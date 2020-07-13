@@ -1,0 +1,48 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //@include outline;
+  width: 1142px;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.page-header__phone {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+
+  line-height: 18px;
+
+  color: $black;
+}
+
+.page-header__callback {
+  display: inline-block;
+
+  @include list-reset;
+
+  background: none;
+
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  font-variant: small-caps;
+  text-transform: lowercase;
+
+  line-height: 18px;
+
+  color: $black;
+
+  border: none;
+  border-bottom: 1px dashed $black;
+
+  cursor: pointer;
+}
+
+.page-header__logo {
+  padding-right: 25px;
+}
