@@ -359,9 +359,46 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
-h1 {
-  color: tomato;
-  font-family: "Raleway", "Arial", sans-serif;
-  font-weight: 900; }
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1142px;
+  margin: 0 auto;
+  margin-top: 32px; }
+
+.page-header__phone {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #484848; }
+
+.page-header__callback {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background: none;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  line-height: 18px;
+  color: #484848;
+  border: none;
+  border-bottom: 1px dashed #484848;
+  cursor: pointer; }
+
+.page-header__logo {
+  padding-right: 25px; }
 
 /*# sourceMappingURL=style.css.map */
