@@ -6,3 +6,99 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin heading-h3 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+
+  font-size: 28px;
+  line-height: 34px;
+
+  letter-spacing: -0.02em;
+
+  color: $blue;
+  }
+
+@mixin text-regular {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+
+  font-size: 15px;
+  line-height: 170%;
+
+  color: $black;
+
+  opacity: 0.87;
+}
+
+@mixin text-small {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+
+  font-size: 13px;
+  line-height: 150%;
+
+  color: $black;
+  opacity: 0.74;
+}
+
+@mixin input-placeholder {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+
+  font-size: 17px;
+  line-height: 20px;
+
+  font-variant: small-caps;
+  text-transform: lowercase;
+
+  color: $black;
+  opacity: 0.5;
+}
+
+@mixin input-text {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+
+  font-size: 17px;
+  line-height: 20px;
+
+  font-variant: small-caps;
+  text-transform: lowercase;
+
+  color: $black;
+  opacity: 0.87;
+}
+
+@mixin button-white-text {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+
+  text-transform: lowercase;
+  font-variant: small-caps;
+
+  font-size: 17px;
+  line-height: 20px;
+
+  color: $white;
+
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+@mixin button-yellow-background {
+  background: linear-gradient(146.13deg, #FFC341 20.46%, #FFD701 65.31%);
+}
+
+@mixin button-yellow-background-hover {
+  background: linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%);
+}
+
+@mixin button-yellow-background-active {
+  background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%);
+}
