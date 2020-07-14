@@ -1,25 +1,35 @@
 .promo {
   position: relative;
+
   width: 100%;
   height: 906px;
-  @include outline;
-  background:  url("../../img/bg-main-city-desktop@1x.png") center 0 no-repeat;
-  background-repeat: no-repeat;
+
+  background: url("../../img/bg-main-city-desktop@1x.png") center 0 no-repeat;
   background-size: auto cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/bg-main-city-desktop@2x.png");
+    background-size: 1366px auto;
+  }
 }
 
 .promo::before {
-  content: '';
-  width: 100%;
-  height: 906px;
+  content: "";
+
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 62px;
-  background: url("../../img/bg-main-girl-desktop@1x.png") center 0 no-repeat;
-  background-size: auto cover;
-}
 
+  width: 100%;
+  height: 906px;
+
+  background: url("../../img/bg-main-girl-desktop@1x.png") center 0 no-repeat;
+  background-size: 1366px auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/bg-main-girl-desktop@2x.png");
+  }
+}
 
 .promo__decorative-text {
   display: block;
@@ -30,54 +40,119 @@
   font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 900;
+
   font-size: 200px;
+  line-height: 170%;
+  letter-spacing: 0.055em;
+
   overflow: hidden;
 
-  line-height: 170%;
-
-  letter-spacing: 0.055em;
   text-transform: uppercase;
-
   text-align: center;
 
-  color: #fff;
   background-clip: text;
 
--webkit-text-fill-color: transparent;
-
-}
-
-
-
-.clip-text_fifteen {
   background-image: url("../../img/bg-main-overlay-desktop@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/bg-main-overlay-desktop@2x.jpg");
+    background-size: 1001px auto;
+  }
+
   background-position-x: 51%;
   background-position-y: 31%;
+
+  color: transparent;
 }
+
 
 .promo__heading {
   position: relative;
+
   width: 343px;
-  text-align: center;
+
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
+
   font-size: 24px;
   line-height: 29px;
+
   text-align: center;
+
   color: white;
   margin: 0 auto;
-  z-index: 100;
+  z-index: 3;
+
+  margin-top: 40px;
 }
 
 .promo__heading::before {
-  content: '';
+  content: "";
 
-  width: 76px;
-  height: 132px;
-  font-size: 62px;
   position: absolute;
   left: 39%;
   top: 153%;
+
+  width: 76px;
+  height: 132px;
+
   background: url("../../img/scroll-down.svg") 0 0 no-repeat;
+}
+
+@media (max-width: 1023px) {
+  .promo__decorative-text {
+    font-size: 150px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo {
+    background: url("../../img/bg-main-city-mobile@1x.png") center 0 no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-main-city-mobile@2x.png");
+      background-size: 912px auto;
+    }
+  }
+
+  .promo__decorative-text {
+    margin-left: -14px;
+    padding: 0;
+    padding-top: 136px;
+
+    font-size: 72px;
+    line-height: 170%;
+    letter-spacing: 0.01em;
+
+    background-image: url("../../img/bg-main-overlay-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-main-overlay-mobile@2x.jpg");
+      background-size: 320px auto;
+    }
+  }
+
+  .promo::before {
+    background: url("../../img/bg-main-girl-mobile@1x.png") center 0 no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-main-girl-mobile@2x.png");
+      background-size: 320px auto;
+    }
+  }
+
+  .promo__heading {
+    width: 288px;
+
+    font-size: 20px;
+    line-height: 24px;
+
+    margin-top: 45px;
+  }
+
+  .promo__heading::before {
+    left: 36%;
+    top: 165%;
+  }
 }

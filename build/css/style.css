@@ -377,8 +377,7 @@ input[type="radio"].visually-hidden {
   margin-right: auto;
   margin-left: auto;
   margin-top: 32px;
-  max-width: 1142px;
-  outline: 4px solid green; }
+  max-width: 1142px; }
 
 .page-header__phone,
 .page-header__callback {
@@ -439,28 +438,35 @@ input[type="radio"].visually-hidden {
   min-width: 320px;
   max-width: 1366px;
   margin: 0 auto;
-  outline: 4px solid orange;
-  padding-top: 0px; }
+  padding-top: 0; }
+
+@media (max-width: 767px) {
+  .page-main {
+    padding-top: 32px; } }
 
 .promo {
   position: relative;
   width: 100%;
   height: 906px;
-  outline: 4px solid red;
   background: url("../../img/bg-main-city-desktop@1x.png") center 0 no-repeat;
-  background-repeat: no-repeat;
   background-size: auto cover; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .promo {
+      background-image: url("../../img/bg-main-city-desktop@2x.png");
+      background-size: 1366px auto; } }
 
 .promo::before {
-  content: '';
-  width: 100%;
-  height: 906px;
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 62px;
+  width: 100%;
+  height: 906px;
   background: url("../../img/bg-main-girl-desktop@1x.png") center 0 no-repeat;
-  background-size: auto cover; }
+  background-size: 1366px auto; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .promo::before {
+      background-image: url("../../img/bg-main-girl-desktop@2x.png"); } }
 
 .promo__decorative-text {
   display: block;
@@ -470,25 +476,25 @@ input[type="radio"].visually-hidden {
   font-style: normal;
   font-weight: 900;
   font-size: 200px;
-  overflow: hidden;
   line-height: 170%;
   letter-spacing: 0.055em;
+  overflow: hidden;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
   -webkit-background-clip: text;
           background-clip: text;
-  -webkit-text-fill-color: transparent; }
-
-.clip-text_fifteen {
   background-image: url("../../img/bg-main-overlay-desktop@1x.jpg");
   background-position-x: 51%;
-  background-position-y: 31%; }
+  background-position-y: 31%;
+  color: transparent; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .promo__decorative-text {
+      background-image: url("../../img/bg-main-overlay-desktop@2x.jpg");
+      background-size: 1001px auto; } }
 
 .promo__heading {
   position: relative;
   width: 343px;
-  text-align: center;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -497,16 +503,60 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: white;
   margin: 0 auto;
-  z-index: 100; }
+  z-index: 3;
+  margin-top: 40px; }
 
 .promo__heading::before {
-  content: '';
-  width: 76px;
-  height: 132px;
-  font-size: 62px;
+  content: "";
   position: absolute;
   left: 39%;
   top: 153%;
+  width: 76px;
+  height: 132px;
   background: url("../../img/scroll-down.svg") 0 0 no-repeat; }
+
+@media (max-width: 1023px) {
+  .promo__decorative-text {
+    font-size: 150px; } }
+
+@media (max-width: 767px) {
+  .promo {
+    background: url("../../img/bg-main-city-mobile@1x.png") center 0 no-repeat; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .promo {
+      background-image: url("../../img/bg-main-city-mobile@2x.png");
+      background-size: 912px auto; } }
+
+@media (max-width: 767px) {
+  .promo__decorative-text {
+    margin-left: -14px;
+    padding: 0;
+    padding-top: 136px;
+    font-size: 72px;
+    line-height: 170%;
+    letter-spacing: 0.01em;
+    background-image: url("../../img/bg-main-overlay-mobile@1x.jpg"); } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .promo__decorative-text {
+      background-image: url("../../img/bg-main-overlay-mobile@2x.jpg");
+      background-size: 320px auto; } }
+
+@media (max-width: 767px) {
+  .promo::before {
+    background: url("../../img/bg-main-girl-mobile@1x.png") center 0 no-repeat; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .promo::before {
+      background-image: url("../../img/bg-main-girl-mobile@2x.png");
+      background-size: 320px auto; } }
+
+@media (max-width: 767px) {
+  .promo__heading {
+    width: 288px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 45px; }
+  .promo__heading::before {
+    left: 36%;
+    top: 165%; } }
 
 /*# sourceMappingURL=style.css.map */
