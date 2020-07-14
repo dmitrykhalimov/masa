@@ -16,5 +16,3 @@ var closeModal = function () {
 
 callbackOpenButton.addEventListener('click', openModal);
 callbackCloseButton.addEventListener('click', closeModal);
-
-

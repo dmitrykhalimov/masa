@@ -14,7 +14,7 @@
   margin-top: 32px;
 
   max-width: 1142px;
-  z-index: -1;
+  z-index: 5;
 }
 
 .page-header__phone,
@@ -31,7 +31,7 @@
 
 .page-header__callback {
   @include list-reset;
-
+  position: relative;
   background: none;
 
   font-variant: small-caps;
