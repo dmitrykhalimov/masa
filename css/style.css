@@ -367,7 +367,7 @@ input[type="radio"].visually-hidden {
   height: 100%;
   outline: 4px solid wheat;
   padding-top: 123px;
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   z-index: 5; }
 
 .modal-callback__container {
@@ -379,7 +379,7 @@ input[type="radio"].visually-hidden {
   min-height: 521px;
   padding-left: 48px;
   padding-top: 56px;
-  background-color: #FFFFFF; }
+  background-color: #ffffff; }
 
 .modal-callback__heading {
   margin: 0;
@@ -390,7 +390,7 @@ input[type="radio"].visually-hidden {
   font-size: 28px;
   line-height: 34px;
   letter-spacing: -0.02em;
-  color: #1FC0FC; }
+  color: #1fc0fc; }
 
 .modal-callback__text {
   font-family: "Fira Sans", "Arial", sans-serif;
@@ -403,61 +403,6 @@ input[type="radio"].visually-hidden {
   padding-right: 80px;
   margin-top: 18px;
   margin-bottom: 33px; }
-
-.modal-callback__input::-webkit-input-placeholder {
-  font-family: "Fira Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 20px;
-  font-variant: small-caps;
-  text-transform: lowercase;
-  color: #484848;
-  opacity: 0.5; }
-
-.modal-callback__input::-moz-placeholder {
-  font-family: "Fira Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 20px;
-  font-variant: small-caps;
-  text-transform: lowercase;
-  color: #484848;
-  opacity: 0.5; }
-
-.modal-callback__input:-ms-input-placeholder {
-  font-family: "Fira Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 20px;
-  font-variant: small-caps;
-  text-transform: lowercase;
-  color: #484848;
-  opacity: 0.5; }
-
-.modal-callback__input::-ms-input-placeholder {
-  font-family: "Fira Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 20px;
-  font-variant: small-caps;
-  text-transform: lowercase;
-  color: #484848;
-  opacity: 0.5; }
-
-.modal-callback__input::placeholder {
-  font-family: "Fira Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 20px;
-  font-variant: small-caps;
-  text-transform: lowercase;
-  color: #484848;
-  opacity: 0.5; }
 
 .modal-callback__input {
   font-family: "Fira Sans", "Arial", sans-serif;
@@ -476,15 +421,14 @@ input[type="radio"].visually-hidden {
   height: 59px;
   padding-left: 38px;
   margin-bottom: 9px;
-  border: 2px solid #E3E3E3;
-  box-sizing: border-box;
+  border: 2px solid #e3e3e3;
   border-radius: 80px; }
   .modal-callback__input:focus {
     outline: none;
-    border-color: #FFC341; }
+    border-color: #ffc341; }
   .modal-callback__input:focus:invalid {
     outline: none;
-    border-color: #FF0000; }
+    border-color: #ff0000; }
 
 .modal-callback__button {
   display: block;
@@ -499,18 +443,18 @@ input[type="radio"].visually-hidden {
   font-variant: small-caps;
   font-size: 17px;
   line-height: 20px;
-  color: #FFFFFF;
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
-  background: linear-gradient(146.13deg, #FFC341 20.46%, #FFD701 65.31%);
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  background: linear-gradient(146.13deg, #ffc341 20.46%, #ffd701 65.31%);
   width: 264px;
   height: 59px;
   border-radius: 80px;
   cursor: pointer; }
   .modal-callback__button:hover {
-    background: linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%); }
+    background: linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%); }
   .modal-callback__button:active {
     outline: none;
-    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%); }
+    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%); }
 
 .modal-callback__phone-error {
   position: absolute;
@@ -522,7 +466,7 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   font-size: 13px;
   line-height: 150%;
-  color: #FF0000;
+  color: #ff0000;
   opacity: 0.75; }
 
 .modal-callback__input--phone:focus:invalid + .modal-callback__phone-error {
@@ -551,7 +495,7 @@ input[type="radio"].visually-hidden {
   top: 0;
   width: 16px;
   height: 16px;
-  border: 2px solid #FFC341; }
+  border: 2px solid #ffc341; }
 
 .modal-callback__acceptance-cb:checked + .modal-callback__acceptance::after {
   position: absolute;
@@ -600,7 +544,7 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
   margin-top: 32px;
   max-width: 1142px;
-  z-index: -1; }
+  z-index: 5; }
 
 .page-header__phone,
 .page-header__callback {
@@ -614,6 +558,7 @@ input[type="radio"].visually-hidden {
 .page-header__callback {
   margin: 0;
   padding: 0;
+  position: relative;
   background: none;
   font-variant: small-caps;
   text-transform: lowercase;
