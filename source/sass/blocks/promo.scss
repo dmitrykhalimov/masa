@@ -1,14 +1,27 @@
 .promo {
   position: relative;
-  width: 1366px;
+  width: 100%;
   height: 906px;
-  margin: 0 auto;
-  //@include outline;
-  background:  url("../../img/bg-main-city-desktop@1x.png") 0 0 no-repeat;
+  @include outline;
+  background:  url("../../img/bg-main-city-desktop@1x.png") center 0 no-repeat;
+  background-repeat: no-repeat;
+  background-size: auto cover;
 }
 
+.promo::before {
+  content: '';
+  width: 100%;
+  height: 906px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 62px;
+  background: url("../../img/bg-main-girl-desktop@1x.png") center 0 no-repeat;
+  background-size: auto cover;
+}
+
+
 .promo__decorative-text {
-  //@include outline(green);
   display: block;
 
   padding-top: 160px;
@@ -18,6 +31,7 @@
   font-style: normal;
   font-weight: 900;
   font-size: 200px;
+  overflow: hidden;
 
   line-height: 170%;
 
@@ -30,18 +44,9 @@
   background-clip: text;
 
 -webkit-text-fill-color: transparent;
+
 }
 
-.promo img {
-  position: absolute;
-  top: 0;
-  left: 0;
-};
-
-/* Background */
-.promo__decorative-text:before {
-  background-image: none;
-}
 
 
 .clip-text_fifteen {
@@ -51,6 +56,7 @@
 }
 
 .promo__heading {
+  position: relative;
   width: 343px;
   text-align: center;
   font-family: "Fira Sans", "Arial", sans-serif;
@@ -59,17 +65,19 @@
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  position: absolute;
-  color: #FFFFFF;
-  top: 518px;
-  left: 512px;
+  color: white;
+  margin: 0 auto;
+  z-index: 100;
 }
 
 .promo__heading::before {
-  content: 'Тест';
-  width: 100px;
-  height: 100px;
+  content: '';
+
+  width: 76px;
+  height: 132px;
   font-size: 62px;
   position: absolute;
-  background: url("../../img/");
+  left: 39%;
+  top: 153%;
+  background: url("../../img/scroll-down.svg") 0 0 no-repeat;
 }
