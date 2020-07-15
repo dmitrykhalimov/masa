@@ -363,10 +363,9 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 0;
   left: 0;
+  padding-top: 123px;
   width: 100%;
   height: 100%;
-  outline: 4px solid wheat;
-  padding-top: 123px;
   background-color: #ebebeb;
   z-index: 5; }
 
@@ -374,11 +373,11 @@ input[type="radio"].visually-hidden {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding-left: 48px;
+  padding-top: 56px;
   margin: 0 auto;
   width: 480px;
   min-height: 521px;
-  padding-left: 48px;
-  padding-top: 56px;
   background-color: #ffffff; }
 
 .modal-callback__heading {
@@ -417,10 +416,10 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
-  width: 360px;
-  height: 59px;
   padding-left: 38px;
   margin-bottom: 9px;
+  width: 360px;
+  height: 59px;
   border: 2px solid #e3e3e3;
   border-radius: 80px; }
   .modal-callback__input:focus {
@@ -431,11 +430,6 @@ input[type="radio"].visually-hidden {
     border-color: #ff0000; }
 
 .modal-callback__button {
-  display: block;
-  margin-top: 22px;
-  margin-left: 60px;
-  border: none;
-  background: none;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -446,8 +440,12 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
   background: linear-gradient(146.13deg, #ffc341 20.46%, #ffd701 65.31%);
+  display: block;
+  margin-top: 22px;
+  margin-left: 60px;
   width: 264px;
   height: 59px;
+  border: none;
   border-radius: 80px;
   cursor: pointer; }
   .modal-callback__button:hover {
@@ -458,9 +456,9 @@ input[type="radio"].visually-hidden {
 
 .modal-callback__phone-error {
   position: absolute;
-  display: none;
   bottom: 160px;
   left: 90px;
+  display: none;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -473,10 +471,6 @@ input[type="radio"].visually-hidden {
   display: block; }
 
 .modal-callback__acceptance {
-  position: relative;
-  display: block;
-  margin-left: 83px;
-  margin-top: 17px;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -484,26 +478,30 @@ input[type="radio"].visually-hidden {
   line-height: 150%;
   color: #484848;
   opacity: 0.74;
+  position: relative;
+  display: block;
+  margin-left: 83px;
+  margin-top: 17px;
   width: 240px; }
 
 .modal-callback__acceptance::before {
   position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   content: "";
   left: -23px;
   top: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 16px;
   height: 16px;
   border: 2px solid #ffc341; }
 
 .modal-callback__acceptance-cb:checked + .modal-callback__acceptance::after {
   position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   content: "";
   left: -23px;
   top: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 16px;
   height: 15px;
   background: url("../img/icon-close.svg") center center no-repeat; }
@@ -514,10 +512,10 @@ input[type="radio"].visually-hidden {
   top: 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 0;
-  font-size: 0;
   width: 18px;
   height: 17px;
+  border: 0;
+  font-size: 0;
   background: url("../img/icon-close.svg") 0 0 no-repeat; }
   .modal-callback__close:hover {
     opacity: 0.6; }
@@ -529,10 +527,10 @@ input[type="radio"].visually-hidden {
   .modal-callback {
     padding-top: 0; }
   .modal-callback__container {
-    width: 100%;
-    height: 100%;
     padding-left: 17px;
-    padding-right: 16px; }
+    padding-right: 16px;
+    width: 100%;
+    height: 100%; }
   .modal-callback__heading {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
@@ -545,7 +543,6 @@ input[type="radio"].visually-hidden {
     margin-bottom: 16px;
     text-align: center; }
   .modal-callback__text {
-    display: block;
     font-family: "Fira Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -553,17 +550,18 @@ input[type="radio"].visually-hidden {
     line-height: 160%;
     color: #484848;
     opacity: 0.87;
-    text-align: center;
+    display: block;
     margin: 0 auto;
     margin-bottom: 30px;
     padding-right: 5px;
-    padding-left: 5px; }
+    padding-left: 5px;
+    text-align: center; }
   .modal-callback__input {
     width: 100%; }
   .modal-callback__button {
-    width: 92%;
     margin: 0 auto;
-    margin-top: 24px; }
+    margin-top: 24px;
+    width: 92%; }
   .modal-callback__acceptance {
     margin-left: 34px;
     width: 85%; }
