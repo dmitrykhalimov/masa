@@ -20,6 +20,19 @@
   color: $blue;
 }
 
+@mixin heading-h3-mobile {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+
+  font-size: 24px;
+  line-height: 29px;
+
+  letter-spacing: -0.02em;
+
+  color: $blue;
+}
+
 @mixin text-regular {
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
@@ -30,6 +43,17 @@
 
   color: $black;
 
+  opacity: 0.87;
+}
+
+@mixin text-regular-mobile {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+
+  color: #484848;
   opacity: 0.87;
 }
 

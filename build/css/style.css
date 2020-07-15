@@ -525,6 +525,52 @@ input[type="radio"].visually-hidden {
     opacity: 0.3;
     outline: none; }
 
+@media (max-width: 767px) {
+  .modal-callback {
+    padding-top: 0; }
+  .modal-callback__container {
+    width: 100%;
+    height: 100%;
+    padding-left: 17px;
+    padding-right: 16px; }
+  .modal-callback__heading {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+    color: #1fc0fc;
+    margin-top: 114px;
+    margin-bottom: 16px;
+    text-align: center; }
+  .modal-callback__text {
+    display: block;
+    font-family: "Fira Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    color: #484848;
+    opacity: 0.87;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-right: 5px;
+    padding-left: 5px; }
+  .modal-callback__input {
+    width: 100%; }
+  .modal-callback__button {
+    width: 92%;
+    margin: 0 auto;
+    margin-top: 24px; }
+  .modal-callback__acceptance {
+    margin-left: 34px;
+    width: 85%; }
+  .modal-callback__close {
+    right: 24px;
+    top: 24px; } }
+
 .page-header {
   position: absolute;
   left: 0;
