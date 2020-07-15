@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <!--
   <header class="page-header">
     <span class="page-header__phone">+ (972) 2 – 621 – 6581</span>
     <a class="page-header__logo">
@@ -28,18 +29,26 @@
         <p class="modal-callback__text">Оставьте ваши контактные данные, мы&nbspсвяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
         <form class="modal-callback__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="name">Имя</label>
-          <input class="modal-callback__input" type="text" id="name" name="name" placeholder="Имя" required="">
+          <input class="modal-callback__input" type="text" id="name" name="name" placeholder="Имя" required>
           <label class="visually-hidden" for="phone">Телефон</label>
-          <input class="modal-callback__input modal-callback__input--phone" type="tel" id="phone" name="phone" placeholder="Телефон" required="">
+          <input class="modal-callback__input modal-callback__input--phone" type="tel" id="phone" name="phone" placeholder="Телефон" required>
           <span class="modal-callback__phone-error">Ошибка: неверный формат</span>
           <button class="modal-callback__button" type="submit">Перезвоните мне</button>
-          <input class="modal-callback__acceptance-cb visually-hidden" type="checkbox" id="acceptance" name="acceptance" required="">
+          <input class="modal-callback__acceptance-cb visually-hidden" type="checkbox" id="acceptance" name="acceptance" required>
           <label class="modal-callback__acceptance" for="acceptance">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
         </form>
         <button class="modal-callback__close" type="button">Закрыть</button>
       </div>
+    </section> -->
+    <section class="modal-accepted">
+      <div class="modal-accepted__container">
+        <h2 class="modal-accepted__heading">Заявка принята</h2>
+        <p class="modal-accepted__text">Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!</p>
+        <button class="modal-accepted__button" type="button">Понятно</button>
+        <button class="modal-accepted__close" type="button">Закрыть</button>
+      </div>
     </section>
-  </main>
+  
   <script src="js/modal.js"></script>
 </body>
 </html>

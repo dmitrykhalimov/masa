@@ -9,7 +9,6 @@
   height: 100%;
 
   background-color: $gray;
-
   z-index: 5;
 }
 
@@ -26,6 +25,10 @@
   min-height: 521px;
 
   background-color: $white;
+
+  border-radius: 8px;
+
+  box-shadow: 0 11px 24px -14px #484848;
 }
 
 .modal-callback__heading {

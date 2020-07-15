@@ -1,0 +1,176 @@
+.modal-accepted {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding-top: 123px;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: $gray;
+  z-index: 5;
+}
+
+.modal-accepted__container {
+  position: relative;
+
+  box-sizing: border-box;
+
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 56px;
+  margin: 0 auto;
+
+  width: 480px;
+  min-height: 521px;
+
+  background-color: $white;
+  border-radius: 8px;
+
+  box-shadow: 0 11px 24px -14px #484848;
+}
+
+.modal-accepted__heading {
+  @include list-reset;
+  @include heading-h3;
+
+  position: relative;
+
+  margin-top: 160px;
+  text-align: center;
+}
+
+.modal-accepted__heading::before {
+  position: absolute;
+  content: "";
+  top: -96px;
+  left: 157px;
+
+  box-sizing: border-box;
+
+  width: 71px;
+  height: 64px;
+
+  background: url("../../img/modal-accepted.svg") 0 0 no-repeat;
+}
+
+.modal-accepted__text {
+  @include text-regular;
+
+  margin-top: 18px;
+  margin-bottom: 33px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  text-align: center;
+}
+
+.modal-accepted__button {
+  @include button-white-text;
+  @include button-yellow-background;
+
+  display: block;
+
+  margin-top: 22px;
+  margin-left: 60px;
+
+  width: 264px;
+  height: 59px;
+
+  border: none;
+  border-radius: 80px;
+
+  cursor: pointer;
+
+  &:hover {
+    @include button-yellow-background-hover;
+  }
+
+  &:active {
+    outline: none;
+
+    @include button-yellow-background-active;
+  }
+}
+
+.modal-accepted__close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+
+  box-sizing: border-box;
+
+  width: 18px;
+  height: 17px;
+
+  border: 0;
+  font-size: 0;
+
+  background: url("../img/icon-close.svg") 0 0 no-repeat;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+    outline: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal-accepted {
+    padding-top: 0;
+  }
+
+  .modal-accepted__container {
+    padding-left: 17px;
+    padding-right: 16px;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal-accepted__heading {
+    @include heading-h3-mobile;
+
+    //position: static;
+    margin-top: 241px;
+    margin-bottom: 16px;
+
+    text-align: center;
+  }
+
+  .modal-accepted__heading::before {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
+  .modal-accepted__text {
+    @include text-regular-mobile;
+
+    display: block;
+
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-right: 5px;
+    padding-left: 5px;
+
+    text-align: center;
+  }
+
+  .modal-accepted__button {
+    margin: 0 auto;
+    margin-top: 24px;
+
+    width: 92%;
+  }
+
+  .modal-accepted__close {
+    right: 24px;
+    top: 24px;
+  }
+}
