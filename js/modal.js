@@ -9,6 +9,10 @@ var acceptedModal = document.querySelector('.modal-accepted');
 var acceptedCloseButton = document.querySelector('.modal-accepted__close');
 var acceptedSubmitButton = document.querySelector('.modal-accepted__button');
 
+var formName = document.querySelector('.modal-callback__input--name');
+var formPhone = document.querySelector('.modal-callback__input--phone');
+var formAccepted = document.querySelector('.modal-callback__acceptance-cb');
+
 var body = document.querySelector('body');
 
 var onCallbackOpenClick = function () {
@@ -34,9 +38,11 @@ var onAcceptedEsc = function (evt) {
 };
 
 var onCallbackSubmitClick = function (evt) {
-  evt.preventDefault(); // тут должна быть логика отправки на сервер через XHR
-  closeCallback();
-  openAccepted();
+  if (formName.validity.valid && formPhone.validity.valid && formAccepted.validity.valid) {
+    closeCallback();
+    openAccepted();
+    evt.preventDefault(); // здесь должен быть блок отправляющий данные по XHR
+  }
 };
 
 var onAcceptedCloseClick = function () {
@@ -77,4 +83,3 @@ callbackSubmitButton.addEventListener('click', onCallbackSubmitClick);
 
 acceptedCloseButton.addEventListener('click', onAcceptedCloseClick);
 acceptedSubmitButton.addEventListener('click', onAcceptedSubmitClick);
-
