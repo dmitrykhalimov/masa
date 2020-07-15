@@ -28,7 +28,7 @@
         <p class="modal-callback__text">Оставьте ваши контактные данные, мы&nbspсвяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
         <form class="modal-callback__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="name">Имя</label>
-          <input class="modal-callback__input" type="text" id="name" name="name" placeholder="Имя" required>
+          <input class="modal-callback__input modal-callback__input--name" type="text" id="name" name="name" placeholder="Имя" required>
           <label class="visually-hidden" for="phone">Телефон</label>
           <input class="modal-callback__input modal-callback__input--phone" type="tel" id="phone" name="phone" placeholder="Телефон" required>
           <span class="modal-callback__phone-error">Ошибка: неверный формат</span>
@@ -44,7 +44,7 @@
         <h2 class="modal-accepted__heading">Заявка принята</h2>
         <p class="modal-accepted__text">Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!</p>
         <button class="modal-accepted__button" type="button">Понятно</button>
-        <button class="modal-accepted__close" type="button">Закрыть</button>
+        <button class="modal-accepted__close" type="submit">Закрыть</button>
       </div>
     </section>
   </main>
