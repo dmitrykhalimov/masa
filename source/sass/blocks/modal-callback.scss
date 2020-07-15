@@ -2,26 +2,29 @@
   position: absolute;
   top: 0;
   left: 0;
+
+  padding-top: 123px;
+
   width: 100%;
   height: 100%;
 
-  @include outline(wheat);
-
-  padding-top: 123px;
   background-color: $gray;
+
   z-index: 5;
 }
 
 .modal-callback__container {
-  //@include outline(purple);
   position: relative;
+
   box-sizing: border-box;
-  margin: 0 auto;
-  width: 480px;
-  min-height: 521px;
 
   padding-left: 48px;
   padding-top: 56px;
+  margin: 0 auto;
+
+  width: 480px;
+  min-height: 521px;
+
   background-color: $white;
 }
 
@@ -32,6 +35,7 @@
 
 .modal-callback__text {
   @include text-regular;
+
   padding-right: 80px;
   margin-top: 18px;
   margin-bottom: 33px;
@@ -42,15 +46,16 @@
   @include input-text;
 
   box-sizing: border-box;
+
   display: block;
-  width: 360px;
-  height: 59px;
 
   padding-left: 38px;
   margin-bottom: 9px;
 
-  border: 2px solid #e3e3e3;
+  width: 360px;
+  height: 59px;
 
+  border: 2px solid #e3e3e3;
   border-radius: 80px;
 
   &:focus {
@@ -65,21 +70,20 @@
 }
 
 .modal-callback__button {
+  @include button-white-text;
+  @include button-yellow-background;
+
   display: block;
 
   margin-top: 22px;
   margin-left: 60px;
-  border: none;
-  background: none;
-
-
-  @include button-white-text;
-  @include button-yellow-background;
 
   width: 264px;
   height: 59px;
 
+  border: none;
   border-radius: 80px;
+
   cursor: pointer;
 
   &:hover {
@@ -95,9 +99,11 @@
 
 .modal-callback__phone-error {
   position: absolute;
-  display: none;
   bottom: 160px;
   left: 90px;
+
+  display: none;
+
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -114,34 +120,43 @@
 }
 
 .modal-callback__acceptance {
+  @include text-small;
+
   position: relative;
+
   display: block;
+
   margin-left: 83px;
   margin-top: 17px;
 
-  @include text-small;
   width: 240px;
 }
 
 .modal-callback__acceptance::before {
   position: absolute;
-  box-sizing: border-box;
   content: "";
   left: -23px;
   top: 0;
+
+  box-sizing: border-box;
+
   width: 16px;
   height: 16px;
+
   border: 2px solid $yellow;
 }
 
 .modal-callback__acceptance-cb:checked + .modal-callback__acceptance::after {
   position: absolute;
-  box-sizing: border-box;
   content: "";
   left: -23px;
   top: 0;
+
+  box-sizing: border-box;
+
   width: 16px;
   height: 15px;
+
   background: url("../img/icon-close.svg") center center no-repeat;
 }
 
@@ -149,11 +164,15 @@
   position: absolute;
   right: 32px;
   top: 32px;
+
   box-sizing: border-box;
-  border: 0;
-  font-size: 0;
+
   width: 18px;
   height: 17px;
+
+  border: 0;
+  font-size: 0;
+
   background: url("../img/icon-close.svg") 0 0 no-repeat;
 
   &:hover {
@@ -172,10 +191,11 @@
   }
 
   .modal-callback__container {
-    width: 100%;
-    height: 100%;
     padding-left: 17px;
     padding-right: 16px;
+
+    width: 100%;
+    height: 100%;
   }
 
   .modal-callback__heading {
@@ -188,14 +208,16 @@
   }
 
   .modal-callback__text {
-    display: block;
     @include text-regular-mobile;
 
-    text-align: center;
+    display: block;
+
     margin: 0 auto;
     margin-bottom: 30px;
     padding-right: 5px;
     padding-left: 5px;
+
+    text-align: center;
   }
 
   .modal-callback__input {
@@ -203,14 +225,15 @@
   }
 
   .modal-callback__button {
-    width: 92%;
     margin: 0 auto;
     margin-top: 24px;
 
+    width: 92%;
   }
 
   .modal-callback__acceptance {
     margin-left: 34px;
+
     width: 85%;
   }
 
