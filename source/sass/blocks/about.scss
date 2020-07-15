@@ -1,0 +1,128 @@
+.about {
+  position: relative;
+
+  background: url("../../img/bg-about-desktop@1x.png") center 160px no-repeat;
+  background-size: auto cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-about-desktop@2x.png");
+    background-size: 1366px auto;
+  }
+}
+
+.about__video-mock {
+  position: relative;
+
+  margin: 0 auto;
+
+  width: 870px;
+}
+
+.about__heading {
+  @include heading-h2;
+
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+
+  text-align: center;
+}
+
+.about__text {
+  @include text-big;
+
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+  width: 720px;
+
+  text-align: center;
+}
+
+.about__video-picture {
+  display: block;
+
+  margin: 0 auto;
+}
+
+.about__button {
+  position: absolute;
+  top: 178px;
+  left: 44%;
+}
+
+.about__button:hover path {
+  fill: #63d3fd;
+}
+
+.about__button:hover circle {
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.05));
+}
+
+.about__button:active circle:nth-child(2) {
+  fill: #f4f4f4;
+}
+
+.about__button:active path {
+  fill: #1fc0fc;
+}
+
+@media (max-width: 1023px) {
+  .about__video-mock {
+    width: 700px;
+  }
+
+  .about__video-picture img {
+    width: 700px;
+    height: auto;
+  }
+
+  .about__button {
+    top: 158px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    background: url("../img/bg-about-mobile@1x.png") -20px 200px no-repeat;
+    background-size: 120%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-about-mobile@2x.png");
+    }
+  }
+
+  .about__heading {
+    @include heading-h2-mobile;
+
+    margin-top: 0;
+  }
+
+  .about__video-mock {
+    width: 100%;
+  }
+
+  .about__text {
+    @include text-big-mobile;
+
+    padding-left: 16px;
+    padding-right: 16px;
+
+    width: auto;
+
+    text-align: left;
+  }
+
+  .about__video-picture img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about__button {
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+
+    width: 80px;
+    height: 80px;
+  }
+}

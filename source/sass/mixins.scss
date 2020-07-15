@@ -33,6 +33,34 @@
   color: $blue;
 }
 
+@mixin heading-h2 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+
+  font-size: 40px;
+  line-height: 49px;
+
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: $blue;
+}
+
+@mixin heading-h2-mobile {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+
+  font-size: 32px;
+  line-height: 39px;
+
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: $blue;
+}
+
 @mixin text-regular {
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
@@ -67,6 +95,27 @@
 
   color: $black;
   opacity: 0.74;
+}
+
+@mixin text-big {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 170%;
+
+  color: $black;
+}
+
+@mixin text-big-mobile {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+
+  font-size: 16px;
+  line-height: 26px;
+
+  color: $black;
 }
 
 @mixin input-placeholder {

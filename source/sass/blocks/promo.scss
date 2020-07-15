@@ -21,7 +21,7 @@
   left: 0;
 
   width: 100%;
-  height: 906px;
+  height: inherit;
 
   background: url("../img/bg-main-girl-desktop@1x.png") center 0 no-repeat;
   background-size: 1366px auto;
@@ -108,6 +108,8 @@
 
 @media (max-width: 767px) {
   .promo {
+
+    height: 600px;
     background: url("../img/bg-main-city-mobile@1x.png") center 0 no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -133,6 +135,8 @@
   }
 
   .promo::before {
+    height: inherit;
+
     background: url("../img/bg-main-girl-mobile@1x.png") center 0 no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
