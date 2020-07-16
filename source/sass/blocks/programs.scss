@@ -4,43 +4,50 @@
 
   padding-top: 20px;
   padding-left: 210px;
-  height: 1000px;
 
-  background: url("../../img/bg-programms-desktop@1x.png") 0 0 no-repeat;
+  background: url("../../img/bg-programs-desktop@1x.png") 0 0 no-repeat;
   background-position-x: right;
 }
 
 .programs__list {
   @include list-reset;
-  list-style: none;
+
   position: relative;
+
+  list-style: none;
 }
 
-.program__item {
-  //@include outline(green);
+.programs__item {
   box-sizing: border-box;
-  height: 68px;
-  width: 250px;
+
   margin-bottom: 4px;
 
-  //background: linear-gradient(138.15deg, #FFC341 20.46%, #FFD701 65.31%);
+  height: 68px;
+  width: 250px;
 }
 
 .programs__heading {
   @include heading-h2;
+
   margin-bottom: 67px;
 }
 
-.program__text-regular {
+.programs__text-regular {
   @include text-regular;
 }
 
-.program__label {
-  box-sizing: border-box;
+.programs__label {
+  position: relative;
 
   display: block;
+
+  box-sizing: border-box;
+
+  padding-top: 24px;
+  padding-left: 73px;
+
   height: inherit;
-  position: relative;
+
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -49,36 +56,36 @@
 
   color: $black;
   opacity: 0.87;
-
-  padding-top: 24px;
-  padding-left: 73px;
 }
 
-.program__content {
-  display: none;
+.programs__content {
   position: absolute;
   top: -14px;
   left: 292px;
+
+  display: none;
 }
 
-.program__name {
+.programs__name {
   @include heading-h3;
+
   margin-bottom: 24px;
 }
 
-.program__text {
+.programs__text {
   @include text-regular;
+
   width: 69%;
 }
 
-.program__label::before {
+.programs__label::before {
   position: absolute;
   content: "";
 
   background-repeat: no-repeat;
 }
 
-.program__label--general::before {
+.programs__label--general::before {
   top: 18px;
   left: 24px;
 
@@ -88,7 +95,7 @@
   background-image: url("../../img/icon-about-general-black.png");
 }
 
-.program__label--academic::before {
+.programs__label--academic::before {
   top: 15px;
   left: 20px;
 
@@ -98,7 +105,7 @@
   background-image: url("../../img/icon-about-academic-black.png");
 }
 
-.program__label--practice::before {
+.programs__label--practice::before {
   top: 20px;
   left: 23px;
 
@@ -108,7 +115,7 @@
   background-image: url("../../img/icon-about-practice-black.png");
 }
 
-.program__label--volunteer::before {
+.programs__label--volunteer::before {
   top: 18px;
   left: 23px;
 
@@ -118,7 +125,7 @@
   background-image: url("../../img/icon-about-volunteer-black.png");
 }
 
-.program__label--religion::before {
+.programs__label--religion::before {
   top: 20px;
   left: 26px;
 
@@ -128,7 +135,7 @@
   background-image: url("../../img/icon-about-religion-black.png");
 }
 
-.program__radio:checked + .program__label {
+.programs__radio:checked + .programs__label {
   background: linear-gradient(138.15deg, #ffc341 20.46%, #ffd701 65.31%);
 
   font-weight: 500;
@@ -144,26 +151,142 @@
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
 
-.program__radio:checked + .program__label--general::before {
+.programs__radio:checked + .programs__label--general::before {
   background-image: url("../../img/icon-about-general-white.png");
 }
 
-.program__radio:checked + .program__label--academic::before {
+.programs__radio:checked + .programs__label--academic::before {
   background-image: url("../../img/icon-about-academic-white.png");
 }
 
-.program__radio:checked + .program__label--practice::before {
+.programs__radio:checked + .programs__label--practice::before {
   background-image: url("../../img/icon-about-practice-white.png");
 }
 
-.program__radio:checked + .program__label--volunteer::before {
+.programs__radio:checked + .programs__label--volunteer::before {
   background-image: url("../../img/icon-about-volunteer-white.png");
 }
 
-.program__radio:checked + .program__label--religion::before {
+.programs__radio:checked + .programs__label--religion::before {
   background-image: url("../../img/icon-about-religion-white.png");
 }
 
-.program__radio:checked ~ .program__content {
+.programs__radio:checked ~ .programs__content {
   display: block;
+}
+
+@media (max-width: 1023px) {
+  .programs {
+    padding-left: 50px;
+  }
+
+  .programs__text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .programs {
+    padding: 0;
+    position: relative;
+    background-image: url("../img/bg-programs-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 120px;
+    background-size: 90% auto;
+  }
+
+  .programs__heading {
+    @include heading-h2-mobile;
+
+    margin-bottom: 16px;
+
+    text-align: center;
+  }
+
+  .programs__list {
+    display: flex;
+
+    position: relative;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    min-height: 600px;
+    //white-space: nowrap;
+  }
+
+  .programs__text {
+    @include text-regular-mobile;
+
+    display: block;
+
+    width: 95%;
+  }
+
+  .programs__label {
+    box-sizing: border-box;
+
+    padding: 0;
+    padding-top: 14px;
+    padding-left: 52px;
+
+    width: 105%;
+    height: 48px;
+  }
+
+  .programs__radio:checked + .programs__label {
+    background: linear-gradient(141.47deg, #ffc341 20.46%, #ffd701 65.31%);
+    border-radius: 61px;
+  }
+
+  .programs__content {
+    top: 45px;
+    left: 15px;
+  }
+
+  .programs__name {
+    @include heading-h3-mobile;
+
+    margin-top: 35px;
+    margin-bottom: 18px;
+  }
+
+  .programs__label--general::before {
+    top: 8px;
+    left: 15px;
+  }
+
+  .programs__label--academic::before {
+    top: 5px;
+    left: 8px;
+
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+  }
+
+  .programs__label--practice::before {
+    top: 10px;
+    left: 15px;
+
+    width: 32px;
+    height: 35px;
+  }
+
+  .programs__label--volunteer::before {
+    top: 5px;
+    left: 10px;
+
+    width: 32px;
+    height: 35px;
+  }
+
+  .programs__label--religion::before {
+    top: 10px;
+    left: 15px;
+
+    width: 32px;
+    height: 35px;
+  }
 }
