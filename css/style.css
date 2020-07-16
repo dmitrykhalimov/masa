@@ -361,7 +361,7 @@ input[type="radio"].visually-hidden {
 
 .about {
   position: relative;
-  padding-bottom: 145px;
+  padding-bottom: 143px;
   background: url("../../img/bg-about-desktop@1x.png") center 160px no-repeat;
   background-size: auto cover; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -393,10 +393,10 @@ input[type="radio"].visually-hidden {
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
-  line-height: 170%;
+  line-height: 29px;
   color: #484848;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
   width: 720px;
   text-align: center; }
 
@@ -551,9 +551,19 @@ input[type="radio"].visually-hidden {
     line-height: 26px; } }
 
 .journey {
-  outline: 4px solid red;
+  padding-top: 210px;
   height: 1000px;
-  background: url("../../img/bg-iwantgo-girl-dekstop@1x.png") 100% 0 no-repeat; }
+  background: url("../../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat, url("../../img/bg-iwantgo-girl-dekstop@1x.png") right 0 no-repeat; }
+
+.journey__container {
+  /*
+  box-sizing: border-box;
+
+  max-width: 1206px;
+  margin-left: auto;
+  margin-right: 0;
+  padding-left: 50px;*/
+  padding-left: 210px; }
 
 .journey__heading {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -571,11 +581,96 @@ input[type="radio"].visually-hidden {
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
-  line-height: 170%;
+  line-height: 29px;
   color: #484848;
-  margin: 0; }
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 62px;
+  width: 400px; }
+
+.journey__input {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  color: #484848;
+  opacity: 0.87;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  color: #484848;
+  opacity: 0.5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 40px;
+  width: 477px;
+  height: 59px;
+  border: 2px solid #e3e3e3;
+  border-radius: 80px; }
+  .journey__input:focus {
+    outline: none;
+    border-color: #ffc341; }
+  .journey__input:focus:invalid {
+    outline: none;
+    border-color: #ff0000; }
+
+.journey__button {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-size: 17px;
+  line-height: 20px;
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  background: linear-gradient(146.13deg, #ffc341 20.46%, #ffd701 65.31%);
+  position: relative;
+  left: -220px;
+  width: 216px;
+  height: 59px;
+  border: none;
+  border-radius: 80px;
+  cursor: pointer; }
+  .journey__button:hover {
+    background: linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%); }
+  .journey__button:active {
+    outline: none;
+    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%); }
+
+.journey__phone-error {
+  position: absolute;
+  display: none; }
+
+@media (max-width: 1023px) {
+  .journey {
+    background: url("../../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat, url("../../img/bg-iwantgo-girl-dekstop@1x.png") right 140px no-repeat;
+    background-size: auto, 550px auto; }
+  .journey__container {
+    /*
+    box-sizing: border-box;
+
+    max-width: 1206px;
+    margin-left: auto;
+    margin-right: 0;
+    padding-left: 50px;*/
+    padding-left: 50px; } }
 
 @media (max-width: 767px) {
+  .journey {
+    padding-top: 53px;
+    background: url("../../img/bg-iwantgo-backpack-mobile@1x.png") 0 0 no-repeat, url("../../img/bg-iwantgo-girl-mobile@1x.png") 0 345px no-repeat;
+    background-size: auto, contain; }
+  .journey__container {
+    padding: 0;
+    max-width: auto; }
   .journey__heading {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
@@ -584,7 +679,9 @@ input[type="radio"].visually-hidden {
     line-height: 39px;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    color: #1fc0fc; }
+    color: #1fc0fc;
+    margin-bottom: 25px;
+    text-align: center; }
   .journey__text {
     font-family: "Fira Sans", "Arial", sans-serif;
     font-style: normal;
@@ -592,7 +689,23 @@ input[type="radio"].visually-hidden {
     font-size: 16px;
     line-height: 26px;
     color: #484848;
-    margin: 0; } }
+    margin: 0;
+    margin-bottom: 25px;
+    padding-left: 17px;
+    padding-right: 17px;
+    width: auto; }
+  .journey__input {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 6px;
+    width: 90%;
+    height: 59px; }
+  .journey__button {
+    position: static;
+    display: block;
+    margin: 0 auto;
+    width: 83%;
+    height: 59px; } }
 
 .modal-accepted {
   position: absolute;
@@ -1163,11 +1276,11 @@ input[type="radio"].visually-hidden {
     top: 165%; } }
 
 .programs {
-  outline: 4px solid red;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-top: 20px;
   padding-left: 210px;
+  padding-bottom: 10px;
   background: url("../../img/bg-programs-desktop@1x.png") 0 0 no-repeat;
   background-position-x: right; }
 
@@ -1222,7 +1335,7 @@ input[type="radio"].visually-hidden {
 
 .programs__content {
   position: absolute;
-  top: -14px;
+  top: -12px;
   left: 292px;
   display: none; }
 
@@ -1347,7 +1460,7 @@ input[type="radio"].visually-hidden {
     position: relative;
     overflow-x: scroll;
     overflow-y: hidden;
-    min-height: 600px; }
+    min-height: 500px; }
   .programs__text {
     font-family: "Fira Sans", "Arial", sans-serif;
     font-style: normal;
