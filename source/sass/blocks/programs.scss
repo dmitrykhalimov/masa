@@ -1,0 +1,169 @@
+.programs {
+  @include outline;
+  box-sizing: border-box;
+
+  padding-top: 20px;
+  padding-left: 210px;
+  height: 1000px;
+
+  background: url("../../img/bg-programms-desktop@1x.png") 0 0 no-repeat;
+  background-position-x: right;
+}
+
+.programs__list {
+  @include list-reset;
+  list-style: none;
+  position: relative;
+}
+
+.program__item {
+  //@include outline(green);
+  box-sizing: border-box;
+  height: 68px;
+  width: 250px;
+  margin-bottom: 4px;
+
+  //background: linear-gradient(138.15deg, #FFC341 20.46%, #FFD701 65.31%);
+}
+
+.programs__heading {
+  @include heading-h2;
+  margin-bottom: 67px;
+}
+
+.program__text-regular {
+  @include text-regular;
+}
+
+.program__label {
+  box-sizing: border-box;
+
+  display: block;
+  height: inherit;
+  position: relative;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: $black;
+  opacity: 0.87;
+
+  padding-top: 24px;
+  padding-left: 73px;
+}
+
+.program__content {
+  display: none;
+  position: absolute;
+  top: -14px;
+  left: 292px;
+}
+
+.program__name {
+  @include heading-h3;
+  margin-bottom: 24px;
+}
+
+.program__text {
+  @include text-regular;
+  width: 69%;
+}
+
+.program__label::before {
+  position: absolute;
+  content: "";
+
+  background-repeat: no-repeat;
+}
+
+.program__label--general::before {
+  top: 18px;
+  left: 24px;
+
+  width: 28px;
+  height: 33px;
+
+  background-image: url("../../img/icon-about-general-black.png");
+}
+
+.program__label--academic::before {
+  top: 15px;
+  left: 20px;
+
+  width: 36px;
+  height: 35px;
+
+  background-image: url("../../img/icon-about-academic-black.png");
+}
+
+.program__label--practice::before {
+  top: 20px;
+  left: 23px;
+
+  width: 32px;
+  height: 35px;
+
+  background-image: url("../../img/icon-about-practice-black.png");
+}
+
+.program__label--volunteer::before {
+  top: 18px;
+  left: 23px;
+
+  width: 32px;
+  height: 35px;
+
+  background-image: url("../../img/icon-about-volunteer-black.png");
+}
+
+.program__label--religion::before {
+  top: 20px;
+  left: 26px;
+
+  width: 32px;
+  height: 35px;
+
+  background-image: url("../../img/icon-about-religion-black.png");
+}
+
+.program__radio:checked + .program__label {
+  background: linear-gradient(138.15deg, #ffc341 20.46%, #ffd701 65.31%);
+
+  font-weight: 500;
+
+  font-size: 16px;
+  line-height: 19px;
+
+  text-transform: lowercase;
+  font-variant: small-caps;
+
+  color: $white;
+
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.program__radio:checked + .program__label--general::before {
+  background-image: url("../../img/icon-about-general-white.png");
+}
+
+.program__radio:checked + .program__label--academic::before {
+  background-image: url("../../img/icon-about-academic-white.png");
+}
+
+.program__radio:checked + .program__label--practice::before {
+  background-image: url("../../img/icon-about-practice-white.png");
+}
+
+.program__radio:checked + .program__label--volunteer::before {
+  background-image: url("../../img/icon-about-volunteer-white.png");
+}
+
+.program__radio:checked + .program__label--religion::before {
+  background-image: url("../../img/icon-about-religion-white.png");
+}
+
+.program__radio:checked ~ .program__content {
+  display: block;
+}

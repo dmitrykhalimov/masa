@@ -1,0 +1,26 @@
+.journey {
+  @include outline;
+  height: 1000px;
+  background: url("../../img/bg-iwantgo-girl-dekstop@1x.png") 100% 0 no-repeat;
+}
+
+.journey__heading {
+  @include heading-h2;
+  margin: 0;
+}
+
+.journey__text {
+  @include text-big;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .journey__heading {
+    @include heading-h2-mobile;
+  }
+
+  .journey__text {
+    @include text-big-mobile;
+    margin: 0;
+  }
+}

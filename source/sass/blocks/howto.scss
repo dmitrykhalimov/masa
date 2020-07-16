@@ -1,0 +1,71 @@
+
+
+.howto__heading {
+  @include heading-h2;
+  margin: 0;
+}
+
+.howto__text {
+  @include text-regular;
+  margin: 0;
+}
+
+.howto__requirements {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 170%;
+
+  color: $black;
+}
+
+.howto__item {
+  font-style: normal;
+  font-weight: normal;
+
+  font-size: 15px;
+  line-height: 21px;
+
+  color: $black;
+  opacity: 0.87;
+}
+
+.howto__additional {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+
+  font-size: 15px;
+  line-height: 21px;
+
+  color: $black;
+  opacity: 0.5;
+}
+
+.howto__num {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+
+  font-size: 17px;
+  line-height: 29px;
+
+  color: #ffc341;
+}
+
+@media (max-width: 767px) {
+  .howto__heading {
+    @include heading-h2-mobile;
+  }
+
+  .howto__text {
+    @include text-regular-mobile;
+    margin: 0;
+  }
+
+  .howto__requirements {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
