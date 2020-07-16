@@ -1,7 +1,20 @@
 .journey {
-  @include outline;
+  padding-top: 210px;
+
   height: 1000px;
-  background: url("../../img/bg-iwantgo-girl-dekstop@1x.png") 100% 0 no-repeat;
+  background: url("../../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat,
+    url("../../img/bg-iwantgo-girl-dekstop@1x.png") right 0 no-repeat;
+}
+
+.journey__container {
+  /*
+  box-sizing: border-box;
+
+  max-width: 1206px;
+  margin-left: auto;
+  margin-right: 0;
+  padding-left: 50px;*/
+  padding-left: 210px;
 }
 
 .journey__heading {
@@ -12,15 +25,143 @@
 .journey__text {
   @include text-big;
   margin: 0;
+  margin-top: 25px;
+  margin-bottom: 62px;
+
+  width: 400px;
+}
+
+.journey__input {
+  @include input-text;
+  @include input-placeholder;
+
+  box-sizing: border-box;
+
+  padding-left: 40px;
+
+  width: 477px;
+  height: 59px;
+
+  border: 2px solid #e3e3e3;
+  border-radius: 80px;
+
+  &:focus {
+    outline: none;
+    border-color: $yellow;
+  }
+
+  &:focus:invalid {
+    outline: none;
+    border-color: $red;
+  }
+}
+
+.journey__button {
+  @include button-white-text;
+  @include button-yellow-background;
+
+  position: relative;
+
+  left: -220px;
+
+  width: 216px;
+  height: 59px;
+
+  border: none;
+  border-radius: 80px;
+
+  cursor: pointer;
+
+  &:hover {
+    @include button-yellow-background-hover;
+  }
+
+  &:active {
+    outline: none;
+
+    @include button-yellow-background-active;
+  }
+}
+
+.journey__phone-error {
+  position: absolute;
+
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .journey {
+    background: url("../../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat,
+      url("../../img/bg-iwantgo-girl-dekstop@1x.png") right 140px no-repeat;
+    background-size: auto, 550px auto;
+  }
+
+  .journey__container {
+    //@include outline(blue);
+    /*
+    box-sizing: border-box;
+
+    max-width: 1206px;
+    margin-left: auto;
+    margin-right: 0;
+    padding-left: 50px;*/
+
+    padding-left: 50px;
+  }
 }
 
 @media (max-width: 767px) {
+  .journey {
+    padding-top: 53px;
+
+    background: url("../../img/bg-iwantgo-backpack-mobile@1x.png") 0 0 no-repeat,
+      url("../../img/bg-iwantgo-girl-mobile@1x.png") 0 345px no-repeat;
+    background-size: auto, contain;
+  }
+
+  .journey__container {
+    padding: 0;
+
+    max-width: auto;
+  }
+
   .journey__heading {
     @include heading-h2-mobile;
+
+    margin-bottom: 25px;
+
+    text-align: center;
   }
 
   .journey__text {
     @include text-big-mobile;
+
     margin: 0;
+    margin-bottom: 25px;
+    padding-left: 17px;
+    padding-right: 17px;
+
+    width: auto;
+  }
+
+  .journey__input {
+    display: block;
+
+    margin: 0 auto;
+    margin-bottom: 6px;
+
+    width: 90%;
+    height: 59px;
+  }
+
+  .journey__button {
+    position: static;
+
+    display: block;
+
+    margin: 0 auto;
+
+    width: 83%;
+    height: 59px;
   }
 }

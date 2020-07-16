@@ -1,9 +1,10 @@
 .programs {
-  @include outline;
+  //@include outline;
   box-sizing: border-box;
 
   padding-top: 20px;
   padding-left: 210px;
+  padding-bottom: 10px;
 
   background: url("../../img/bg-programs-desktop@1x.png") 0 0 no-repeat;
   background-position-x: right;
@@ -60,7 +61,7 @@
 
 .programs__content {
   position: absolute;
-  top: -14px;
+  top: -12px;
   left: 292px;
 
   display: none;
@@ -212,7 +213,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
 
-    min-height: 600px;
+    min-height: 500px;
     //white-space: nowrap;
   }
 
