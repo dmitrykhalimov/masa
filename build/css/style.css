@@ -474,10 +474,9 @@ input[type="radio"].visually-hidden {
     height: 80px; } }
 
 .howto {
-  outline: 4px solid red;
   padding-top: 62px;
-  padding-bottom: 1000px;
-  background: url("../img/bg-howto-people-desktop@1x.png") 10px 30px no-repeat, url("../img/bg-howto-watercolor@1x.png") 0 -170px no-repeat; }
+  padding-bottom: 200px;
+  background: url("../img/bg-howto-people-desktop@1x.png") 10px 30px no-repeat, url("../../img/bg-howto-stamp-desktop@1x.png") right 240px no-repeat, url("../img/bg-howto-watercolor@1x.png") 0 -170px no-repeat; }
 
 .howto__heading {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -515,22 +514,120 @@ input[type="radio"].visually-hidden {
   line-height: 170%;
   color: #484848; }
 
+.howto__list {
+  counter-reset: my-awesome-counter;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  width: 480px;
+  margin-left: auto;
+  margin-right: 190px;
+  list-style: none;
+  padding: 0;
+  padding-left: 46px;
+  margin-top: 25px; }
+
+.howto__item::before {
+  content: counter(my-awesome-counter);
+  color: #fcd000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 3px;
+  position: absolute;
+  left: -60px;
+  top: 0;
+  border-radius: 50%;
+  text-align: center;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 29px;
+  color: #FFC341;
+  width: 36px;
+  height: 36px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1); }
+
+.howto__item::after {
+  content: "";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 3px;
+  position: absolute;
+  left: -43px;
+  top: 36px;
+  border-left: 1px dashed #484848;
+  opacity: 0.2;
+  width: 5px;
+  height: 40px; }
+
+.howto__item:last-child::after {
+  display: none; }
+
+.howto__item:last-child {
+  margin-bottom: 0; }
+
 .howto__item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  counter-increment: my-awesome-counter;
+  position: relative;
+  margin-bottom: 40px;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 21px;
   color: #484848;
-  opacity: 0.87; }
+  opacity: 0.87;
+  height: 36px; }
+
+.howto__requirments {
+  display: block;
+  width: 450px;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 29px;
+  color: #484848;
+  margin-top: 31px;
+  margin-left: auto;
+  margin-right: 216px; }
 
 .howto__additional {
+  position: relative;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 21px;
   color: #484848;
-  opacity: 0.5; }
+  opacity: 0.5;
+  width: 520px;
+  margin-top: 51px;
+  margin-left: auto;
+  margin-right: 130px; }
+
+.howto__additional::before {
+  content: "";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 3px;
+  position: absolute;
+  left: -20px;
+  top: 0px;
+  background: linear-gradient(108.42deg, #FFC341 20.46%, #FFD701 65.31%);
+  width: 4px;
+  height: 42px; }
 
 .howto__num {
   font-family: "Fira Sans", "Arial", sans-serif;
@@ -542,22 +639,39 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 1023px) {
   .howto {
-    background-size: 470px auto;
-    background-position-y: 100px; }
+    background-size: 470px auto, auto;
+    background-position-y: 100px, 300px, 100px; }
   .howto__heading {
     margin-top: 0;
     margin-bottom: 25px;
-    margin-left: auto;
-    margin-right: 100px;
+    margin-right: auto;
+    margin-left: 450px;
     width: 298px; }
+  .howto__requirments {
+    margin-right: auto;
+    margin-left: 450px;
+    width: 45%; }
+  .howto__list {
+    margin-right: auto;
+    margin-left: 500px;
+    width: 35%; }
+  .howto__additional {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    margin-right: auto;
+    padding-left: 30px;
+    width: 35%; }
+  .howto__additional::before {
+    height: 100%; }
   .howto__text {
-    width: 350px;
-    margin-left: auto;
-    margin-right: 47px; } }
+    width: 45%;
+    margin-right: auto;
+    margin-left: 450px; } }
 
 @media (max-width: 767px) {
   .howto {
-    background: none;
+    background: url("../../img/bg-howto-stamp-mobile@1x.png") right 352px no-repeat;
     padding-top: 79px; }
   .howto__heading {
     font-family: "Montserrat", "Arial", sans-serif;
@@ -586,9 +700,68 @@ input[type="radio"].visually-hidden {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px; }
-  .howto__requirements {
+  .howto__requirments {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-size: 16px;
-    line-height: 26px; } }
+    line-height: 26px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 25px; }
+  .howto__list {
+    width: 100%;
+    margin: 0;
+    margin-top: 22px;
+    list-style: none;
+    padding: 0;
+    padding-left: 60px;
+    padding-right: 15px; }
+  .howto__additional {
+    font-family: "Fira Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #484848;
+    opacity: 0.87;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 10px;
+    margin-top: 40px; }
+  .howto__additional::before {
+    top: 0;
+    left: 10px;
+    height: 100%; }
+  .howto__item {
+    font-family: "Fira Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #484848;
+    opacity: 0.87;
+    width: 100%;
+    margin-bottom: 55px; }
+  .howto__item:nth-child(2) {
+    margin-bottom: 45px; }
+  .howto__item:nth-child(3) {
+    margin-bottom: 38px; }
+  .howto__item::before {
+    top: 0px;
+    left: -51px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 29px; }
+  .howto__item::after {
+    left: -35px;
+    height: 56px;
+    border-width: 2px; } }
 
 .journey {
   padding-top: 210px;
@@ -692,7 +865,8 @@ input[type="radio"].visually-hidden {
 @media (max-width: 1023px) {
   .journey {
     background: url("../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat, url("../img/bg-iwantgo-girl-dekstop@1x.png") right 140px no-repeat;
-    background-size: auto, 550px auto; }
+    background-size: auto, 550px auto;
+    padding-bottom: 100px; }
   .journey__container {
     /*
     box-sizing: border-box;
@@ -747,6 +921,80 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
     width: 83%;
     height: 59px; } }
+
+.masa-israel {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url("../../img/bg-masa-desktop@1x.png") 5px 0 no-repeat;
+  height: 1000px;
+  padding-top: 87px;
+  max-width: 1366px; }
+
+.masa-israel__heading {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #1fc0fc;
+  margin-left: auto;
+  margin-right: 206px;
+  margin-bottom: 0;
+  width: 100px; }
+
+.masa-israel__text {
+  padding: 0;
+  opacity: 0.87;
+  margin-top: 25px;
+  margin-left: 799px;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 29px;
+  color: #FFFFFF;
+  opacity: 0.87;
+  /* shadow / text */
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  color: #FFFFFF;
+  width: 390px;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12); }
+
+.masa-israel__button {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-size: 17px;
+  line-height: 20px;
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  background: linear-gradient(146.13deg, #ffc341 20.46%, #ffd701 65.31%);
+  border-radius: 80px;
+  width: 230px;
+  height: 59px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 21px;
+  padding-left: 31px;
+  margin-left: 796px;
+  margin-top: 30px; }
+
+.masa-israel__button::before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 40px;
+  width: 24px;
+  height: 24px;
+  background: url("../../img/icon-in-white.svg") 0 0 no-repeat; }
 
 .modal-accepted {
   position: absolute;
@@ -1574,5 +1822,148 @@ input[type="radio"].visually-hidden {
     left: 15px;
     width: 32px;
     height: 35px; } }
+
+.questions {
+  background: url("../../img/bg-questions-photo-dekstop@1x.png") right 80px no-repeat, url("../../img/bg-questions-bag@1x.png") 0 bottom no-repeat, url("../../img/bg-questions-watercolor-desktop@1x.png") left top no-repeat;
+  background-size: 47.2%, auto, auto;
+  padding-left: 110px;
+  padding-top: 80px;
+  padding-bottom: 120px; }
+
+.questions__heading {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #1fc0fc;
+  margin: 0; }
+
+.questions__list {
+  margin-top: 10px;
+  width: 44.5%;
+  list-style: none;
+  padding-left: 0; }
+
+.questions__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 100%; }
+
+.questions__answer {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  color: #484848;
+  opacity: 0.74; }
+
+.questions__item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 96px;
+  padding-top: 20px;
+  padding-bottom: 22px;
+  padding-right: 35px;
+  border-bottom: 1px solid rgba(72, 72, 72, 0.2); }
+
+.questions__expand {
+  margin-left: auto;
+  font-size: 0;
+  border: 0;
+  background: url("../../img/icon-show.svg") center top no-repeat;
+  width: 20px;
+  height: 11px; }
+
+.questions__expand:focus {
+  outline: none; }
+
+.questions__item .questions__answer {
+  display: none; }
+
+.questions__item--active .questions__answer {
+  display: block; }
+
+.questions__item--active .questions__expand {
+  background: url("../../img/icon-hide.svg") center top no-repeat; }
+
+.questions__number {
+  margin-right: 15px;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 48px;
+  color: #ffd701; }
+
+.questions__question {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px; }
+
+@media (max-width: 767px) {
+  .questions {
+    background: url("../../img/bg-questions-bag@1x.png") -10px 500px no-repeat;
+    padding-left: 0px; }
+  .questions__heading {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #1fc0fc;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+  .questions__list {
+    width: 90%;
+    margin-top: 2px;
+    margin-left: 16px; }
+  .questions__item {
+    min-height: 88px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0px;
+    padding-top: 18px;
+    padding-bottom: 20px; }
+  .questions__item--active .questions__item {
+    padding-bottom: 0px; }
+  .questions__number {
+    margin-right: 12px; }
+  .questions__answer {
+    padding-top: 2px;
+    padding-bottom: 0px; }
+  .questions__question {
+    font-family: "Fira Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #484848;
+    width: 80%; }
+  .questions__answer {
+    font-family: "Fira Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #484848;
+    opacity: 0.87; } }
 
 /*# sourceMappingURL=style.css.map */

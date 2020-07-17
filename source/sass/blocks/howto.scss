@@ -1,10 +1,10 @@
 .howto {
-  @include outline;
   padding-top: 62px;
-  padding-bottom: 1000px;
-  background: url("../img/bg-howto-people-desktop@1x.png") 10px 30px no-repeat,
-    url("../img/bg-howto-watercolor@1x.png") 0 -170px no-repeat;
+  padding-bottom: 200px;
 
+  background: url("../img/bg-howto-people-desktop@1x.png") 10px 30px no-repeat,
+              url("../../img/bg-howto-stamp-desktop@1x.png") right 240px no-repeat,
+    url("../img/bg-howto-watercolor@1x.png") 0 -170px no-repeat;
 }
 
 .howto__heading {
@@ -31,13 +31,90 @@
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
+
   font-size: 17px;
   line-height: 170%;
 
   color: $black;
 }
 
+.howto__list {
+  counter-reset: my-awesome-counter;
+
+  box-sizing: border-box;
+  display: block;
+  //@include outline;
+  width: 480px;
+  margin-left: auto;
+  margin-right: 190px;
+
+  list-style: none;
+
+  padding: 0;
+  padding-left: 46px;
+
+  margin-top: 25px;
+}
+
+.howto__item::before {
+  content: counter(my-awesome-counter);
+  color: #fcd000;
+
+  box-sizing: border-box;
+  padding-top: 3px;
+  position: absolute;
+  left: -60px;
+  top: 0;
+
+  border-radius: 50%;
+
+  text-align: center;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 29px;
+  color: #FFC341;
+
+  width: 36px;
+  height: 36px;
+  background: $white;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.howto__item::after {
+  content: "";
+
+  box-sizing: border-box;
+  padding-top: 3px;
+  position: absolute;
+  left: -43px;
+  top: 36px;
+  border-left: 1px dashed $black;
+  opacity: 0.2;
+  width: 5px;
+  height: 40px;
+
+}
+
+.howto__item:last-child::after {
+  display: none;
+}
+
+.howto__item:last-child {
+  margin-bottom: 0;
+}
+
 .howto__item {
+  display: inline-flex;
+  align-items: center;
+  //@include outline;
+  counter-increment: my-awesome-counter;
+  position: relative;
+  margin-bottom: 40px;
+
+  font-family: "Fira Sans", "Arial", sans-serif;
+  box-sizing: border-box;
   font-style: normal;
   font-weight: normal;
 
@@ -46,9 +123,28 @@
 
   color: $black;
   opacity: 0.87;
+
+  height: 36px;
+}
+
+.howto__requirments {
+  display: block;
+  width: 450px;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 29px;
+
+  color: $black;
+
+  margin-top: 31px;
+  margin-left: auto;
+  margin-right: 216px;
 }
 
 .howto__additional {
+  position: relative;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -58,6 +154,26 @@
 
   color: $black;
   opacity: 0.5;
+
+  width: 520px;
+
+  margin-top: 51px;
+  margin-left: auto;
+  margin-right: 130px;
+}
+
+.howto__additional::before {
+  content: "";
+
+  box-sizing: border-box;
+  padding-top: 3px;
+  position: absolute;
+  left: -20px;
+  top: 0px;
+  background: linear-gradient(108.42deg, #FFC341 20.46%, #FFD701 65.31%);;
+  width: 4px;
+  height: 42px;
+
 }
 
 .howto__num {
@@ -73,33 +189,57 @@
 
 @media (max-width: 1023px) {
   .howto {
-    background-size: 470px auto;
-    background-position-y: 100px;
+    background-size: 470px auto, auto;
+    background-position-y: 100px, 300px, 100px;
   }
 
   .howto__heading {
 
     margin-top: 0;
     margin-bottom: 25px;
-    margin-left: auto;
-    margin-right: 100px;
+    margin-right: auto;
+    margin-left: 450px;
 
     width: 298px;
   }
 
-  .howto__text {
-    width: 350px;
+  .howto__requirments {
+    margin-right: auto;
+    margin-left: 450px;
+    width: 45%;
+  }
 
-    margin-left: auto;
-    margin-right: 47px;
+  .howto__list {
+    margin-right: auto;
+    margin-left: 500px;
+    width: 35%;
+
+  }
+
+  .howto__additional {
+    box-sizing: border-box;
+    margin: 0;
+    margin-right: auto;
+    padding-left: 30px;
+    width: 35%;
+  }
+
+  .howto__additional::before {
+    height: 100%;
+  }
+
+  .howto__text {
+    width: 45%;
+
+    margin-right: auto;
+    margin-left: 450px;
   }
 }
 
 
-
 @media (max-width: 767px) {
   .howto {
-    background: none;
+    background: url("../../img/bg-howto-stamp-mobile@1x.png") right 352px no-repeat;
     padding-top: 79px;
   }
 
@@ -120,8 +260,73 @@
     padding-right: 15px;
   }
 
-  .howto__requirements {
+  .howto__requirments {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 26px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    margin-top: 25px;
+  }
+
+  .howto__list {
+    width: 100%;
+    margin: 0;
+    margin-top: 22px;
+    list-style: none;
+
+    padding: 0;
+    padding-left: 60px;
+    padding-right: 15px;
+  }
+
+  .howto__additional {
+    @include text-regular-mobile;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 10px;
+
+    margin-top: 40px;
+  }
+
+  .howto__additional::before {
+    top: 0;
+    left: 10px;
+    height: 100%;
+  }
+
+  .howto__item {
+    @include text-regular-mobile;
+    width: 100%;
+    margin-bottom: 55px;
+  }
+
+  .howto__item:nth-child(2) {
+    margin-bottom: 45px;
+  }
+
+  .howto__item:nth-child(3) {
+    margin-bottom: 38px;
+  }
+
+  .howto__item::before {
+    top: 0px;
+    left: -51px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 29px;
+  }
+
+  .howto__item::after {
+    left: -35px;
+    height: 56px;
+
+    border-width: 2px;
   }
 }

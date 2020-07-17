@@ -1,0 +1,73 @@
+.masa-israel {
+  box-sizing: border-box;
+  background: url("../../img/bg-masa-desktop@1x.png") 5px 0 no-repeat;
+  height: 1000px;
+  padding-top: 87px;
+  max-width: 1366px;
+}
+
+.masa-israel__heading {
+  @include heading-h2;
+  margin-left: auto;
+  margin-right: 206px;
+  //margin-left: 796px;
+  margin-bottom: 0;
+  width: 100px;
+}
+
+.masa-israel__text {
+  padding: 0;
+
+  opacity: 0.87;
+
+  margin-top: 25px;
+  margin-left: 799px;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 29px;
+
+  color: #FFFFFF;
+
+  opacity: 0.87;
+
+  /* shadow / text */
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+
+  color: #FFFFFF;
+  width: 390px;
+
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.masa-israel__button {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  @include button-white-text;
+  @include button-yellow-background;
+  border-radius: 80px;
+
+  width: 230px;
+  height: 59px;
+
+  text-decoration: none;
+  text-align: center;
+
+  padding-top: 21px;
+  padding-left: 31px;
+
+  margin-left: 796px;
+  margin-top: 30px;
+}
+
+.masa-israel__button::before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 40px;
+  width: 24px;
+  height: 24px;
+  background: url("../../img/icon-in-white.svg") 0 0 no-repeat;
+}
