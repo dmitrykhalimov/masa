@@ -477,7 +477,7 @@ input[type="radio"].visually-hidden {
   outline: 4px solid red;
   padding-top: 62px;
   padding-bottom: 1000px;
-  background: url("../../img/bg-howto-people-desktop@1x.png") 10px 30px no-repeat, url("../../img/bg-howto-watercolor@1x.png") 0 -170px no-repeat; }
+  background: url("../img/bg-howto-people-desktop@1x.png") 10px 30px no-repeat, url("../img/bg-howto-watercolor@1x.png") 0 -170px no-repeat; }
 
 .howto__heading {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -593,7 +593,7 @@ input[type="radio"].visually-hidden {
 .journey {
   padding-top: 210px;
   padding-bottom: 260px;
-  background: url("../../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat, url("../../img/bg-iwantgo-girl-dekstop@1x.png") right 0 no-repeat; }
+  background: url("../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat, url("../img/bg-iwantgo-girl-dekstop@1x.png") right 0 no-repeat; }
 
 .journey__container {
   /*
@@ -691,7 +691,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 1023px) {
   .journey {
-    background: url("../../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat, url("../../img/bg-iwantgo-girl-dekstop@1x.png") right 140px no-repeat;
+    background: url("../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat, url("../img/bg-iwantgo-girl-dekstop@1x.png") right 140px no-repeat;
     background-size: auto, 550px auto; }
   .journey__container {
     /*
@@ -707,7 +707,7 @@ input[type="radio"].visually-hidden {
   .journey {
     padding-top: 53px;
     padding-bottom: 310px;
-    background: url("../../img/bg-iwantgo-backpack-mobile@1x.png") 0 0 no-repeat, url("../../img/bg-iwantgo-girl-mobile@1x.png") 0 345px no-repeat;
+    background: url("../img/bg-iwantgo-backpack-mobile@1x.png") 0 0 no-repeat, url("../img/bg-iwantgo-girl-mobile@1x.png") 0 345px no-repeat;
     background-size: auto, contain; }
   .journey__container {
     padding: 0;
@@ -1322,7 +1322,7 @@ input[type="radio"].visually-hidden {
   padding-top: 20px;
   padding-left: 210px;
   padding-bottom: 10px;
-  background: url("../../img/bg-programs-desktop@1x.png") 0 0 no-repeat;
+  background: url("../img/bg-programs-desktop@1x.png") 0 0 no-repeat;
   background-position-x: right; }
 
 .programs__list {
@@ -1410,35 +1410,35 @@ input[type="radio"].visually-hidden {
   left: 24px;
   width: 28px;
   height: 33px;
-  background-image: url("../../img/icon-about-general-black.png"); }
+  background-image: url("../img/icon-about-general-black.png"); }
 
 .programs__label--academic::before {
   top: 15px;
   left: 20px;
   width: 36px;
   height: 35px;
-  background-image: url("../../img/icon-about-academic-black.png"); }
+  background-image: url("../img/icon-about-academic-black.png"); }
 
 .programs__label--practice::before {
   top: 20px;
   left: 23px;
   width: 32px;
   height: 35px;
-  background-image: url("../../img/icon-about-practice-black.png"); }
+  background-image: url("../img/icon-about-practice-black.png"); }
 
 .programs__label--volunteer::before {
   top: 18px;
   left: 23px;
   width: 32px;
   height: 35px;
-  background-image: url("../../img/icon-about-volunteer-black.png"); }
+  background-image: url("../img/icon-about-volunteer-black.png"); }
 
 .programs__label--religion::before {
   top: 20px;
   left: 26px;
   width: 32px;
   height: 35px;
-  background-image: url("../../img/icon-about-religion-black.png"); }
+  background-image: url("../img/icon-about-religion-black.png"); }
 
 .programs__radio:checked + .programs__label {
   background: linear-gradient(138.15deg, #ffc341 20.46%, #ffd701 65.31%);
@@ -1451,19 +1451,19 @@ input[type="radio"].visually-hidden {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12); }
 
 .programs__radio:checked + .programs__label--general::before {
-  background-image: url("../../img/icon-about-general-white.png"); }
+  background-image: url("../img/icon-about-general-white.png"); }
 
 .programs__radio:checked + .programs__label--academic::before {
-  background-image: url("../../img/icon-about-academic-white.png"); }
+  background-image: url("../img/icon-about-academic-white.png"); }
 
 .programs__radio:checked + .programs__label--practice::before {
-  background-image: url("../../img/icon-about-practice-white.png"); }
+  background-image: url("../img/icon-about-practice-white.png"); }
 
 .programs__radio:checked + .programs__label--volunteer::before {
-  background-image: url("../../img/icon-about-volunteer-white.png"); }
+  background-image: url("../img/icon-about-volunteer-white.png"); }
 
 .programs__radio:checked + .programs__label--religion::before {
-  background-image: url("../../img/icon-about-religion-white.png"); }
+  background-image: url("../img/icon-about-religion-white.png"); }
 
 .programs__radio:checked ~ .programs__content {
   display: block; }
@@ -1475,19 +1475,6 @@ input[type="radio"].visually-hidden {
     width: 80%; } }
 
 @media (max-width: 767px) {
-  .programs {
-    padding: 0;
-    padding-top: 4px;
-    position: relative;
-    background-image: url("../img/bg-programs-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: 120px;
-    background-size: 90% auto;
-    width: 100%;
-    min-height: 580px;
-    overflow-x: hidden;
-    overflow-y: visible; }
   .programs::-webkit-scrollbar {
     display: none; }
   .programs__heading {
@@ -1501,6 +1488,19 @@ input[type="radio"].visually-hidden {
     color: #1fc0fc;
     margin-bottom: 16px;
     text-align: center; }
+  .programs {
+    padding: 0;
+    padding-top: 4px;
+    position: relative;
+    background-image: url("../img/bg-programs-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 120px;
+    background-size: 90% auto;
+    width: 100%;
+    min-height: 580px;
+    overflow-x: hidden;
+    overflow-y: visible; }
   .programs__list {
     display: -webkit-box;
     display: -ms-flexbox;

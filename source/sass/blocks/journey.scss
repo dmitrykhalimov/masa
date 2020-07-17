@@ -1,8 +1,8 @@
 .journey {
   padding-top: 210px;
   padding-bottom: 260px;
-  background: url("../../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat,
-    url("../../img/bg-iwantgo-girl-dekstop@1x.png") right 0 no-repeat;
+  background: url("../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat,
+    url("../img/bg-iwantgo-girl-dekstop@1x.png") right 0 no-repeat;
 }
 
 .journey__container {
@@ -90,8 +90,8 @@
 
 @media (max-width: 1023px) {
   .journey {
-    background: url("../../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat,
-      url("../../img/bg-iwantgo-girl-dekstop@1x.png") right 140px no-repeat;
+    background: url("../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat,
+      url("../img/bg-iwantgo-girl-dekstop@1x.png") right 140px no-repeat;
     background-size: auto, 550px auto;
   }
 
@@ -114,8 +114,8 @@
     padding-top: 53px;
     padding-bottom: 310px;
 
-    background: url("../../img/bg-iwantgo-backpack-mobile@1x.png") 0 0 no-repeat,
-      url("../../img/bg-iwantgo-girl-mobile@1x.png") 0 345px no-repeat;
+    background: url("../img/bg-iwantgo-backpack-mobile@1x.png") 0 0 no-repeat,
+      url("../img/bg-iwantgo-girl-mobile@1x.png") 0 345px no-repeat;
     background-size: auto, contain;
   }
 
