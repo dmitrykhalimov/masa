@@ -188,7 +188,11 @@
 
 @media (max-width: 767px) {
   .programs {
+
+    //@include outline;
+
     padding: 0;
+    padding-top: 4px;
     position: relative;
     background-image: url("../img/bg-programs-mobile@1x.png");
     background-repeat: no-repeat;
@@ -196,7 +200,11 @@
     background-position-y: 120px;
     background-size: 90% auto;
 
+    width: 100%;
+    min-height: 580px;
 
+    overflow-x: hidden;
+    overflow-y: visible;
   }
 
   .programs::-webkit-scrollbar {
@@ -214,17 +222,15 @@
   .programs__list {
     display: flex;
 
-    position: relative;
+    @include outline;
+    position: static;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 20px;
 
     overflow-x: scroll;
-    overflow-y: hidden;
-
-    min-height: 500px;
-    //white-space: nowrap;
-  }
-
-  .programs__content {
-    display: none;
+    overflow-y: visible;
   }
 
   .programs__text {
@@ -244,6 +250,8 @@
 
     width: 105%;
     height: 48px;
+
+    overflow: hidden;
   }
 
   .programs__radio:checked + .programs__label {
@@ -252,8 +260,10 @@
   }
 
   .programs__content {
-    top: 45px;
+
+    top: 130px;
     left: 15px;
+    width: 95%;
   }
 
   .programs__name {
