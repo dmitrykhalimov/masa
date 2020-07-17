@@ -473,6 +473,12 @@ input[type="radio"].visually-hidden {
     width: 80px;
     height: 80px; } }
 
+.howto {
+  outline: 4px solid red;
+  padding-top: 62px;
+  padding-bottom: 1000px;
+  background: url("../../img/bg-howto-people-desktop@1x.png") 10px 30px no-repeat, url("../../img/bg-howto-watercolor@1x.png") 0 -170px no-repeat; }
+
 .howto__heading {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
@@ -482,7 +488,11 @@ input[type="radio"].visually-hidden {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #1fc0fc;
-  margin: 0; }
+  margin-top: 0;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: 370px;
+  width: 298px; }
 
 .howto__text {
   font-family: "Fira Sans", "Arial", sans-serif;
@@ -492,7 +502,10 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   color: #484848;
   opacity: 0.87;
-  margin: 0; }
+  margin: 0;
+  width: 480px;
+  margin-left: auto;
+  margin-right: 185px; }
 
 .howto__requirements {
   font-family: "Fira Sans", "Arial", sans-serif;
@@ -527,7 +540,25 @@ input[type="radio"].visually-hidden {
   line-height: 29px;
   color: #ffc341; }
 
+@media (max-width: 1023px) {
+  .howto {
+    background-size: 470px auto;
+    background-position-y: 100px; }
+  .howto__heading {
+    margin-top: 0;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: 100px;
+    width: 298px; }
+  .howto__text {
+    width: 350px;
+    margin-left: auto;
+    margin-right: 47px; } }
+
 @media (max-width: 767px) {
+  .howto {
+    background: none;
+    padding-top: 79px; }
   .howto__heading {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
@@ -536,8 +567,14 @@ input[type="radio"].visually-hidden {
     line-height: 39px;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    color: #1fc0fc; }
+    color: #1fc0fc;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px; }
   .howto__text {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: "Fira Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -545,14 +582,17 @@ input[type="radio"].visually-hidden {
     line-height: 22px;
     color: #484848;
     opacity: 0.87;
-    margin: 0; }
+    margin: 0;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px; }
   .howto__requirements {
     font-size: 16px;
     line-height: 26px; } }
 
 .journey {
   padding-top: 210px;
-  height: 1000px;
+  padding-bottom: 260px;
   background: url("../../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat, url("../../img/bg-iwantgo-girl-dekstop@1x.png") right 0 no-repeat; }
 
 .journey__container {
@@ -666,6 +706,7 @@ input[type="radio"].visually-hidden {
 @media (max-width: 767px) {
   .journey {
     padding-top: 53px;
+    padding-bottom: 310px;
     background: url("../../img/bg-iwantgo-backpack-mobile@1x.png") 0 0 no-repeat, url("../../img/bg-iwantgo-girl-mobile@1x.png") 0 345px no-repeat;
     background-size: auto, contain; }
   .journey__container {
@@ -1442,6 +1483,8 @@ input[type="radio"].visually-hidden {
     background-position-x: right;
     background-position-y: 120px;
     background-size: 90% auto; }
+  .programs::-webkit-scrollbar {
+    display: none; }
   .programs__heading {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
@@ -1461,6 +1504,8 @@ input[type="radio"].visually-hidden {
     overflow-x: scroll;
     overflow-y: hidden;
     min-height: 500px; }
+  .programs__content {
+    display: none; }
   .programs__text {
     font-family: "Fira Sans", "Arial", sans-serif;
     font-style: normal;
