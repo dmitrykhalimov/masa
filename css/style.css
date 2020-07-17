@@ -1477,12 +1477,17 @@ input[type="radio"].visually-hidden {
 @media (max-width: 767px) {
   .programs {
     padding: 0;
+    padding-top: 4px;
     position: relative;
     background-image: url("../img/bg-programs-mobile@1x.png");
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: 120px;
-    background-size: 90% auto; }
+    background-size: 90% auto;
+    width: 100%;
+    min-height: 580px;
+    overflow-x: hidden;
+    overflow-y: visible; }
   .programs::-webkit-scrollbar {
     display: none; }
   .programs__heading {
@@ -1500,12 +1505,14 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: relative;
+    outline: 4px solid red;
+    position: static;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 20px;
     overflow-x: scroll;
-    overflow-y: hidden;
-    min-height: 500px; }
-  .programs__content {
-    display: none; }
+    overflow-y: visible; }
   .programs__text {
     font-family: "Fira Sans", "Arial", sans-serif;
     font-style: normal;
@@ -1523,13 +1530,15 @@ input[type="radio"].visually-hidden {
     padding-top: 14px;
     padding-left: 52px;
     width: 105%;
-    height: 48px; }
+    height: 48px;
+    overflow: hidden; }
   .programs__radio:checked + .programs__label {
     background: linear-gradient(141.47deg, #ffc341 20.46%, #ffd701 65.31%);
     border-radius: 61px; }
   .programs__content {
-    top: 45px;
-    left: 15px; }
+    top: 130px;
+    left: 15px;
+    width: 95%; }
   .programs__name {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
