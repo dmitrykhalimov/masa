@@ -1,13 +1,30 @@
+.howto {
+  @include outline;
+  padding-top: 62px;
+  padding-bottom: 1000px;
+  background: url("../../img/bg-howto-people-desktop@1x.png") 10px 30px no-repeat,
+    url("../../img/bg-howto-watercolor@1x.png") 0 -170px no-repeat;
 
+}
 
 .howto__heading {
   @include heading-h2;
-  margin: 0;
+
+  margin-top: 0;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: 370px;
+
+  width: 298px;
 }
 
 .howto__text {
   @include text-regular;
   margin: 0;
+  width: 480px;
+
+  margin-left: auto;
+  margin-right: 185px;
 }
 
 .howto__requirements {
@@ -54,14 +71,53 @@
   color: #ffc341;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
+  .howto {
+    background-size: 470px auto;
+    background-position-y: 100px;
+  }
+
   .howto__heading {
-    @include heading-h2-mobile;
+
+    margin-top: 0;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: 100px;
+
+    width: 298px;
   }
 
   .howto__text {
+    width: 350px;
+
+    margin-left: auto;
+    margin-right: 47px;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .howto {
+    background: none;
+    padding-top: 79px;
+  }
+
+  .howto__heading {
+    @include heading-h2-mobile;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .howto__text {
+    box-sizing: border-box;
     @include text-regular-mobile;
     margin: 0;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .howto__requirements {

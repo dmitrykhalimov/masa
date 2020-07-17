@@ -195,6 +195,12 @@
     background-position-x: right;
     background-position-y: 120px;
     background-size: 90% auto;
+
+
+  }
+
+  .programs::-webkit-scrollbar {
+    display: none;
   }
 
   .programs__heading {
@@ -215,6 +221,10 @@
 
     min-height: 500px;
     //white-space: nowrap;
+  }
+
+  .programs__content {
+    display: none;
   }
 
   .programs__text {
