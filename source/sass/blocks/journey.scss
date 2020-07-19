@@ -1,6 +1,7 @@
 .journey {
   padding-top: 210px;
   padding-bottom: 260px;
+
   background: url("../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat,
     url("../img/bg-iwantgo-girl-dekstop@1x.png") right 0 no-repeat;
 
@@ -24,11 +25,13 @@
 
 .journey__heading {
   @include heading-h2;
+
   margin: 0;
 }
 
 .journey__text {
   @include text-big;
+
   margin: 0;
   margin-top: 25px;
   margin-bottom: 62px;
@@ -66,7 +69,6 @@
   @include button-yellow-background;
 
   position: relative;
-
   left: -220px;
 
   width: 216px;

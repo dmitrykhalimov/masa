@@ -286,36 +286,42 @@
   }
 
   .howto__list {
-    width: 100%;
     margin: 0;
     margin-top: 22px;
-    list-style: none;
-
     padding: 0;
     padding-left: 60px;
     padding-right: 15px;
+
+    list-style: none;
+
+    width: 100%;
   }
 
   .howto__additional {
     @include text-regular-mobile;
+
     box-sizing: border-box;
-    width: 100%;
+
+    margin-top: 40px;
     padding-left: 25px;
     padding-right: 10px;
 
-    margin-top: 40px;
+    width: 100%;
   }
 
   .howto__additional::before {
     top: 0;
     left: 10px;
+
     height: 100%;
   }
 
   .howto__item {
     @include text-regular-mobile;
-    width: 100%;
+
     margin-bottom: 55px;
+
+    width: 100%;
   }
 
   .howto__item:nth-child(2) {
@@ -329,14 +335,17 @@
   .howto__item::before {
     top: 0px;
     left: -51px;
+
     font-style: normal;
     font-weight: bold;
+
     font-size: 17px;
     line-height: 29px;
   }
 
   .howto__item::after {
     left: -35px;
+
     height: 56px;
 
     border-width: 2px;

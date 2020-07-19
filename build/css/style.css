@@ -722,13 +722,13 @@ input[type="radio"].visually-hidden {
     padding-right: 15px;
     margin-top: 25px; }
   .howto__list {
-    width: 100%;
     margin: 0;
     margin-top: 22px;
-    list-style: none;
     padding: 0;
     padding-left: 60px;
-    padding-right: 15px; }
+    padding-right: 15px;
+    list-style: none;
+    width: 100%; }
   .howto__additional {
     font-family: "Fira Sans", "Arial", sans-serif;
     font-style: normal;
@@ -739,10 +739,10 @@ input[type="radio"].visually-hidden {
     opacity: 0.87;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 100%;
+    margin-top: 40px;
     padding-left: 25px;
     padding-right: 10px;
-    margin-top: 40px; }
+    width: 100%; }
   .howto__additional::before {
     top: 0;
     left: 10px;
@@ -755,8 +755,8 @@ input[type="radio"].visually-hidden {
     line-height: 22px;
     color: #484848;
     opacity: 0.87;
-    width: 100%;
-    margin-bottom: 55px; }
+    margin-bottom: 55px;
+    width: 100%; }
   .howto__item:nth-child(2) {
     margin-bottom: 45px; }
   .howto__item:nth-child(3) {
@@ -969,28 +969,20 @@ input[type="radio"].visually-hidden {
   width: 100px; }
 
 .masa-israel__text {
-  padding: 0;
-  opacity: 0.87;
   margin-top: 25px;
   margin-left: 799px;
+  padding: 0;
+  width: 390px;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
   line-height: 29px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.87;
-  /* shadow / text */
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
-  color: #FFFFFF;
-  width: 390px;
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12); }
 
 .masa-israel__button {
-  position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: inline-block;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1001,15 +993,19 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
   background: linear-gradient(146.13deg, #ffc341 20.46%, #ffd701 65.31%);
-  border-radius: 80px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  margin-left: 796px;
+  margin-top: 30px;
+  padding-top: 21px;
+  padding-left: 31px;
   width: 230px;
   height: 59px;
   text-decoration: none;
   text-align: center;
-  padding-top: 21px;
-  padding-left: 31px;
-  margin-left: 796px;
-  margin-top: 30px; }
+  border-radius: 80px; }
 
 .masa-israel__button::before {
   content: '';
@@ -1522,6 +1518,7 @@ input[type="radio"].visually-hidden {
 
 .promo__heading {
   position: relative;
+  margin-top: 40px;
   width: 343px;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
@@ -1531,8 +1528,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: white;
   margin: 0 auto;
-  z-index: 3;
-  margin-top: 40px; }
+  z-index: 3; }
 
 .promo__heading::before {
   content: "";
@@ -1580,10 +1576,10 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 767px) {
   .promo__heading {
+    margin-top: 45px;
     width: 288px;
     font-size: 20px;
-    line-height: 24px;
-    margin-top: 45px; }
+    line-height: 24px; }
   .promo__heading::before {
     left: 36%;
     top: 165%; } }
@@ -1909,19 +1905,19 @@ input[type="radio"].visually-hidden {
 .questions__item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  min-height: 96px;
   padding-top: 20px;
   padding-bottom: 22px;
   padding-right: 35px;
+  min-height: 96px;
   border-bottom: 1px solid rgba(72, 72, 72, 0.2); }
 
 .questions__expand {
   margin-left: auto;
+  width: 20px;
+  height: 11px;
   font-size: 0;
   border: 0;
-  background: url("../../img/icon-show.svg") center top no-repeat;
-  width: 20px;
-  height: 11px; }
+  background: url("../../img/icon-show.svg") center top no-repeat; }
 
 .questions__expand:focus {
   outline: none; }
@@ -1968,18 +1964,18 @@ input[type="radio"].visually-hidden {
     padding: 0;
     text-align: center; }
   .questions__list {
-    width: 90%;
     margin-top: 2px;
-    margin-left: 16px; }
+    margin-left: 16px;
+    width: 90%; }
   .questions__item {
-    min-height: 88px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 100%;
     padding-left: 0;
     padding-right: 0px;
     padding-top: 18px;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    min-height: 88px;
+    width: 100%; }
   .questions__item--active .questions__item {
     padding-bottom: 0px; }
   .questions__number {
