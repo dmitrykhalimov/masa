@@ -476,7 +476,11 @@ input[type="radio"].visually-hidden {
 .howto {
   padding-top: 62px;
   padding-bottom: 200px;
-  background: url("../img/bg-howto-people-desktop@1x.png") 10px 30px no-repeat, url("../../img/bg-howto-stamp-desktop@1x.png") right 240px no-repeat, url("../img/bg-howto-watercolor@1x.png") 0 -170px no-repeat; }
+  background: url("../img/bg-howto-people-desktop@1x.png") 10px 30px no-repeat, url("../img/bg-howto-stamp-desktop@1x.png") right 240px no-repeat, url("../img/bg-howto-watercolor@1x.png") 0 -170px no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .howto {
+      background-image: url("../img/bg-howto-people-desktop@2x.png"), url("../img/bg-howto-stamp-desktop@2x.png"), url("../img/bg-howto-watercolor@2x.png");
+      background-size: 581px auto, 216px auto, 1366px auto; } }
 
 .howto__heading {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -672,7 +676,13 @@ input[type="radio"].visually-hidden {
 @media (max-width: 767px) {
   .howto {
     background: url("../../img/bg-howto-stamp-mobile@1x.png") right 352px no-repeat;
-    padding-top: 79px; }
+    padding-top: 79px; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .howto {
+      background-image: url("../img/bg-howto-stamp-mobile@2x.png");
+      background-size: 216px auto; } }
+
+@media (max-width: 767px) {
   .howto__heading {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
@@ -767,6 +777,10 @@ input[type="radio"].visually-hidden {
   padding-top: 210px;
   padding-bottom: 260px;
   background: url("../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat, url("../img/bg-iwantgo-girl-dekstop@1x.png") right 0 no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .journey {
+      background-image: url("../img/bg-iwantgo-backpack-desktop@2x.png"), url("../img/bg-iwantgo-girl-dekstop@2x.png");
+      background-size: 147px auto, 818px auto; } }
 
 .journey__container {
   /*
@@ -882,7 +896,13 @@ input[type="radio"].visually-hidden {
     padding-top: 53px;
     padding-bottom: 310px;
     background: url("../img/bg-iwantgo-backpack-mobile@1x.png") 0 0 no-repeat, url("../img/bg-iwantgo-girl-mobile@1x.png") 0 345px no-repeat;
-    background-size: auto, contain; }
+    background-size: auto, contain; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .journey {
+      background-image: url("../img/bg-iwantgo-backpack-mobile@2x.png"), url("../img/bg-iwantgo-girl-mobile@2x.png");
+      background-size: 130px auto, 320px auto; } }
+
+@media (max-width: 767px) {
   .journey__container {
     padding: 0;
     max-width: auto; }
@@ -925,10 +945,14 @@ input[type="radio"].visually-hidden {
 .masa-israel {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url("../../img/bg-masa-desktop@1x.png") 5px 0 no-repeat;
+  background: url("../img/bg-masa-desktop@1x.png") 5px 0 no-repeat;
   height: 1000px;
   padding-top: 87px;
   max-width: 1366px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .masa-israel {
+      background-image: url("../img/bg-masa-desktop@2x.png");
+      background-size: 1361px auto; } }
 
 .masa-israel__heading {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -994,7 +1018,7 @@ input[type="radio"].visually-hidden {
   left: 40px;
   width: 24px;
   height: 24px;
-  background: url("../../img/icon-in-white.svg") 0 0 no-repeat; }
+  background: url("../img/icon-in-white.svg") 0 0 no-repeat; }
 
 .modal-accepted {
   position: absolute;
@@ -1044,7 +1068,7 @@ input[type="radio"].visually-hidden {
           box-sizing: border-box;
   width: 71px;
   height: 64px;
-  background: url("../../img/modal-accepted.svg") 0 0 no-repeat; }
+  background: url("../img/modal-accepted.svg") 0 0 no-repeat; }
 
 .modal-accepted__text {
   font-family: "Fira Sans", "Arial", sans-serif;
@@ -1453,11 +1477,11 @@ input[type="radio"].visually-hidden {
   width: 100%;
   height: 896px;
   background: url("../img/bg-main-city-desktop@1x.png") center 0 no-repeat;
-  background-size: auto cover; }
+  background-size: 100%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .promo {
       background-image: url("../img/bg-main-city-desktop@2x.png");
-      background-size: 1366px auto; } }
+      background-size: 100% auto; } }
 
 .promo::before {
   content: "";
@@ -1467,7 +1491,7 @@ input[type="radio"].visually-hidden {
   width: 100%;
   height: inherit;
   background: url("../img/bg-main-girl-desktop@1x.png") center 0 no-repeat;
-  background-size: 1366px auto; }
+  background-size: 100% auto; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .promo::before {
       background-image: url("../img/bg-main-girl-desktop@2x.png"); } }
@@ -1479,7 +1503,7 @@ input[type="radio"].visually-hidden {
   font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 200px;
+  font-size: 1250%;
   line-height: 170%;
   letter-spacing: 0.055em;
   overflow: hidden;
@@ -1572,6 +1596,10 @@ input[type="radio"].visually-hidden {
   padding-bottom: 10px;
   background: url("../img/bg-programs-desktop@1x.png") 0 0 no-repeat;
   background-position-x: right; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .programs {
+      background-image: url("../img/bg-programs-desktop@2x.png");
+      background-size: 680px auto; } }
 
 .programs__list {
   margin: 0;
@@ -1748,7 +1776,13 @@ input[type="radio"].visually-hidden {
     width: 100%;
     min-height: 580px;
     overflow-x: hidden;
-    overflow-y: visible; }
+    overflow-y: visible; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .programs {
+      background-image: url("../img/bg-programs-mobile@2x.png");
+      background-size: 90% auto; } }
+
+@media (max-width: 767px) {
   .programs__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1829,6 +1863,10 @@ input[type="radio"].visually-hidden {
   padding-left: 110px;
   padding-top: 80px;
   padding-bottom: 120px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .questions {
+      background-image: url("../../img/bg-questions-photo-dekstop@2x.png"), url("../../img/bg-questions-bag@2x.png"), url("../../img/bg-questions-watercolor-desktop@2x.png");
+      background-size: 47.2%, 153px, 1366px; } }
 
 .questions__heading {
   font-family: "Montserrat", "Arial", sans-serif;

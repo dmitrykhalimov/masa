@@ -3,6 +3,12 @@
   padding-bottom: 260px;
   background: url("../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat,
     url("../img/bg-iwantgo-girl-dekstop@1x.png") right 0 no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-iwantgo-backpack-desktop@2x.png"),
+      url("../img/bg-iwantgo-girl-dekstop@2x.png");
+    background-size: 147px auto, 818px auto;
+  }
 }
 
 .journey__container {
@@ -118,6 +124,12 @@
     background: url("../img/bg-iwantgo-backpack-mobile@1x.png") 0 0 no-repeat,
       url("../img/bg-iwantgo-girl-mobile@1x.png") 0 345px no-repeat;
     background-size: auto, contain;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-iwantgo-backpack-mobile@2x.png"),
+        url("../img/bg-iwantgo-girl-mobile@2x.png");
+      background-size: 130px auto, 320px auto;
+    }
   }
 
   .journey__container {

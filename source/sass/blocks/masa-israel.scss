@@ -1,6 +1,12 @@
 .masa-israel {
   box-sizing: border-box;
-  background: url("../../img/bg-masa-desktop@1x.png") 5px 0 no-repeat;
+  background: url("../img/bg-masa-desktop@1x.png") 5px 0 no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-masa-desktop@2x.png");
+    background-size: 1361px auto;
+  }
+
   height: 1000px;
   padding-top: 87px;
   max-width: 1366px;
@@ -69,5 +75,5 @@
   left: 40px;
   width: 24px;
   height: 24px;
-  background: url("../../img/icon-in-white.svg") 0 0 no-repeat;
+  background: url("../img/icon-in-white.svg") 0 0 no-repeat;
 }

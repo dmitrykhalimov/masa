@@ -5,11 +5,11 @@
   height: 896px;
 
   background: url("../img/bg-main-city-desktop@1x.png") center 0 no-repeat;
-  background-size: auto cover;
+  background-size: 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-main-city-desktop@2x.png");
-    background-size: 1366px auto;
+    background-size: 100% auto;
   }
 }
 
@@ -24,7 +24,7 @@
   height: inherit;
 
   background: url("../img/bg-main-girl-desktop@1x.png") center 0 no-repeat;
-  background-size: 1366px auto;
+  background-size: 100% auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-main-girl-desktop@2x.png");
@@ -41,7 +41,7 @@
   font-style: normal;
   font-weight: 900;
 
-  font-size: 200px;
+  font-size: 1250%;
   line-height: 170%;
   letter-spacing: 0.055em;
 

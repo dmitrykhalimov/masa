@@ -7,6 +7,12 @@
   padding-bottom: 10px;
 
   background: url("../img/bg-programs-desktop@1x.png") 0 0 no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-programs-desktop@2x.png");
+    background-size: 680px auto;
+  }
+
   background-position-x: right;
 }
 
@@ -204,10 +210,16 @@
     padding-top: 4px;
     position: relative;
     background-image: url("../img/bg-programs-mobile@1x.png");
+
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: 120px;
     background-size: 90% auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-programs-mobile@2x.png");
+      background-size: 90% auto;
+    }
 
     width: 100%;
     min-height: 580px;

@@ -3,8 +3,15 @@
   padding-bottom: 200px;
 
   background: url("../img/bg-howto-people-desktop@1x.png") 10px 30px no-repeat,
-              url("../../img/bg-howto-stamp-desktop@1x.png") right 240px no-repeat,
+    url("../img/bg-howto-stamp-desktop@1x.png") right 240px no-repeat,
     url("../img/bg-howto-watercolor@1x.png") 0 -170px no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-howto-people-desktop@2x.png"),
+        url("../img/bg-howto-stamp-desktop@2x.png"),
+        url("../img/bg-howto-watercolor@2x.png");
+      background-size: 581px auto, 216px auto, 1366px auto;
+    }
 }
 
 .howto__heading {
@@ -241,6 +248,11 @@
   .howto {
     background: url("../../img/bg-howto-stamp-mobile@1x.png") right 352px no-repeat;
     padding-top: 79px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-howto-stamp-mobile@2x.png");
+      background-size: 216px auto;
+    }
   }
 
   .howto__heading {
