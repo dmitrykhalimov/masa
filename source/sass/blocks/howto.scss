@@ -1,10 +1,12 @@
 .howto {
   padding-top: 62px;
-  padding-bottom: 200px;
+  padding-bottom: 162px;
 
   background: url("../img/bg-howto-people-desktop@1x.png") 12px 31px no-repeat,
     url("../img/bg-howto-stamp-desktop@1x.png") right 240px no-repeat,
     url("../img/bg-howto-watercolor@1x.png") 0 -170px no-repeat;
+
+  background-size: 42.53%, 15.81%, 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-howto-people-desktop@2x.png"),

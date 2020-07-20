@@ -20,6 +20,25 @@
   color: $blue;
 }
 
+@mixin  heading-h4 {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+
+  font-size: 21px;
+  line-height: 25px;
+}
+
+@mixin  heading-h4-mobile {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+
+  font-size: 18px;
+  line-height: 21px;
+}
+
+
 @mixin heading-h3-mobile {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;

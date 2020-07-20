@@ -1,10 +1,11 @@
 .about {
   position: relative;
 
+  margin-top: 0;
   padding-bottom: 143px;
 
   background: url("../../img/bg-about-desktop@1x.png") center 160px no-repeat;
-  background-size: auto cover;
+  background-size: 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-about-desktop@2x.png");

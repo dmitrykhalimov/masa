@@ -5,6 +5,8 @@
   background: url("../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat,
     url("../img/bg-iwantgo-girl-dekstop@1x.png") right 0 no-repeat;
 
+  background-size: auto, 60%;
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-iwantgo-backpack-desktop@2x.png"),
       url("../img/bg-iwantgo-girl-dekstop@2x.png");
