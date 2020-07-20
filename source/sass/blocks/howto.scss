@@ -2,7 +2,7 @@
   padding-top: 62px;
   padding-bottom: 200px;
 
-  background: url("../img/bg-howto-people-desktop@1x.png") 10px 30px no-repeat,
+  background: url("../img/bg-howto-people-desktop@1x.png") 12px 31px no-repeat,
     url("../img/bg-howto-stamp-desktop@1x.png") right 240px no-repeat,
     url("../img/bg-howto-watercolor@1x.png") 0 -170px no-repeat;
 
@@ -18,20 +18,24 @@
   @include heading-h2;
 
   margin-top: 0;
-  margin-bottom: 25px;
   margin-left: auto;
-  margin-right: 370px;
+  margin-right: 369px;
+  margin-bottom: 0;
 
   width: 298px;
 }
 
 .howto__text {
   @include text-regular;
-  margin: 0;
+
   width: 480px;
 
+  margin-top: 24px;
   margin-left: auto;
-  margin-right: 185px;
+  margin-right: 187px;
+  margin-bottom: 0px;
+
+  padding: 0;
 }
 
 .howto__requirements {

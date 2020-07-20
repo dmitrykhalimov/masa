@@ -52,30 +52,43 @@ var onAcceptedCloseClick = function () {
 var onAcceptedSubmitClick = function () {
   closeAccepted();
 };
+/*
+var onOverlayClick = function (evt) {
+  var isClickInside = callbackModal.contains(evt.target);
+  console.log(evt.target);
+};*/
+
 
 var openCallback = function () {
   body.style.overflow = 'hidden';
   callbackModal.classList.remove('visually-hidden');
   document.addEventListener('keydown', onCallbackEsc);
+
+  // document.querySelector('body').addEventListener('click', onOverlayClick(event));
 };
 
 var closeCallback = function () {
   body.style.overflow = 'visible';
   callbackModal.classList.add('visually-hidden');
   document.removeEventListener('keydown', onCallbackEsc);
+
+  // document.querySelector('body').removeEventListener('click', onOverlayClick);
 };
 
 var openAccepted = function () {
   body.style.overflow = 'hidden';
   acceptedModal.classList.remove('visually-hidden');
+
   document.addEventListener('keydown', onAcceptedEsc);
 };
 
 var closeAccepted = function () {
   body.style.overflow = 'visible';
   acceptedModal.classList.add('visually-hidden');
+
   document.removeEventListener('keydown', onAcceptedEsc);
 };
+
 
 callbackOpenButton.addEventListener('click', onCallbackOpenClick);
 callbackCloseButton.addEventListener('click', onCallbackCloseClick);
