@@ -35,7 +35,7 @@
   left: 25px;
   width: 80%;
 }
-
+/*
 .life-in-israel img {
   width: 100%;
   height: auto;
@@ -85,7 +85,7 @@
   grid-row-start: 3;
   padding-left: 15px;
 }
-
+*/
 @media (max-width: 767px) {
   .life-in-israel__heading {
     @include heading-h2-mobile;
@@ -93,11 +93,79 @@
 
   .life-in-israel__slide-text {
     @include heading-h4-mobile;
+    text-align: center;
+    width: 75%;
+    left: 35px;
+    bottom: 30px;
   }
-
 
   .life-in-israel__text {
     @include text-big-mobile;
+    margin-left: 0;
+    text-align: left;
+    width: 88%;
+    padding-left: 15px;
+
+  }
+
+  .life-in-israel__slider {
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    margin-top: 25px;
+    @include outline(red);
+    display: flex;
+    overflow: hidden;
+  }
+
+  .life-in-israel__slider-item {
+    @include outline(green);
     width: 100%;
   }
+
+  .life-in-israel__slider-item img{
+    width: 100%;
+  }
+
+  .life-in-israel__selectors {
+    text-align: center;
+}
+
+.life-in-israel__selector{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.life-in-israel__selector:hover {
+    background-color: #aaa;
+}
+/* Анимация слайдов */
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
 }
