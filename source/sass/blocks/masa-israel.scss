@@ -1,34 +1,35 @@
 .masa-israel {
   box-sizing: border-box;
   background: url("../img/bg-masa-desktop@1x.png") 5px 0 no-repeat;
+  background-size: 99.9% auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-masa-desktop@2x.png");
     background-size: 1361px auto;
   }
 
-  height: 1000px;
   padding-top: 87px;
-  max-width: 1366px;
+  padding-bottom: 254px;
 }
 
 .masa-israel__heading {
   @include heading-h2;
 
-  margin-left: auto;
-  margin-right: 206px;
-  //margin-left: 796px;
-  margin-bottom: 0;
-
   width: 100px;
+
+  margin-left: auto;
+  margin-right: 470px;
+  margin-bottom: 0;
 }
 
 .masa-israel__text {
-  margin-top: 25px;
-  margin-left: 799px;
-  padding: 0;
-
   width: 390px;
+
+  margin-top: 23px;
+  margin-left: auto;
+  margin-right: 176px;
+
+  padding: 0;
 
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
@@ -52,10 +53,11 @@
 
   box-sizing: border-box;
 
-  display: inline-block;
+  display: block;
 
-  margin-left: 796px;
-  margin-top: 30px;
+  margin-left: auto;
+  margin-right: 340px;
+  margin-top: 45px;
   padding-top: 21px;
   padding-left: 31px;
 
@@ -78,4 +80,29 @@
   height: 24px;
 
   background: url("../img/icon-in-white.svg") 0 0 no-repeat;
+}
+
+@media (max-width: 1023px) {
+
+.masa-israel__heading {
+  width: 100px;
+  margin-top: 0;
+  margin-right: 300px;
+}
+
+.masa-israel__text {
+  width: 390px;
+  margin-right: 10px;
+
+  font-size: 15px;
+  line-height: 27px;
+}
+
+.masa-israel__button {
+  margin-right: 170px;
+  margin-top: 25px;
+
+  width: 230px;
+  height: 59px;
+}
 }

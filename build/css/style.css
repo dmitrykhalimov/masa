@@ -952,9 +952,9 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: url("../img/bg-masa-desktop@1x.png") 5px 0 no-repeat;
-  height: 1000px;
+  background-size: 99.9% auto;
   padding-top: 87px;
-  max-width: 1366px; }
+  padding-bottom: 254px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .masa-israel {
       background-image: url("../img/bg-masa-desktop@2x.png");
@@ -969,16 +969,17 @@ input[type="radio"].visually-hidden {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #1fc0fc;
+  width: 100px;
   margin-left: auto;
-  margin-right: 206px;
-  margin-bottom: 0;
-  width: 100px; }
+  margin-right: 470px;
+  margin-bottom: 0; }
 
 .masa-israel__text {
-  margin-top: 25px;
-  margin-left: 799px;
-  padding: 0;
   width: 390px;
+  margin-top: 23px;
+  margin-left: auto;
+  margin-right: 176px;
+  padding: 0;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1002,9 +1003,10 @@ input[type="radio"].visually-hidden {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  display: inline-block;
-  margin-left: 796px;
-  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: 340px;
+  margin-top: 45px;
   padding-top: 21px;
   padding-left: 31px;
   width: 230px;
@@ -1021,6 +1023,22 @@ input[type="radio"].visually-hidden {
   width: 24px;
   height: 24px;
   background: url("../img/icon-in-white.svg") 0 0 no-repeat; }
+
+@media (max-width: 1023px) {
+  .masa-israel__heading {
+    width: 100px;
+    margin-top: 0;
+    margin-right: 300px; }
+  .masa-israel__text {
+    width: 390px;
+    margin-right: 10px;
+    font-size: 15px;
+    line-height: 27px; }
+  .masa-israel__button {
+    margin-right: 170px;
+    margin-top: 25px;
+    width: 230px;
+    height: 59px; } }
 
 .modal-accepted {
   position: absolute;
@@ -1870,12 +1888,223 @@ input[type="radio"].visually-hidden {
     width: 32px;
     height: 35px; } }
 
+.reviews {
+  position: relative;
+  background: url("../../img/bg-reviews-watercolor-desktop@1x.png") right 0 no-repeat, url("../../img/bg-reviews-sketch-desktop@1x.png") right 52px no-repeat;
+  background-size: 92.16%, 38.28%; }
+
+.reviews__heading {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #1fc0fc;
+  text-align: center;
+  margin-bottom: 0; }
+
+.reviews__list {
+  width: 79.35%;
+  padding: 0;
+  margin: 0;
+  margin-top: 7px;
+  margin-left: 98px; }
+
+.reviews__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.reviews__container {
+  margin-top: 40px;
+  margin-left: 40px; }
+
+.reviews__title,
+.reviews__program {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px; }
+
+.reviews__name {
+  display: block;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #484848;
+  opacity: 0.74; }
+
+.reviews__title {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 14px;
+  color: #1fc0fc; }
+
+.reviews__program {
+  color: black;
+  opacity: 0.74;
+  padding: 0;
+  margin: 0; }
+
+.reviews__text {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 29px;
+  color: #484848;
+  color: black;
+  opacity: 0.74; }
+
+.reviews__expand {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #1FC0FC; }
+
+.reviews__numbers {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+  color: #484848;
+  opacity: 0.5;
+  margin-right: 20px; }
+
+.reviews__button {
+  border: 0;
+  width: 11px;
+  height: 18px; }
+
+.reviews__slider {
+  position: absolute;
+  bottom: -5%;
+  left: 36.7%; }
+
+.reviews__socials {
+  position: absolute;
+  width: 104px;
+  bottom: -5%;
+  right: 185px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.reviews__button--prev {
+  background: url("../img/icon-prev.svg") 0 0 no-repeat;
+  margin-right: 13px; }
+
+.reviews__button--next {
+  background: url("../img/icon-next.svg") 0 0 no-repeat; }
+
+@media (max-width: 1023px) {
+  .reviews__socials {
+    bottom: -50px;
+    right: 20px; }
+  .reviews__slider {
+    bottom: -50px;
+    left: 36.7%; } }
+
+@media (max-width: 767px) {
+  .reviews__heading {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #1fc0fc;
+    margin-bottom: 24px; }
+  .reviews__title,
+  .reviews__program {
+    font-family: "Fira Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px; }
+  .reviews__text {
+    font-family: "Fira Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #484848; }
+  .reviews__expand {
+    font-size: 16px;
+    line-height: 24px; }
+  .reviews__list {
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+  .reviews__item {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%; }
+  .reviews__item img {
+    display: block;
+    width: 75%;
+    height: auto;
+    margin: 0 auto; }
+  .reviews__name {
+    text-align: left; }
+  .reviews__container {
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+    margin-top: 60px; }
+  .reviews__title {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px; }
+  .reviews__program {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px; }
+  .reviews__text {
+    width: 95%; }
+  .reviews__expand {
+    display: inline-block;
+    margin-top: 8px; }
+  .reviews__slider {
+    top: 38.7%;
+    left: 35.6%; }
+  .reviews__socials {
+    left: 3%; } }
+
 .questions {
   background: url("../../img/bg-questions-photo-dekstop@1x.png") right 80px no-repeat, url("../../img/bg-questions-bag@1x.png") 0 bottom no-repeat, url("../../img/bg-questions-watercolor-desktop@1x.png") left top no-repeat;
   background-size: 47.2%, auto, auto;
   padding-left: 110px;
   padding-top: 80px;
-  padding-bottom: 120px; }
+  padding-bottom: 115px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .questions {
       background-image: url("../../img/bg-questions-photo-dekstop@2x.png"), url("../../img/bg-questions-bag@2x.png"), url("../../img/bg-questions-watercolor-desktop@2x.png");
@@ -2015,6 +2244,9 @@ input[type="radio"].visually-hidden {
     line-height: 26px;
     color: #484848;
     width: 80%; } }
+
+.life-in-israel {
+  padding-bottom: 137px; }
 
 .life-in-israel__heading {
   font-family: "Montserrat", "Arial", sans-serif;
