@@ -2057,57 +2057,56 @@ input[type="radio"].visually-hidden {
   left: 25px;
   width: 80%; }
 
-/*
 .life-in-israel img {
   width: 100%;
-  height: auto;
-}
-
+  height: auto; }
 
 .life-in-israel__slider {
   position: relative;
   max-width: 84.77%;
   margin: 0 auto;
   top: -21px;
-
   display: grid;
   grid-template-rows: 4.91% 43.44% 43.44%;
   grid-template-columns: 41.62% 18.22% 15.88% 19.86%;
-  column-gap: 15px;
-  row-gap: 30px;
-}
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+  row-gap: 30px; }
+
+.life-in-israel__selectors {
+  display: none; }
 
 .life-in-israel__slider-item--excursion {
   grid-column-start: 1;
   grid-row-start: 1;
-  grid-row-end: 4;
-}
+  grid-row-end: 4; }
 
 .life-in-israel__slider-item--language {
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 2;
-}
+  grid-row-start: 2; }
 
 .life-in-israel__slider-item--skills {
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 2;
-  padding-left: 15px;
-}
+  padding-left: 15px; }
 
 .life-in-israel__slider-item--projects {
   grid-column-start: 2;
   grid-column-end: 4;
-  grid-row-start: 3;
-}
+  grid-row-start: 3; }
 
 .life-in-israel__slider-item--leadership {
   grid-column-start: 4;
   grid-row-start: 3;
-  padding-left: 15px;
-}
-*/
+  padding-left: 15px; }
+
+@media (max-width: 1023px) {
+  .life-in-israel__slide-text {
+    font-size: 16px; } }
+
 @media (max-width: 767px) {
   .life-in-israel__heading {
     font-family: "Montserrat", "Arial", sans-serif;
@@ -2142,25 +2141,30 @@ input[type="radio"].visually-hidden {
   .life-in-israel__slider {
     max-width: 90%;
     position: relative;
+    top: 0;
     margin: auto;
     margin-top: 25px;
-    outline: 4px solid red;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     overflow: hidden; }
   .life-in-israel__slider-item {
-    outline: 4px solid green;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     width: 100%; }
   .life-in-israel__slider-item img {
-    width: 100%; }
+    display: block;
+    width: 100%;
+    height: auto; }
   .life-in-israel__selectors {
+    display: block;
     text-align: center; }
   .life-in-israel__selector {
     cursor: pointer;
-    height: 12px;
-    width: 12px;
+    height: 6px;
+    width: 6px;
     margin: 0 2px;
+    margin-top: 20px;
     background-color: #ddd;
     border-radius: 50%;
     display: inline-block;
