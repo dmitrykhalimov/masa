@@ -2,12 +2,12 @@
   background: url("../../img/bg-questions-photo-dekstop@1x.png") right 80px no-repeat,
     url("../../img/bg-questions-bag@1x.png") 0 bottom no-repeat,
     url("../../img/bg-questions-watercolor-desktop@1x.png") left top no-repeat;
-    background-size: 47.2%, auto, auto;
+  background-size: 47.2%, auto, auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../../img/bg-questions-photo-dekstop@2x.png"),
-    url("../../img/bg-questions-bag@2x.png"),
-    url("../../img/bg-questions-watercolor-desktop@2x.png");
+      url("../../img/bg-questions-bag@2x.png"),
+      url("../../img/bg-questions-watercolor-desktop@2x.png");
     background-size: 47.2%, 153px, 1366px;
   }
 
@@ -87,10 +87,10 @@
 .questions__item--active .questions__answer {
   display: block;
 }
+
 .questions__item--active .questions__expand {
   background: url("../../img/icon-hide.svg") center top no-repeat;
 }
-
 
 .questions__number {
   margin-right: 15px;
@@ -102,7 +102,7 @@
   font-size: 28px;
   line-height: 48px;
 
-  color:  #ffd701;
+  color: #ffd701;
 }
 
 .questions__question {
@@ -117,9 +117,9 @@
 @media (max-width: 767px) {
   .questions {
     background: url("../../img/bg-questions-bag@1x.png") -10px 500px no-repeat;
-    padding-left: 0px;
-
+    padding-left: 0;
   }
+
   .questions__heading {
     @include heading-h2-mobile;
     margin: 0;
@@ -135,11 +135,11 @@
     width: 90%;
   }
 
- .questions__item {
+  .questions__item {
     box-sizing: border-box;
 
     padding-left: 0;
-    padding-right: 0px;
+    padding-right: 0;
     padding-top: 18px;
     padding-bottom: 20px;
 
@@ -148,7 +148,7 @@
   }
 
   .questions__item--active .questions__item {
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .questions__number {
@@ -156,16 +156,14 @@
   }
 
   .questions__answer {
+    @include text-regular-mobile;
+
     padding-top: 2px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .questions__question {
     @include text-big-mobile;
     width: 80%;
-  }
-
-  .questions__answer {
-    @include text-regular-mobile;
   }
 }

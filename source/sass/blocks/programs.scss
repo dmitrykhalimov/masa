@@ -30,7 +30,7 @@
   margin-bottom: 4px;
 
   height: 68px;
-  width: 250px;
+  width: 196px;
 }
 
 .programs__heading {
@@ -143,6 +143,8 @@
 }
 
 .programs__radio:checked + .programs__label {
+  position: relative;
+
   background: linear-gradient(138.15deg, #ffc341 20.46%, #ffd701 65.31%);
 
   font-weight: 500;
@@ -157,6 +159,20 @@
 
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
+
+.programs__radio:checked + .programs__label::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 100%;
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 34px 0 34px 32px;
+  border-color: transparent transparent transparent #ffd701;
+}
+
 
 .programs__radio:checked + .programs__label--general::before {
   background-image: url("../img/icon-about-general-white.png");
@@ -193,7 +209,6 @@
 }
 
 @media (max-width: 767px) {
-
   .programs::-webkit-scrollbar {
     display: none;
   }
@@ -205,6 +220,7 @@
 
     text-align: center;
   }
+
   .programs {
     padding: 0;
     padding-top: 4px;
