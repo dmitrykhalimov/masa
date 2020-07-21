@@ -12,6 +12,22 @@ buttonsSlider.forEach(function (button, index) {
   onButtonSliderClick(button, index);
 });
 
+window.onresize = function () {
+  var currentWidth = window.innerWidth;
+  console.log(currentWidth);
+  if (currentWidth > 767) {
+    returnSlides();
+  }
+};
+
+var returnSlides = function () {
+  var slides = document.querySelectorAll('.life-in-israel__slider-item');
+
+  slides.forEach(function (slide) {
+    slide.classList.remove('visually-hidden');
+  });
+};
+
 var showSlides = function (numberSlide) {
   var slides = document.querySelectorAll('.life-in-israel__slider-item');
 

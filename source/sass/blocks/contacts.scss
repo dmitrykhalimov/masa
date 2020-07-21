@@ -1,0 +1,241 @@
+.contacts__heading {
+  @include heading-h2;
+  margin-bottom: 49px;
+}
+
+.contacts__title,
+.contacts__city,
+.contacts__courator-title,
+.contacts__courator-name {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+
+  font-size: 15px;
+  line-height: 22px;
+
+  color: $black;
+  opacity: 0.74;
+}
+
+.contacts__title {
+  display: inline-block;
+  padding-left: 22px;
+  position: relative;
+  margin-right: 12px;
+}
+
+.contacts__title::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 18px;
+  background: url("../../img/contacts-city-marker.png");
+  left: 4px;
+  top: 1px;
+}
+
+.contacts__city {
+  position: relative;
+}
+
+.contacts__city::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: -3px;
+  left: 0;
+  border-bottom: 1px dashed #1FC0FC;
+}
+
+.contacts__city::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  background: url("../../img/contacts-city-arrow.png");
+  right: -26px;
+  top: 3px;
+}
+
+.contacts__courator-container {
+  @include outline;
+  display: flex;
+  justify-self: flex-start;
+  align-items: flex-start;
+}
+
+.contacts__courator-container img {
+  display: block;
+  @include outline(yellow)
+}
+
+.contacts__text-container {
+  margin-top: 41px;
+  margin-left: 20px;
+  @include outline(green);
+  margin-bottom: 20px;
+}
+
+.contacts__courator-name {
+  margin-left: 5px;
+}
+
+.contacts__description {
+  @include text-big;
+}
+
+.contacts__address {
+  width: 264px;
+  margin-bottom: 0;
+}
+
+.contacts__courator-title {
+  color: $blue;
+  margin-left: 5px;
+}
+
+.contacts__socials {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-top: 12px;
+  width: 96px;
+}
+
+.contacts__container img{
+  flex-grow: 0;
+  display: block;
+  margin-top: 40px;
+}
+
+.contacts__item img {
+  margin-top: 0;
+}
+
+.contacts__bold-text {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+
+  font-size: 17px;
+  line-height: 25px;
+
+  color: $black;
+  opacity: 0.87;
+}
+
+.contacts__address {
+  @include text-small;
+  margin-left: 4px;
+}
+
+.contacts__city {
+  font-variant: small-caps;
+}
+
+.contacts__text {
+  @include text-small;
+  opacity: 0.5;
+}
+
+.contacts__input {
+  @include input-text;
+
+  box-sizing: border-box;
+
+  display: block;
+
+  width: 360px;
+  height: 59px;
+
+  border: 2px solid #e3e3e3;
+  border-radius: 80px;
+
+  &:focus {
+    outline: none;
+    border-color: $yellow;
+  }
+
+  &:focus:invalid {
+    outline: none;
+    border-color: $red;
+  }
+}
+
+.contacts__button {
+  @include button-white-text;
+  @include button-yellow-background;
+
+  display: block;
+
+  margin-top: 22px;
+  margin-left: 60px;
+
+  width: 264px;
+  height: 59px;
+
+  border: none;
+  border-radius: 80px;
+
+  cursor: pointer;
+
+  &:hover {
+    @include button-yellow-background-hover;
+  }
+
+  &:active {
+    outline: none;
+
+    @include button-yellow-background-active;
+  }
+}
+
+.contacts__phone-error {
+  position: absolute;
+  bottom: 160px;
+  left: 90px;
+
+  display: none;
+
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+
+  font-size: 13px;
+  line-height: 150%;
+
+  color: $red;
+  opacity: 0.75;
+}
+
+.contacts__input--phone:focus:invalid + .contacts__phone-error {
+  display: block;
+}
+
+.contacts__container {
+  display: flex;
+  align-items: flex-start;
+  width: 1256px;
+  padding-left: 110px;
+}
+
+
+
+@media (max-width: 767px) {
+  .contacts__heading {
+    @include heading-h2-mobile;
+  }
+
+  .contacts__description {
+    @include text-big-mobile;
+  }
+
+  .contacts__bold-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
