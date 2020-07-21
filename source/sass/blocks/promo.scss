@@ -1,9 +1,9 @@
 .promo {
   position: relative;
 
-  padding-bottom: 25%;
+  padding-bottom: 21.83%;
 
-  @include outline(red);
+  //@include outline(red);
   width: 100%;
 
   background: url("../img/bg-main-city-desktop@1x.png") center 0 no-repeat;
@@ -131,7 +131,7 @@
   .promo {
     padding: 0;
     margin: 0;
-    height: 550px;
+    height: 582px;
     background: url("../img/bg-main-city-mobile@1x.png") center -18px no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -144,7 +144,6 @@
     margin-left: -13px;
     padding: 0;
     padding-top: 118px;
-
 
     font-size: 22.5vw;
     letter-spacing: 0.01em;
