@@ -14,6 +14,10 @@
       url("../img/bg-howto-watercolor@2x.png");
     background-size: 581px auto, 216px auto, 1366px auto;
   }
+
+  @media (max-width: 1222px) {
+    background-size: 38.89%, 15.81%, 80%;
+  }
 }
 
 .howto__heading {
@@ -35,7 +39,7 @@
   margin-top: 24px;
   margin-left: auto;
   margin-right: 187px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 
   padding: 0;
 }
@@ -59,10 +63,10 @@
   //@include outline;
 
   margin-left: auto;
-  margin-top: 25px;
+  margin-top: 24px;
   margin-right: 190px;
   padding: 0;
-  padding-left: 46px;
+  padding-left: 47px;
 
   list-style: none;
 
@@ -117,6 +121,7 @@
 }
 
 .howto__item:last-child {
+  margin-top: 4px;
   margin-bottom: 0;
 }
 
@@ -153,9 +158,9 @@
 
   color: $black;
 
-  margin-top: 31px;
+  margin-top: 32px;
   margin-left: auto;
-  margin-right: 216px;
+  margin-right: 217px;
 }
 
 .howto__additional {
@@ -231,10 +236,10 @@
 
   .howto__additional {
     box-sizing: border-box;
-    margin: 0;
-    margin-right: auto;
-    padding-left: 30px;
-    width: 35%;
+    margin-left: 30px;
+   // margin-right: auto;
+    padding-left: 20px;
+   width: 80%;
   }
 
   .howto__additional::before {
@@ -248,7 +253,6 @@
     margin-left: 450px;
   }
 }
-
 
 @media (max-width: 767px) {
   .howto {
@@ -311,11 +315,12 @@
 
     box-sizing: border-box;
 
-    margin-top: 40px;
-    padding-left: 25px;
-    padding-right: 10px;
+    margin-top: 38px;
+    margin-left: 0;
+    padding-left: 24px;
+    padding-right: 5px;
 
-    width: 100%;
+    width: 95%;
   }
 
   .howto__additional::before {

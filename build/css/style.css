@@ -876,6 +876,9 @@ input[type="radio"].visually-hidden {
     .howto {
       background-image: url("../img/bg-howto-people-desktop@2x.png"), url("../img/bg-howto-stamp-desktop@2x.png"), url("../img/bg-howto-watercolor@2x.png");
       background-size: 581px auto, 216px auto, 1366px auto; } }
+  @media (max-width: 1222px) {
+    .howto {
+      background-size: 38.89%, 15.81%, 80%; } }
 
 .howto__heading {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -904,7 +907,7 @@ input[type="radio"].visually-hidden {
   margin-top: 24px;
   margin-left: auto;
   margin-right: 187px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   padding: 0; }
 
 .howto__requirements {
@@ -921,10 +924,10 @@ input[type="radio"].visually-hidden {
           box-sizing: border-box;
   display: block;
   margin-left: auto;
-  margin-top: 25px;
+  margin-top: 24px;
   margin-right: 190px;
   padding: 0;
-  padding-left: 46px;
+  padding-left: 47px;
   list-style: none;
   width: 480px; }
 
@@ -967,6 +970,7 @@ input[type="radio"].visually-hidden {
   display: none; }
 
 .howto__item:last-child {
+  margin-top: 4px;
   margin-bottom: 0; }
 
 .howto__item {
@@ -999,9 +1003,9 @@ input[type="radio"].visually-hidden {
   font-size: 17px;
   line-height: 29px;
   color: #484848;
-  margin-top: 31px;
+  margin-top: 32px;
   margin-left: auto;
-  margin-right: 216px; }
+  margin-right: 217px; }
 
 .howto__additional {
   position: relative;
@@ -1058,10 +1062,9 @@ input[type="radio"].visually-hidden {
   .howto__additional {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    margin: 0;
-    margin-right: auto;
-    padding-left: 30px;
-    width: 35%; }
+    margin-left: 30px;
+    padding-left: 20px;
+    width: 80%; }
   .howto__additional::before {
     height: 100%; }
   .howto__text {
@@ -1136,10 +1139,11 @@ input[type="radio"].visually-hidden {
     opacity: 0.87;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    margin-top: 40px;
-    padding-left: 25px;
-    padding-right: 10px;
-    width: 100%; }
+    margin-top: 38px;
+    margin-left: 0;
+    padding-left: 24px;
+    padding-right: 5px;
+    width: 95%; }
   .howto__additional::before {
     top: 0;
     left: 10px;
@@ -1172,7 +1176,7 @@ input[type="radio"].visually-hidden {
 
 .journey {
   padding-top: 210px;
-  padding-bottom: 260px;
+  padding-bottom: 261px;
   background: url("../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat, url("../img/bg-iwantgo-girl-dekstop@1x.png") right 0 no-repeat;
   background-size: 10.76%, 59.88%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -1287,14 +1291,13 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 767px) {
   .journey {
-    padding-top: 55px;
+    padding-top: 56px;
     padding-bottom: 310px;
-    background: url("../img/bg-iwantgo-backpack-mobile@1x.png") 0 0 no-repeat, url("../img/bg-iwantgo-girl-mobile@1x.png") 0 345px no-repeat;
-    background-size: auto, contain; } }
+    background: url("../img/bg-iwantgo-backpack-mobile@1x.png") 0 0 no-repeat, url("../img/bg-iwantgo-girl-mobile@1x.png") 0 347px no-repeat;
+    background-size: 100px, contain; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .journey {
-      background-image: url("../img/bg-iwantgo-backpack-mobile@2x.png"), url("../img/bg-iwantgo-girl-mobile@2x.png");
-      background-size: 130px auto, contain auto; } }
+      background-image: url("../img/bg-iwantgo-backpack-mobile@2x.png"), url("../img/bg-iwantgo-girl-mobile@2x.png"); } }
 
 @media (max-width: 767px) {
   .journey__container {

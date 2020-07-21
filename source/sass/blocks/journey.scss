@@ -1,6 +1,6 @@
 .journey {
   padding-top: 210px;
-  padding-bottom: 260px;
+  padding-bottom: 261px;
 
   background: url("../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat,
     url("../img/bg-iwantgo-girl-dekstop@1x.png") right 0 no-repeat;
@@ -119,17 +119,16 @@
 
 @media (max-width: 767px) {
   .journey {
-    padding-top: 55px;
+    padding-top: 56px;
     padding-bottom: 310px;
 
     background: url("../img/bg-iwantgo-backpack-mobile@1x.png") 0 0 no-repeat,
-      url("../img/bg-iwantgo-girl-mobile@1x.png") 0 345px no-repeat;
-    background-size: auto, contain;
+      url("../img/bg-iwantgo-girl-mobile@1x.png") 0 347px no-repeat;
+    background-size: 100px, contain;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-iwantgo-backpack-mobile@2x.png"),
         url("../img/bg-iwantgo-girl-mobile@2x.png");
-      background-size: 130px auto, contain auto;
     }
   }
 
