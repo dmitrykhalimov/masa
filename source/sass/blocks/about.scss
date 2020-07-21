@@ -90,7 +90,7 @@
 
 @media (max-width: 767px) {
   .about {
-    padding-bottom: 47px;
+    padding-bottom: 50px;
 
     background: url("../img/bg-about-mobile@1x.png") -20px 200px no-repeat;
     background-size: 120%;
@@ -127,7 +127,7 @@
   }
 
   .about__button {
-    top: calc(50% - 40px);
+    top: calc(50% - 30px);
     left: calc(50% - 40px);
 
     width: 80px;

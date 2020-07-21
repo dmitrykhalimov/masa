@@ -437,7 +437,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 767px) {
   .about {
-    padding-bottom: 47px;
+    padding-bottom: 50px;
     background: url("../img/bg-about-mobile@1x.png") -20px 200px no-repeat;
     background-size: 120%; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
@@ -472,7 +472,7 @@ input[type="radio"].visually-hidden {
     width: 100%;
     height: auto; }
   .about__button {
-    top: calc(50% - 40px);
+    top: calc(50% - 30px);
     left: calc(50% - 40px);
     width: 80px;
     height: 80px; } }
@@ -1174,20 +1174,16 @@ input[type="radio"].visually-hidden {
   padding-top: 210px;
   padding-bottom: 260px;
   background: url("../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat, url("../img/bg-iwantgo-girl-dekstop@1x.png") right 0 no-repeat;
-  background-size: auto, 60%; }
+  background-size: 10.76%, 59.88%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .journey {
-      background-image: url("../img/bg-iwantgo-backpack-desktop@2x.png"), url("../img/bg-iwantgo-girl-dekstop@2x.png");
-      background-size: 147px auto, 818px auto; } }
+      background-image: url("../img/bg-iwantgo-backpack-desktop@2x.png"), url("../img/bg-iwantgo-girl-dekstop@2x.png"); } }
+  @media (max-width: 1350px) {
+    .journey {
+      background-position-y: 5vw;
+      background-size: 10.76%, 49.88%; } }
 
 .journey__container {
-  /*
-  box-sizing: border-box;
-
-  max-width: 1206px;
-  margin-left: auto;
-  margin-right: 0;
-  padding-left: 50px;*/
   padding-left: 210px; }
 
 .journey__heading {
@@ -1291,14 +1287,14 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 767px) {
   .journey {
-    padding-top: 53px;
+    padding-top: 55px;
     padding-bottom: 310px;
     background: url("../img/bg-iwantgo-backpack-mobile@1x.png") 0 0 no-repeat, url("../img/bg-iwantgo-girl-mobile@1x.png") 0 345px no-repeat;
     background-size: auto, contain; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .journey {
       background-image: url("../img/bg-iwantgo-backpack-mobile@2x.png"), url("../img/bg-iwantgo-girl-mobile@2x.png");
-      background-size: 130px auto, 320px auto; } }
+      background-size: 130px auto, contain auto; } }
 
 @media (max-width: 767px) {
   .journey__container {
