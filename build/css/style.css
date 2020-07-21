@@ -1948,6 +1948,8 @@ input[type="radio"].visually-hidden {
 
 .promo {
   position: relative;
+  padding-bottom: 25%;
+  outline: 4px solid red;
   width: 100%;
   background: url("../img/bg-main-city-desktop@1x.png") center 0 no-repeat;
   background-size: 100%; }
@@ -1955,6 +1957,9 @@ input[type="radio"].visually-hidden {
     .promo {
       background-image: url("../img/bg-main-city-desktop@2x.png");
       background-size: 100% auto; } }
+  @media (max-width: 1200px) {
+    .promo {
+      padding-bottom: 15%; } }
 
 .promo::before {
   content: "";
@@ -1973,10 +1978,11 @@ input[type="radio"].visually-hidden {
   display: block;
   padding-top: 160px;
   padding-left: 10px;
+  height: 25vw;
   font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 1250%;
+  font-size: 14.65vw;
   line-height: 170%;
   letter-spacing: 0.055em;
   overflow: hidden;
@@ -1996,8 +2002,7 @@ input[type="radio"].visually-hidden {
 .promo__heading {
   position: relative;
   margin: 0 auto;
-  margin-top: 2.8%;
-  padding-bottom: 21.9%;
+  margin-top: 37px;
   width: 343px;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
@@ -2018,13 +2023,22 @@ input[type="radio"].visually-hidden {
   background: url("../img/scroll-down.svg") 0 0 no-repeat; }
 
 @media (max-width: 1023px) {
+  .promo {
+    padding-bottom: 25%; }
   .promo__decorative-text {
-    font-size: 150px; } }
+    height: 28vw;
+    margin-top: 18px;
+    font-size: 150px;
+    padding-top: 40px;
+    background-position-x: 51%;
+    background-position-y: 97%; } }
 
 @media (max-width: 767px) {
   .promo {
-    height: 600px;
-    background: url("../img/bg-main-city-mobile@1x.png") center 0 no-repeat; } }
+    padding: 0;
+    margin: 0;
+    height: 550px;
+    background: url("../img/bg-main-city-mobile@1x.png") center -18px no-repeat; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .promo {
       background-image: url("../img/bg-main-city-mobile@2x.png");
@@ -2032,10 +2046,10 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 767px) {
   .promo__decorative-text {
-    margin-left: -14px;
+    margin-left: -13px;
     padding: 0;
-    padding-top: 136px;
-    font-size: 72px;
+    padding-top: 118px;
+    font-size: 22.5vw;
     letter-spacing: 0.01em;
     background-image: url("../img/bg-main-overlay-mobile@1x.jpg"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
@@ -2046,7 +2060,7 @@ input[type="radio"].visually-hidden {
 @media (max-width: 767px) {
   .promo::before {
     height: inherit;
-    background: url("../img/bg-main-girl-mobile@1x.png") center 0 no-repeat; } }
+    background: url("../img/bg-main-girl-mobile@1x.png") center -18px no-repeat; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .promo::before {
       background-image: url("../img/bg-main-girl-mobile@2x.png");
@@ -2054,7 +2068,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 767px) {
   .promo__heading {
-    margin-top: 45px;
+    margin-top: 76px;
     width: 288px;
     font-size: 20px;
     line-height: 24px; }

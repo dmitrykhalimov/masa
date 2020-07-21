@@ -1,6 +1,9 @@
 .promo {
   position: relative;
 
+  padding-bottom: 25%;
+
+  @include outline(red);
   width: 100%;
 
   background: url("../img/bg-main-city-desktop@1x.png") center 0 no-repeat;
@@ -9,6 +12,10 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-main-city-desktop@2x.png");
     background-size: 100% auto;
+  }
+
+  @media (max-width: 1200px) {
+    padding-bottom: 15%;
   }
 }
 
@@ -36,11 +43,13 @@
   padding-top: 160px;
   padding-left: 10px;
 
+  height: 25vw;
+
   font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 900;
 
-  font-size: 1250%;
+  font-size: 14.65vw;
   line-height: 170%;
   letter-spacing: 0.055em;
 
@@ -69,8 +78,7 @@
   position: relative;
 
   margin: 0 auto;
-  margin-top: 2.8%;
-  padding-bottom: 21.9%;
+  margin-top: 37px;
 
   width: 343px;
 
@@ -102,16 +110,29 @@
 }
 
 @media (max-width: 1023px) {
+  .promo {
+    padding-bottom: 25%;
+  }
+
   .promo__decorative-text {
+    //@include outline(orange);
+    height: 28vw;
+    margin-top: 18px;
     font-size: 150px;
+    padding-top: 40px;
+
+    background-position-x: 51%;
+    background-position-y: 97%;
   }
 }
 
 @media (max-width: 767px) {
-  .promo {
 
-    height: 600px;
-    background: url("../img/bg-main-city-mobile@1x.png") center 0 no-repeat;
+  .promo {
+    padding: 0;
+    margin: 0;
+    height: 550px;
+    background: url("../img/bg-main-city-mobile@1x.png") center -18px no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-main-city-mobile@2x.png");
@@ -120,11 +141,12 @@
   }
 
   .promo__decorative-text {
-    margin-left: -14px;
+    margin-left: -13px;
     padding: 0;
-    padding-top: 136px;
+    padding-top: 118px;
 
-    font-size: 72px;
+
+    font-size: 22.5vw;
     letter-spacing: 0.01em;
 
     background-image: url("../img/bg-main-overlay-mobile@1x.jpg");
@@ -138,7 +160,7 @@
   .promo::before {
     height: inherit;
 
-    background: url("../img/bg-main-girl-mobile@1x.png") center 0 no-repeat;
+    background: url("../img/bg-main-girl-mobile@1x.png") center -18px no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-main-girl-mobile@2x.png");
@@ -147,7 +169,7 @@
   }
 
   .promo__heading {
-    margin-top: 45px;
+    margin-top: 76px;
 
     width: 288px;
 

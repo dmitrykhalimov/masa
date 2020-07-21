@@ -22,19 +22,19 @@
       <b class="promo__decorative-text">Израиль</b>
       <h2 class="promo__heading">Учёба, путешествия и карьера для еврейской молодёжи</h2>
     </section>
-    <section class="about">
+    <section class="about"> <!--
       <h2 class="about__heading">О программе</h2>
       <p class="about__text">«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. &nbsp&nbspБолее 250 учебных программ (60 на русском) и возможность стажировки в Израиле. В&nbspтечение освоения программ предусмотрен грант от 4200 до 8400$.</p>
       <div class="about__video-mock">
         <picture class="about__video-picture">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/about-photo-dekstop@1x.webp 1x, img/about-photo-desktop@2x.webp 2x">
           <source type="image/webp" srcset="img/about-photo-mobile@1x.webp 1x, img/about-photo-mobile@2x.webp 2x">
-          <img src="./img/about-photo-dekstop@1x.png" srcset="./img/about-photo-dekstop@2x.png 2x" width="870" height="460" alt="Видеоролик о программе">
+          <img src="./img/about-photo-dekstop@1x.png" srcset="./img/about-photo-dekstop@2x.png 2x"  width="870" height="460" alt="Видеоролик о программе">
         </picture>
         <svg class="about__button" width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle opacity="0.32" cx="48" cy="48" r="48" fill="white"></circle>
-          <circle cx="48" cy="48" r="32" fill="white"></circle>
-          <path d="M58 47.5L43 57V38L58 47.5Z" fill="#1FC0FC"></path>
+          <circle opacity="0.32" cx="48" cy="48" r="48" fill="white"/>
+          <circle cx="48" cy="48" r="32" fill="white"/>
+          <path d="M58 47.5L43 57V38L58 47.5Z" fill="#1FC0FC"/>
         </svg>
       </div>
     </section>
@@ -42,7 +42,7 @@
       <h2 class="programs__heading">Программы</h2>
       <ul class="programs__list">
         <li class="programs__item">
-          <input class="programs__radio visually-hidden" type="radio" id="program-1" name="programs-group" checked="">
+          <input class="programs__radio visually-hidden" type="radio" id="program-1" name="programs-group" checked>
           <label class="programs__label programs__label--general" for="program-1">Общие</label>
           <section class="programs__content">
             <h3 class="programs__name">Общие</h3>
@@ -94,7 +94,7 @@
         <p class="journey__text">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
         <form class="journey__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="journey-phone">Телефон</label>
-          <input class="journey__input" type="tel" id="journey-phone" name="journey-phone" placeholder="Телефон" required="">
+          <input class="journey__input" type="tel" id="journey-phone" name="journey-phone" placeholder="Телефон" required>
           <span class="journey__phone-error">Ошибка: неверный формат</span>
           <button class="journey__button" type="submit">Перезвоните мне</button>
         </form>
@@ -121,29 +121,39 @@
       <div class="life-in-israel__slider">
         <div class="life-in-israel__slider-item life-in-israel__slider-item--excursion">
                       <img srcset="img/life-excursion-mobile@1x.png 288w,
-                         img/life-excursion-desktop@1x.png 482w" sizes="(max-width: 767px) 288px" src="img/life-excursion-desktop@1x.png" alt="Elva dressed as a fairy">
+                         img/life-excursion-desktop@1x.png 482w"
+                  sizes="(max-width: 767px) 288px"
+                  src="img/life-excursion-desktop@1x.png" alt="Elva dressed as a fairy">
           <div class="life-in-israel__slide-text">Экскурсии по Израилю и знакомство с его историе</div>
         </div>
         <div class="life-in-israel__slider-item life-in-israel__slider-item--language">
           <img srcset="img/life-language-mobile@1x.png 288w,
-          img/life-language-desktop@1x.png 482w" sizes="(max-width: 767px) 288px" src="img/life-language-desktop@1x.png" alt="Elva dressed as a fairy">
+          img/life-language-desktop@1x.png 482w"
+   sizes="(max-width: 767px) 288px"
+   src="img/life-language-desktop@1x.png" alt="Elva dressed as a fairy">
           <div class="life-in-israel__slide-text">Изучение иврита</div>
         </div>
 
         <div class="life-in-israel__slider-item life-in-israel__slider-item--skills">
           <img srcset="img/life-skills-mobile@1x.png 288w,
-          img/life-skills-desktop@1x.png 482w" sizes="(max-width: 767px) 288px" src="img/life-skills-desktop@1x.png" alt="Elva dressed as a fairy">
+          img/life-skills-desktop@1x.png 482w"
+   sizes="(max-width: 767px) 288px"
+   src="img/life-skills-desktop@1x.png" alt="Elva dressed as a fairy">
           <div class="life-in-israel__slide-text">Обучение современным навыкам и профессиям</div>
         </div>
 
         <div class="life-in-israel__slider-item life-in-israel__slider-item--projects">
           <img srcset="img/life-projects-mobile@1x.png 288w,
-          img/life-projects-desktop@1x.png 482w" sizes="(max-width: 767px) 288px" src="img/life-projects-desktop@1x.png" alt="Elva dressed as a fairy">
+          img/life-projects-desktop@1x.png 482w"
+   sizes="(max-width: 767px) 288px"
+   src="img/life-projects-desktop@1x.png" alt="Elva dressed as a fairy">
           <div class="life-in-israel__slide-text">Совместные творческие проекты с израильской молодёжью</div>
         </div>
         <div class="life-in-israel__slider-item life-in-israel__slider-item--leadership">
           <img srcset="img/life-leadership-mobile@1x.png 288w,
-          img/life-leadership-desktop@1x.png 482w" sizes="(max-width: 767px) 288px" src="img/life-leadership-desktop@1x.png" alt="Elva dressed as a fairy">
+          img/life-leadership-desktop@1x.png 482w"
+   sizes="(max-width: 767px) 288px"
+   src="img/life-leadership-desktop@1x.png" alt="Elva dressed as a fairy">
           <div class="life-in-israel__slide-text">Развитие лидерства</div>
         </div>
       </div>
@@ -155,12 +165,12 @@
         <span class="life-in-israel__selector"></span>
       </div>
     </section>
-    <!--
+
     <section class="masa-israel">
       <h2 class="masa-israel__heading">#MASAISRAEL</h2>
       <p class="masa-israel__text">Познакомьтесь с программой от первого лица! Многие участники ведут блоги и фотодневники о жизни, учёбе и путешествиях в Израиле.</p>
       <a class="masa-israel__button" href="#">Смотреть фото</a>
-    </section>-->
+    </section>
     <section class="questions">
       <h2 class="questions__heading">Частые вопросы</h2>
       <ul class="questions__list">
@@ -296,7 +306,6 @@
           <source media="(max-width: 1024px)" srcset="img/contatcs-map-mobile@1x.png">
           <img class="contacts__map" src="img/contatcs-map-desktop@1x.png" srcset="img/contatcs-map-desktop@2x.png 2x" width="702" height="448" alt="Карта проезда">
         </picture>
-        <!-- <img src="img/contacts-map-desktop@1x.png" srcset="img/contacts-map-desktop@2x.png 2x" width="702" height="448" alt="Карта проезда">-->
       </div>
       <div class="contacts__callback">
         <div class="contacts__questions">
@@ -305,12 +314,12 @@
         </div>
         <form class="contacts__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="name">Имя</label>
-          <input class="contacts__input contacts__input--name" type="text" id="contacts__name" name="name" placeholder="Имя" required="">
+          <input class="contacts__input contacts__input--name" type="text" id="contacts__name" name="name" placeholder="Имя" required>
           <label class="visually-hidden" for="phone">Телефон</label>
-          <input class="contacts__input contacts__input--phone" type="tel" id="contacts__phone" name="phone" placeholder="Телефон" required="">
+          <input class="contacts__input contacts__input--phone" type="tel" id="contacts__phone" name="phone" placeholder="Телефон" required>
           <span class="contacts__phone-error">Ошибка: неверный формат</span>
           <button class="contacts__button" type="submit">Перезвоните мне</button>
-          <input class="contacts__acceptance-cb visually-hidden" type="checkbox" id="contacts__acceptance" name="acceptance" required="">
+          <input class="contacts__acceptance-cb visually-hidden" type="checkbox" id="contacts__acceptance" name="acceptance" required>
         </form>
       </div>
     </section>
@@ -344,12 +353,12 @@
         <p class="modal-callback__text">Оставьте ваши контактные данные, мы&nbspсвяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
         <form class="modal-callback__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="name">Имя</label>
-          <input class="modal-callback__input modal-callback__input--name" type="text" id="name" name="name" placeholder="Имя" required="">
+          <input class="modal-callback__input modal-callback__input--name" type="text" id="name" name="name" placeholder="Имя" required>
           <label class="visually-hidden" for="phone">Телефон</label>
-          <input class="modal-callback__input modal-callback__input--phone" type="tel" id="phone" name="phone" placeholder="Телефон" required="">
+          <input class="modal-callback__input modal-callback__input--phone" type="tel" id="phone" name="phone" placeholder="Телефон" required>
           <span class="modal-callback__phone-error">Ошибка: неверный формат</span>
           <button class="modal-callback__button" type="submit">Перезвоните мне</button>
-          <input class="modal-callback__acceptance-cb visually-hidden" type="checkbox" id="acceptance" name="acceptance" required="">
+          <input class="modal-callback__acceptance-cb visually-hidden" type="checkbox" id="acceptance" name="acceptance" required>
           <label class="modal-callback__acceptance" for="acceptance">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
         </form>
         <button class="modal-callback__close" type="button">Закрыть</button>
@@ -363,7 +372,8 @@
         <button class="modal-accepted__close" type="submit">Закрыть</button>
       </div>
     </section>
-  </main>
+    -->
+  </section></main>
   <script src="js/accordion.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/slider.js"></script>
