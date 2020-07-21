@@ -86,12 +86,13 @@
 
 .masa-israel__heading {
   width: 100px;
-  margin-top: 0;
+
   margin-right: 300px;
+  padding: 0;
 }
 
 .masa-israel__text {
-  width: 390px;
+  width: 100%;
   margin-right: 10px;
 
   font-size: 15px;
@@ -105,4 +106,52 @@
   width: 230px;
   height: 59px;
 }
+}
+
+@media (max-width: 727px) {
+  .masa-israel {
+    padding-top: 0;
+
+    background: url("../img/bg-masa-mobile@1x.png") 0 45px no-repeat;
+    background-size: 99.9% auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-masa-mobile@1x.png");
+    }
+  }
+
+  .masa-israel__text {
+    @include text-big-mobile;
+    box-sizing: border-box;
+    display: block;
+    color: $white;
+    width: 85%;
+
+    margin-top: 33vw;
+    padding-left: 23px;
+    margin-left: 0;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+
+    color: #FFFFFF;
+
+    opacity: 0.87;
+
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  }
+
+  .masa-israel__button {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 80vw;
+  }
+
+  .masa-israel__heading {
+    margin-top: 25px;
+    padding-left: 10px;
+  }
 }

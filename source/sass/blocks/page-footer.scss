@@ -1,5 +1,5 @@
 .page-footer__container {
-  @include outline;
+  //@include outline;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -21,7 +21,7 @@
 }
 
 .page-footer__text {
-  @include outline;
+  //@include outline;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;

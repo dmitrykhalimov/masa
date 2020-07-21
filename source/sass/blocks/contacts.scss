@@ -1,11 +1,20 @@
 .contacts {
+  padding-top: 75px;
   padding-bottom: 70px;
+
+  background: url("../img/bg-contacts-watercolor-desktop@1x.png") 0 0 no-repeat;
+  background-size: 100% auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-contacts-watercolor-desktop@1x.png");
+  }
 }
 
 .contacts__heading {
   box-sizing: border-box;
   @include heading-h2;
   margin-bottom: 49px;
+  width: 550px;
 }
 
 .contacts__title,
@@ -21,6 +30,10 @@
 
   color: $black;
   opacity: 0.74;
+}
+
+.contacts__courator-photo {
+  margin-top: 40px;
 }
 
 .contacts__title {
@@ -118,6 +131,8 @@
   flex-grow: 0;
   display: block;
   margin-top: 40px;
+  width: 120%;
+  height: auto;
 }
 
 .contacts__item img {
@@ -370,6 +385,7 @@
 
   .contacts__heading {
     @include heading-h2-mobile;
+    width: 100%;
   }
 
   .contacts__container {

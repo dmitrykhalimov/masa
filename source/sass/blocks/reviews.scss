@@ -24,6 +24,11 @@
   flex-direction: row;
 }
 
+.reviews__item img {
+  width: 26.5vw;
+  height: auto;
+}
+
 .reviews__container {
   margin-top: 40px;
   margin-left: 40px;
@@ -107,14 +112,14 @@
 
 .reviews__slider {
   position: absolute;
-  bottom: -5%;
+  bottom: 0;
   left: 36.7%;
 }
 
 .reviews__socials {
   position: absolute;
   width: 104px;
-  bottom: -5%;
+  bottom: 0;
   right: 185px;
   display: flex;
   justify-content: space-between;
