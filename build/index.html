@@ -289,10 +289,13 @@
                 </li>
               </ul>
             </div>
-            <!-- <p class="contacts__description">Куратор является опытным специалистом агентства Сохнут и знает о проекте «Маса» всё! Свяжитесь с куратором, узнайте подробнее о программах и выберите свою !</p> -->
+            <p class="contacts__description">Куратор является опытным специалистом агентства Сохнут и знает о проекте «Маса» всё! Свяжитесь с куратором, узнайте подробнее о программах и выберите свою !</p>
           </div>
         </div>
-        <img src="img/contatcs-map-desktop@1x.png">
+        <picture>
+          <source media="(max-width: 1024px)" srcset="img/contatcs-map-mobile@1x.png">
+          <img class="contacts__map" src="img/contatcs-map-desktop@1x.png" srcset="img/contatcs-map-desktop@2x.png 2x" width="702" height="448" alt="Карта проезда">
+        </picture>
         <!-- <img src="img/contacts-map-desktop@1x.png" srcset="img/contacts-map-desktop@2x.png 2x" width="702" height="448" alt="Карта проезда">-->
       </div>
       <div class="contacts__callback">
@@ -300,34 +303,35 @@
           <b class="contacts__bold-text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</b>
           <p class="contacts__text">Мы не передаём данные третьим лицам. Ваши данные будут в безопасности и вам не придёт спам от нас!</p>
         </div>
-        <div class="contacts__form">
-          <form class="contacts__form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="name">Имя</label>
-            <input class="contacts__input contacts__input--name" type="text" id="contacts__name" name="name" placeholder="Имя" required="">
-            <label class="visually-hidden" for="phone">Телефон</label>
-            <input class="contacts__input contacts__input--phone" type="tel" id="contacts__phone" name="phone" placeholder="Телефон" required="">
-            <span class="contacts__phone-error">Ошибка: неверный формат</span>
-            <button class="contacts__button" type="submit">Перезвоните мне</button>
-            <input class="contacts__acceptance-cb visually-hidden" type="checkbox" id="contacts__acceptance" name="acceptance" required="">
-            <label class="contacts__acceptance" for="acceptance">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
-          </form>
-        </div>
+        <form class="contacts__form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="name">Имя</label>
+          <input class="contacts__input contacts__input--name" type="text" id="contacts__name" name="name" placeholder="Имя" required="">
+          <label class="visually-hidden" for="phone">Телефон</label>
+          <input class="contacts__input contacts__input--phone" type="tel" id="contacts__phone" name="phone" placeholder="Телефон" required="">
+          <span class="contacts__phone-error">Ошибка: неверный формат</span>
+          <button class="contacts__button" type="submit">Перезвоните мне</button>
+          <input class="contacts__acceptance-cb visually-hidden" type="checkbox" id="contacts__acceptance" name="acceptance" required="">
+        </form>
       </div>
     </section>
     <footer class="page-footer">
       <div class="page-footer__container">
-        <img>
+        <picture>
+            <source media="(max-width: 1024px)" srcset="img/logo-footer-mobile@1x.png">
+            <img class="page-footer__logo" src="img/logo-footer-desktop@1x.png" width="85" height="27">
+        </picture>
+
         <span class="page-footer__text">Copyright someDesignCompany ©2019</span>
-        <ul class="courator__socials">
-          <li class="contact__social-item">
+        <ul class="page-footer__socials">
+          <li class="page-footer__social-item">
             <a><img src="img/icon-fb.svg"></a>
             <span class="visually-hidden">Facebook</span>
           </li>
-          <li class="courator__social-item">
+          <li class="page-footer__social-item">
             <a><img src="img/icon-tw.svg"></a>
             <span class="visually-hidden">Facebook</span>
           </li>
-          <li class="courator__social-item">
+          <li class="page-footer__social-item">
             <a><img src="img/icon-in.svg"></a>
             <span class="visually-hidden">Facebook</span>
           </li>

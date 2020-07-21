@@ -1,4 +1,9 @@
+.contacts {
+  padding-bottom: 70px;
+}
+
 .contacts__heading {
+  box-sizing: border-box;
   @include heading-h2;
   margin-bottom: 49px;
 }
@@ -23,6 +28,10 @@
   padding-left: 22px;
   position: relative;
   margin-right: 12px;
+}
+
+.contacts__questions {
+  margin-top: 4px;
 }
 
 .contacts__title::before {
@@ -60,21 +69,20 @@
 }
 
 .contacts__courator-container {
-  @include outline;
   display: flex;
   justify-self: flex-start;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .contacts__courator-container img {
   display: block;
-  @include outline(yellow)
+
 }
 
 .contacts__text-container {
   margin-top: 41px;
   margin-left: 20px;
-  @include outline(green);
   margin-bottom: 20px;
 }
 
@@ -106,7 +114,7 @@
   width: 96px;
 }
 
-.contacts__container img{
+.contacts__map {
   flex-grow: 0;
   display: block;
   margin-top: 40px;
@@ -126,6 +134,18 @@
 
   color: $black;
   opacity: 0.87;
+}
+
+.contacts__wrapper {
+  //@include outline;
+}
+
+.contacts__description {
+  padding: 0;
+  margin-top: 12px;
+  //flex: 0 0 100%;
+  //width: 90.21%;
+  max-width: 481px;
 }
 
 .contacts__address {
@@ -149,11 +169,15 @@
 
   display: block;
 
-  width: 360px;
+  width: 32.62%;
   height: 59px;
 
   border: 2px solid #e3e3e3;
   border-radius: 80px;
+
+  margin-right: 24px;
+
+  padding-left: 38px;
 
   &:focus {
     outline: none;
@@ -166,16 +190,28 @@
   }
 }
 
+
+.contacts__map {
+  //width: 89%;
+  height: auto;
+}
+
+
+
+@media (max-width: 1129px) {
+  .contacts__map {
+    width: 600px;
+    height: auto;
+  }
+}
+
 .contacts__button {
   @include button-white-text;
   @include button-yellow-background;
 
   display: block;
 
-  margin-top: 22px;
-  margin-left: 60px;
-
-  width: 264px;
+  width: 28.5%;
   height: 59px;
 
   border: none;
@@ -217,15 +253,48 @@
 }
 
 .contacts__container {
+  //@include outline;
   display: flex;
   align-items: flex-start;
-  width: 1256px;
+  width: 88.94%;
   padding-left: 110px;
+}
+
+.contacts__callback {
+  //@include outline(green);
+  display: flex;
+
+  margin: 0 auto;
+  margin-top: 65px;
+  width: 83.60%;
 }
 
 
 
-@media (max-width: 767px) {
+.contacts__bold-text {
+  display: block;
+  width: 328px;
+}
+
+.contacts__text {
+  display: block;
+  width: 364px;
+}
+
+.contacts__form {
+  //@include outline(orange);
+  display: flex;
+  margin-left: 6px;
+  width: 100%;
+}
+
+
+@media (max-width: 1023px) {
+  .contacts__map {
+    width: 59%;
+    height: auto;
+  }
+
   .contacts__heading {
     @include heading-h2-mobile;
   }
@@ -237,5 +306,139 @@
   .contacts__bold-text {
     font-size: 16px;
     line-height: 24px;
+    width: 60%;
+  }
+
+  .contacts__text {
+    font-size: 16px;
+    line-height: 24px;
+    width: 60%;
+  }
+
+  .contacts__questions {
+    width: 50%;
+  }
+
+  .contacts__bold-text {
+    display: block;
+    width: 90%;
+  }
+
+  .contacts__text {
+    display: block;
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .contacts__callback {
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  .contacts__bold-text {
+    display: block;
+
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 0;
+
+    width: 90%;
+
+    text-align: left;
+  }
+
+  .contacts__text {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+
+    color: $black;
+    opacity: 0.5;
+
+    width: 90%;
+
+    margin: 0 auto;
+    margin-top: 11px;
+    padding: 0;
+  }
+
+  .contacts__heading {
+    @include heading-h2-mobile;
+  }
+
+  .contacts__container {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .contacts__heading {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .contacts__title {
+    margin-left: 15px;
+  }
+
+  .contacts__courator-container {
+    box-sizing: border-box;
+    padding-left: 10px;
+  }
+
+  .contacts__text-container {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+
+  .contacts__address {
+    width: 90%;
+  }
+
+  .contacts__description {
+    margin-top: 15px;
+    margin-left: 5px;
+    width: 90%;
+  }
+
+  .contacts__map {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+  }
+
+  .contacts__questions {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contacts__form {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-top: 35px;
+  }
+
+  .contacts__input {
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .contacts__button {
+    margin: 0 auto;
+    margin-top: 23px;
+    width: 82.81%;
   }
 }
