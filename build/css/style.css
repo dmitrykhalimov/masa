@@ -363,7 +363,7 @@ input[type="radio"].visually-hidden {
 .about {
   position: relative;
   margin-top: 0;
-  padding-bottom: 143px;
+  padding-bottom: 148px;
   background: url("../../img/bg-about-desktop@1x.png") center 160px no-repeat;
   background-size: 100%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -2083,7 +2083,7 @@ input[type="radio"].visually-hidden {
   padding-top: 20px;
   padding-left: 210px;
   padding-bottom: 10px;
-  background: url("../img/bg-programs-desktop@1x.png") 0 0 no-repeat;
+  background: url("../img/bg-programs-desktop@1x.png") 0 5px no-repeat;
   background-position-x: right; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .programs {
@@ -2231,7 +2231,11 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-about-general-white.png"); }
 
 .programs__radio:checked + .programs__label--academic::before {
-  background-image: url("../img/icon-about-academic-white.png"); }
+  top: 13px;
+  left: 16px;
+  width: 39px;
+  height: 39px;
+  background: url("../img/icon-about-academic-white.png") 0 0 no-repeat; }
 
 .programs__radio:checked + .programs__label--practice::before {
   background-image: url("../img/icon-about-practice-white.png"); }

@@ -6,7 +6,7 @@
   padding-left: 210px;
   padding-bottom: 10px;
 
-  background: url("../img/bg-programs-desktop@1x.png") 0 0 no-repeat;
+  background: url("../img/bg-programs-desktop@1x.png") 0 5px no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-programs-desktop@2x.png");
@@ -110,6 +110,7 @@
   height: 35px;
 
   background-image: url("../img/icon-about-academic-black.png");
+
 }
 
 .programs__label--practice::before {
@@ -179,7 +180,13 @@
 }
 
 .programs__radio:checked + .programs__label--academic::before {
-  background-image: url("../img/icon-about-academic-white.png");
+  top: 13px;
+  left: 16px;
+
+  width: 39px;
+  height: 39px;
+
+  background: url("../img/icon-about-academic-white.png") 0 0 no-repeat;
 }
 
 .programs__radio:checked + .programs__label--practice::before {
