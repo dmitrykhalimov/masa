@@ -1,13 +1,13 @@
 .questions {
-  background: url("../../img/bg-questions-photo-dekstop@1x.png") right 80px no-repeat,
-    url("../../img/bg-questions-bag@1x.png") 0 bottom no-repeat,
+  background: url("../img/bg-questions-photo-dekstop@1x.png") right 80px no-repeat,
+    url("../img/bg-questions-bag@1x.png") 0 bottom no-repeat,
     url("../../img/bg-questions-watercolor-desktop@1x.png") left top no-repeat;
   background-size: 47.2%, auto, auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../../img/bg-questions-photo-dekstop@2x.png"),
-      url("../../img/bg-questions-bag@2x.png"),
-      url("../../img/bg-questions-watercolor-desktop@2x.png");
+      url("../img/bg-questions-bag@2x.png"),
+      url("../img/bg-questions-watercolor-desktop@2x.png");
     background-size: 47.2%, 153px, 1366px;
   }
 
@@ -73,7 +73,7 @@
   font-size: 0;
   border: 0;
 
-  background: url("../../img/icon-show.svg") center top no-repeat;
+  background: url("../img/icon-show.svg") center top no-repeat;
 }
 
 .questions__expand:focus {
@@ -89,7 +89,7 @@
 }
 
 .questions__item--active .questions__expand {
-  background: url("../../img/icon-hide.svg") center top no-repeat;
+  background: url("../img/icon-hide.svg") center top no-repeat;
 }
 
 .questions__number {
@@ -116,7 +116,7 @@
 
 @media (max-width: 767px) {
   .questions {
-    background: url("../../img/bg-questions-bag@1x.png") -10px 500px no-repeat;
+    background: url("../img/bg-questions-bag@1x.png") -10px 500px no-repeat;
     padding-left: 0;
   }
 

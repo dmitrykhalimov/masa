@@ -364,7 +364,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   margin-top: 0;
   padding-bottom: 148px;
-  background: url("../../img/bg-about-desktop@1x.png") center 160px no-repeat;
+  background: url("../img/bg-about-desktop@1x.png") center 160px no-repeat;
   background-size: 100%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .about {
@@ -529,7 +529,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 12px;
   height: 18px;
-  background: url("../../img/contacts-city-marker.png");
+  background: url("../img/contacts-city-marker.png");
   left: 4px;
   top: 1px; }
 
@@ -550,7 +550,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 16px;
   height: 15px;
-  background: url("../../img/contacts-city-arrow.png");
+  background: url("../img/contacts-city-arrow.png");
   right: -26px;
   top: 3px; }
 
@@ -1087,7 +1087,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 767px) {
   .howto {
-    background: url("../../img/bg-howto-stamp-mobile@1x.png") right 352px no-repeat;
+    background: url("../img/bg-howto-stamp-mobile@1x.png") right 352px no-repeat;
     padding-top: 79px;
     padding-bottom: 51px; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
@@ -2415,7 +2415,7 @@ input[type="radio"].visually-hidden {
 
 .reviews {
   position: relative;
-  background: url("../../img/bg-reviews-watercolor-desktop@1x.png") right 0 no-repeat, url("../../img/bg-reviews-sketch-desktop@1x.png") right 52px no-repeat;
+  background: url("../img/bg-reviews-watercolor-desktop@1x.png") right 0 no-repeat, url("../img/bg-reviews-sketch-desktop@1x.png") right 52px no-repeat;
   background-size: 92.16%, 38.28%; }
 
 .reviews__heading {
@@ -2629,14 +2629,14 @@ input[type="radio"].visually-hidden {
     left: 3%; } }
 
 .questions {
-  background: url("../../img/bg-questions-photo-dekstop@1x.png") right 80px no-repeat, url("../../img/bg-questions-bag@1x.png") 0 bottom no-repeat, url("../../img/bg-questions-watercolor-desktop@1x.png") left top no-repeat;
+  background: url("../img/bg-questions-photo-dekstop@1x.png") right 80px no-repeat, url("../img/bg-questions-bag@1x.png") 0 bottom no-repeat, url("../../img/bg-questions-watercolor-desktop@1x.png") left top no-repeat;
   background-size: 47.2%, auto, auto;
   padding-left: 110px;
   padding-top: 80px;
   padding-bottom: 115px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .questions {
-      background-image: url("../../img/bg-questions-photo-dekstop@2x.png"), url("../../img/bg-questions-bag@2x.png"), url("../../img/bg-questions-watercolor-desktop@2x.png");
+      background-image: url("../../img/bg-questions-photo-dekstop@2x.png"), url("../img/bg-questions-bag@2x.png"), url("../img/bg-questions-watercolor-desktop@2x.png");
       background-size: 47.2%, 153px, 1366px; } }
 
 .questions__heading {
@@ -2692,7 +2692,7 @@ input[type="radio"].visually-hidden {
   height: 11px;
   font-size: 0;
   border: 0;
-  background: url("../../img/icon-show.svg") center top no-repeat; }
+  background: url("../img/icon-show.svg") center top no-repeat; }
 
 .questions__expand:focus {
   outline: none; }
@@ -2704,7 +2704,7 @@ input[type="radio"].visually-hidden {
   display: block; }
 
 .questions__item--active .questions__expand {
-  background: url("../../img/icon-hide.svg") center top no-repeat; }
+  background: url("../img/icon-hide.svg") center top no-repeat; }
 
 .questions__number {
   margin-right: 15px;
@@ -2724,7 +2724,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 767px) {
   .questions {
-    background: url("../../img/bg-questions-bag@1x.png") -10px 500px no-repeat;
+    background: url("../img/bg-questions-bag@1x.png") -10px 500px no-repeat;
     padding-left: 0; }
   .questions__heading {
     font-family: "Montserrat", "Arial", sans-serif;
