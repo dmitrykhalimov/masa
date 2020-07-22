@@ -2685,6 +2685,7 @@ input[type="radio"].visually-hidden {
   .reviews__item img {
     display: block;
     width: 75%;
+    max-width: 240px;
     height: auto;
     margin: 0 auto; }
   .reviews__name {
@@ -2715,7 +2716,7 @@ input[type="radio"].visually-hidden {
   .reviews__socials {
     left: 3%; }
   .reviews__slider {
-    top: 38%; } }
+    top: 48vh; } }
 
 .questions {
   background: url("../img/bg-questions-photo-dekstop@1x.png") right 80px no-repeat, url("../img/bg-questions-bag@1x.png") 0 bottom no-repeat, url("../../img/bg-questions-watercolor-desktop@1x.png") left top no-repeat;

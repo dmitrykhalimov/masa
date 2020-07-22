@@ -227,6 +227,7 @@
   .reviews__item img {
     display: block;
     width: 75%;
+    max-width: 240px;
     height: auto;
     margin: 0 auto;
   }
@@ -273,6 +274,6 @@
   }
 
   .reviews__slider {
-    top: 38%;
+    top: 48vh;
   }
 }
