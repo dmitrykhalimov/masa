@@ -522,7 +522,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 49px;
-  width: 550px; }
+  width: 520px; }
 
 .contacts__title,
 .contacts__city,
@@ -638,7 +638,8 @@ input[type="radio"].visually-hidden {
 .contacts__map {
   display: block;
   margin-top: 40px;
-  width: 100%;
+  overflow: hidden;
+  width: 90%;
   height: auto; }
 
 .contacts__bold-text {
@@ -652,7 +653,7 @@ input[type="radio"].visually-hidden {
 
 .contacts__description {
   padding: 0;
-  margin-top: 12px;
+  margin-top: 10px;
   max-width: 481px; }
 
 .contacts__address {
@@ -703,14 +704,6 @@ input[type="radio"].visually-hidden {
   .contacts__input:focus:invalid {
     outline: none;
     border-color: #ff0000; }
-
-.contacts__map {
-  height: auto; }
-
-@media (max-width: 1129px) {
-  .contacts__map {
-    width: 600px;
-    height: auto; } }
 
 .contacts__button {
   font-family: "Fira Sans", "Arial", sans-serif;
@@ -765,7 +758,7 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  margin-top: 65px;
+  margin-top: 62px;
   width: 83.60%; }
 
 .contacts__bold-text {
@@ -853,7 +846,7 @@ input[type="radio"].visually-hidden {
     opacity: 0.5;
     width: 90%;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 0; }
   .contacts__heading {
     font-family: "Montserrat", "Arial", sans-serif;

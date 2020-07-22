@@ -304,7 +304,15 @@
           </div>
         </div>
 
-        <img class="contacts__map" src="img/contatcs-map-desktop@1x.png" srcset="img/contatcs-map-desktop@1x.png 2x" width="702" height="448" alt="Карта проезда">
+        <img class="contacts__map"
+        srcset="
+          img/contatcs-map-desktop@1x.png 768w,
+          img/contatcs-map-mobile@1x.png 320w"
+        sizes="
+          (max-width: 767px) 320px,
+          768px"
+          src="img/contatcs-map-desktop@1x.png" width="702" height="448" alt="Карта проезда">
+      </div>
       </div>
       <div class="contacts__callback">
         <div class="contacts__questions">
@@ -320,7 +328,6 @@
           <button class="contacts__button" type="submit">Перезвоните мне</button>        </form>
       </div>
     </section>
-         <!--
     <footer class="page-footer">
       <div class="page-footer__container">
         <picture>
@@ -369,7 +376,6 @@
         <button class="modal-accepted__close" type="submit">Закрыть</button>
       </div>
     </section>
-    -->
   </main>
   <script src="js/accordion.js"></script>
   <script src="js/modal.js"></script>

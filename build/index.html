@@ -294,8 +294,13 @@
           </div>
         </div>
 
-        <img class="contacts__map" src="img/contatcs-map-desktop@1x.png" srcset="img/contatcs-map-desktop@1x.png 2x" width="702" height="448" alt="Карта проезда">
+        <img class="contacts__map" srcset="
+          img/contatcs-map-desktop@1x.png 768w,
+          img/contatcs-map-mobile@1x.png 320w" sizes="
+          (max-width: 767px) 320px,
+          768px" src="img/contatcs-map-desktop@1x.png" width="702" height="448" alt="Карта проезда">
       </div>
+      
       <div class="contacts__callback">
         <div class="contacts__questions">
           <b class="contacts__bold-text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</b>
@@ -310,7 +315,6 @@
           <button class="contacts__button" type="submit">Перезвоните мне</button>        </form>
       </div>
     </section>
-         <!--
     <footer class="page-footer">
       <div class="page-footer__container">
         <picture>
@@ -340,12 +344,12 @@
         <p class="modal-callback__text">Оставьте ваши контактные данные, мы&nbspсвяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
         <form class="modal-callback__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="name">Имя</label>
-          <input class="modal-callback__input modal-callback__input--name" type="text" id="name" name="name" placeholder="Имя" required>
+          <input class="modal-callback__input modal-callback__input--name" type="text" id="name" name="name" placeholder="Имя" required="">
           <label class="visually-hidden" for="phone">Телефон</label>
-          <input class="modal-callback__input modal-callback__input--phone" type="tel" id="phone" name="phone" placeholder="Телефон" required>
+          <input class="modal-callback__input modal-callback__input--phone" type="tel" id="phone" name="phone" placeholder="Телефон" required="">
           <span class="modal-callback__phone-error">Ошибка: неверный формат</span>
           <button class="modal-callback__button" type="submit">Перезвоните мне</button>
-          <input class="modal-callback__acceptance-cb visually-hidden" type="checkbox" id="acceptance" name="acceptance" required>
+          <input class="modal-callback__acceptance-cb visually-hidden" type="checkbox" id="acceptance" name="acceptance" required="">
           <label class="modal-callback__acceptance" for="acceptance">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
         </form>
         <button class="modal-callback__close" type="button">Закрыть</button>
@@ -359,7 +363,6 @@
         <button class="modal-accepted__close" type="submit">Закрыть</button>
       </div>
     </section>
-    -->
   </main>
   <script src="js/accordion.js"></script>
   <script src="js/modal.js"></script>
