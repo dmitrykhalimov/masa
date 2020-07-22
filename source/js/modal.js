@@ -16,6 +16,8 @@ var formAccepted = document.querySelector('.modal-callback__acceptance-cb');
 var contactsName = document.querySelector('.contacts__input--name');
 var contactsPhone = document.querySelector('.contacts__input--phone');
 
+var journeyName = document.querySelector('.journey__input');
+
 var body = document.querySelector('body');
 
 var onCallbackOpenClick = function () {
@@ -44,14 +46,21 @@ var onCallbackSubmitClick = function (evt) {
   if (formName.validity.valid && formPhone.validity.valid && formAccepted.validity.valid) {
     closeCallback();
     openAccepted();
-    evt.preventDefault(); // здесь должен быть блок отправляющий данные по XHR
+    evt.preventDefault();
   }
 };
 
 var onContactsSubmit = function (evt) {
   if (contactsName.validity.valid && contactsPhone.validity.valid) {
     openAccepted();
-    evt.preventDefault(); // здесь должен быть блок отправляющий данные по XHR
+    evt.preventDefault();
+  }
+};
+
+var onJourneySubmit = function (evt) {
+  if (journeyName.validity.valid) {
+    openAccepted();
+    evt.preventDefault();
   }
 };
 
@@ -73,16 +82,12 @@ var openCallback = function () {
   body.style.overflow = 'hidden';
   callbackModal.classList.remove('visually-hidden');
   document.addEventListener('keydown', onCallbackEsc);
-
-  // document.querySelector('body').addEventListener('click', onOverlayClick(event));
 };
 
 var closeCallback = function () {
   body.style.overflow = 'visible';
   callbackModal.classList.add('visually-hidden');
   document.removeEventListener('keydown', onCallbackEsc);
-
-  // document.querySelector('body').removeEventListener('click', onOverlayClick);
 };
 
 var openAccepted = function () {
@@ -112,6 +117,5 @@ acceptedSubmitButton.addEventListener('click', onAcceptedSubmitClick);
 var contactsButton = document.querySelector('.contacts__button');
 var journeyButton = document.querySelector('.journey__button');
 
-journeyButton.addEventListener('click', onContactsSubmit);
-
 contactsButton.addEventListener('click', onContactsSubmit);
+journeyButton.addEventListener('click', onJourneySubmit);

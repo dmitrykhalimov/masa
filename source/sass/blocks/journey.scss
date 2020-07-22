@@ -19,6 +19,7 @@
 }
 
 .journey__container {
+  position: relative;
   padding-left: 210px;
 }
 
@@ -92,8 +93,27 @@
 .journey__phone-error {
   position: absolute;
 
+  position: absolute;
+  bottom: -20px;
+  left: 220px;
+
   display: none;
+
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+
+  font-size: 13px;
+  line-height: 150%;
+
+  color: $red;
+  opacity: 0.75;
 }
+
+.journey__input:focus:invalid + .journey__phone-error {
+  display: block;
+}
+
 
 @media (max-width: 1023px) {
   .journey {
