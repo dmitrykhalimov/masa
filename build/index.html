@@ -36,6 +36,20 @@
     </section>
     <section class="programs">
       <h2 class="programs__heading">Программы</h2>
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="scroll">
+          <a href="http://iamsteve.me">Logo</a>
+          <nav>
+            <a href="http://iamsteve.me/blog">Blog</a>
+            <a href="http://iamsteve.me/portfolio">Portfolio</a>
+            <a href="http://iamsteve.me/downloads">Downloads</a>
+            <a href="http://iamsteve.me/about">About</a>
+            <a href="http://iamsteve.me/contact">Contact</a>
+          </nav>
+        </div>
+
+      <!--
       <ul class="programs__list">
         <li class="programs__item">
           <input class="programs__radio visually-hidden" type="radio" id="program-1" name="programs-group">
@@ -47,7 +61,7 @@
           </section>
         </li>
         <li class="programs__item">
-          <input class="programs__radio visually-hidden" type="radio" id="program-2" name="programs-group" checked="">
+          <input class="programs__radio visually-hidden" type="radio" id="program-2" name="programs-group" checked>
           <label class="programs__label programs__label--academic" for="program-2">Академические</label>
           <section class="programs__content">
             <h3 class="programs__name">Академические</h3>
@@ -90,12 +104,12 @@
         <p class="journey__text">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
         <form class="journey__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="journey-phone">Телефон</label>
-          <input class="journey__input" type="tel" id="journey-phone" name="journey-phone" placeholder="Телефон" required="">
+          <input class="journey__input" type="tel" id="journey-phone" name="journey-phone" placeholder="Телефон" required>
           <span class="journey__phone-error">Ошибка: неверный формат</span>
           <button class="journey__button" type="submit">Перезвоните мне</button>
         </form>
       </div>
-    </section>
+    </section> -->
 
     <section class="howto">
       <h2 class="howto__heading">Как поехать</h2>
@@ -370,7 +384,7 @@
           (max-width: 767px) 320px,
           768px" src="img/contatcs-map-desktop@1x.png" width="702" height="448" alt="Карта проезда">
       </div>
-      
+      </section></div>
       <div class="contacts__callback">
         <div class="contacts__questions">
           <b class="contacts__bold-text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</b>
@@ -438,6 +452,30 @@
   <script src="js/modal.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/reviews.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+})
+  </script>
 </body>
 
 </html>

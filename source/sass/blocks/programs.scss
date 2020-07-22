@@ -16,6 +16,15 @@
   background-position-x: right;
 }
 
+.scroll {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+
+
 .programs__list {
   @include list-reset;
 

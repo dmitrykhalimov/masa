@@ -2177,6 +2177,12 @@ input[type="radio"].visually-hidden {
       background-image: url("../img/bg-programs-desktop@2x.png");
       background-size: 680px auto; } }
 
+.scroll {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
+
 .programs__list {
   margin: 0;
   padding: 0;
