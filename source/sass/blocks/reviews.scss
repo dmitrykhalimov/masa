@@ -3,6 +3,8 @@
   background: url("../img/bg-reviews-watercolor-desktop@1x.png") right 0 no-repeat,
     url("../img/bg-reviews-sketch-desktop@1x.png") right 52px no-repeat;
   background-size: 92.16%, 38.28%;
+
+  min-height: 525px;
 }
 
 .reviews__heading {
@@ -90,6 +92,8 @@
   @include text-big;
   color: black;
   opacity: 0.74;
+
+
 }
 
 .reviews__expand {
@@ -153,14 +157,26 @@
 }
 
 @media (max-width: 1023px) {
+  .reviews__list {
+    margin-left: 10px;
+    width: 90%;
+  }
+
   .reviews__socials {
     bottom: -50px;
-    right: 20px;
+    right: 100px;
+  }
+  .reviews__item img {
+    width: 300px;
   }
 
   .reviews__slider {
     bottom: -50px;
-    left: 36.7%;
+    left: 350px;
+  }
+
+  .reviews__text {
+    font-size: 15px;
   }
 }
 
@@ -200,9 +216,12 @@
 
   .reviews__item {
     @include list-reset;
-    display: block;
 
     width: 100%;
+  }
+
+  .reviews__item--active {
+    display: block;
   }
 
   .reviews__item img {
@@ -251,5 +270,9 @@
 
   .reviews__socials {
     left: 3%;
+  }
+
+  .reviews__slider {
+    top: 38%;
   }
 }
