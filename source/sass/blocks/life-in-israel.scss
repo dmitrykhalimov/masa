@@ -23,7 +23,7 @@
 
   padding: 0;
   margin: 0 auto;
-  margin-top: 22px;
+  margin-top: 24px;
 
   text-align: right;
   font-family: "Fira Sans", "Arial", sans-serif;
@@ -126,6 +126,11 @@
 @media (max-width: 1023px) {
   .life-in-israel__slide-text {
     font-size: 16px;
+  }
+
+  .life-in-israel__text {
+    padding-right: 0;
+    text-align: center;
   }
 }
 

@@ -114,10 +114,30 @@
   line-height: 25px;
 }
 
+@media (max-width: 1024px) {
+  .questions__heading {
+    width: 30%;
+  }
+
+  .questions__question {
+    font-size: 16px;
+  }
+
+  .questions__answer {
+    font-size: 14px;
+  }
+
+  .questions__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
 @media (max-width: 767px) {
   .questions {
     background: url("../img/bg-questions-bag@1x.png") -10px 500px no-repeat;
     padding-left: 0;
+    padding-bottom: 35px;
   }
 
   .questions__heading {
@@ -126,6 +146,7 @@
     padding: 0;
 
     text-align: center;
+    width: 100%;
   }
 
   .questions__list {
@@ -147,8 +168,8 @@
     width: 100%;
   }
 
-  .questions__item--active .questions__item {
-    padding-bottom: 0;
+  .questions__item--active {
+    padding-bottom: 6px;
   }
 
   .questions__number {
