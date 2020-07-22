@@ -2165,6 +2165,7 @@ input[type="radio"].visually-hidden {
     top: 165%; } }
 
 .programs {
+  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-top: 20px;
@@ -2176,12 +2177,6 @@ input[type="radio"].visually-hidden {
     .programs {
       background-image: url("../img/bg-programs-desktop@2x.png");
       background-size: 680px auto; } }
-
-.scroll {
-  white-space: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar; }
 
 .programs__list {
   margin: 0;
@@ -2234,9 +2229,12 @@ input[type="radio"].visually-hidden {
 
 .programs__content {
   position: absolute;
-  top: -12px;
-  left: 292px;
+  top: 157px;
+  left: 501px;
   display: none; }
+
+.programs__content--active {
+  display: block; }
 
 .programs__name {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -2346,11 +2344,16 @@ input[type="radio"].visually-hidden {
   .programs {
     padding-left: 50px; }
   .programs__text {
-    width: 80%; } }
+    width: 80%; }
+  .programs__content {
+    position: absolute;
+    top: 157px;
+    left: 301px; } }
 
 @media (max-width: 767px) {
-  .programs::-webkit-scrollbar {
-    display: none; }
+  /*.programs::-webkit-scrollbar {
+    display: none;
+  } */
   .programs__heading {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
@@ -2374,7 +2377,10 @@ input[type="radio"].visually-hidden {
     width: 100%;
     min-height: 580px;
     overflow-x: hidden;
-    overflow-y: visible; } }
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+    /* [3] */
+    -ms-overflow-style: -ms-autohiding-scrollbar; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .programs {
       background-image: url("../img/bg-programs-mobile@2x.png");
@@ -2385,14 +2391,18 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    outline: 4px solid red;
-    position: static;
+    position: relative;
     top: 0;
     bottom: 0;
     left: 0;
     right: 20px;
-    overflow-x: scroll;
-    overflow-y: visible; }
+    overflow-x: auto;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+    /* [3] */
+    -ms-overflow-style: -ms-autohiding-scrollbar; }
+  .programs__list::-webkit-scrollbar {
+    display: none; }
   .programs__text {
     font-family: "Fira Sans", "Arial", sans-serif;
     font-style: normal;

@@ -1,5 +1,6 @@
 .programs {
   //@include outline;
+  position: relative;
   box-sizing: border-box;
 
   padding-top: 20px;
@@ -15,15 +16,6 @@
 
   background-position-x: right;
 }
-
-.scroll {
-  white-space: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-}
-
-
 
 .programs__list {
   @include list-reset;
@@ -76,10 +68,14 @@
 
 .programs__content {
   position: absolute;
-  top: -12px;
-  left: 292px;
+  top: 157px;
+  left: 501px;
 
   display: none;
+}
+
+.programs__content--active {
+  display: block;
 }
 
 .programs__name {
@@ -222,12 +218,19 @@
   .programs__text {
     width: 80%;
   }
+
+  .programs__content {
+    position: absolute;
+    top: 157px;
+    left: 301px;
+  }
+
 }
 
 @media (max-width: 767px) {
-  .programs::-webkit-scrollbar {
+  /*.programs::-webkit-scrollbar {
     display: none;
-  }
+  } */
 
   .programs__heading {
     @include heading-h2-mobile;
@@ -258,20 +261,30 @@
 
     overflow-x: hidden;
     overflow-y: visible;
+
+    -webkit-overflow-scrolling: touch; /* [3] */
+    -ms-overflow-style: -ms-autohiding-scrollbar;
   }
 
   .programs__list {
     display: flex;
 
-    @include outline;
-    position: static;
+    //@include outline;
+    position: relative;
     top: 0;
     bottom: 0;
     left: 0;
     right: 20px;
 
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: visible;
+
+    -webkit-overflow-scrolling: touch; /* [3] */
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+  .programs__list::-webkit-scrollbar {
+    display: none;
   }
 
   .programs__text {
