@@ -38,12 +38,12 @@
 }
 
 .page-footer__social-item {
-  fill: #d6d6d6;
+  --circle: #d6d6d6;
 }
 
 
 .page-footer__social-item:hover {
-  fill: $gray;
+  fill: #ebebeb;
 }
 
 @media (max-width: 767px) {

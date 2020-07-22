@@ -593,10 +593,7 @@ input[type="radio"].visually-hidden {
   display: block; }
 
 .contacts__item {
-  fill: #d6d6d6; }
-
-.contacts__item:hover {
-  fill: #ebebeb; }
+  --circle: #d6d6d6; }
 
 .contacts__text-container {
   margin-top: 41px;
@@ -705,6 +702,9 @@ input[type="radio"].visually-hidden {
     outline: none;
     border-color: #ff0000; }
 
+.contacts__input--phone:focus:invalid + .contacts__phone-error {
+  display: block; }
+
 .contacts__button {
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
@@ -728,10 +728,13 @@ input[type="radio"].visually-hidden {
     outline: none;
     background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%); }
 
+.contacts__form {
+  position: relative; }
+
 .contacts__phone-error {
   position: absolute;
-  bottom: 160px;
-  left: 90px;
+  bottom: 30px;
+  right: 35%;
   display: none;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
@@ -1932,7 +1935,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.5; }
 
 .page-footer__social-item {
-  fill: #d6d6d6; }
+  --circle: #d6d6d6; }
 
 .page-footer__social-item:hover {
   fill: #ebebeb; }
@@ -2532,7 +2535,7 @@ input[type="radio"].visually-hidden {
   margin: 0; }
 
 .reviews__social-item {
-  fill: #d6d6d6; }
+  --circle: #d6d6d6; }
 
 .reviews__social-item:hover {
   fill: #ebebeb; }
