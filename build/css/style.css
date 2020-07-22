@@ -2474,9 +2474,7 @@ input[type="radio"].visually-hidden {
   margin-left: 98px; }
 
 .reviews__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -2484,6 +2482,11 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row; }
+
+.reviews__item--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .reviews__item img {
   width: 26.5vw;

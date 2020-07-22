@@ -18,10 +18,15 @@
   margin-top: 7px;
   margin-left: 98px;
 }
+
 .reviews__item {
-  display: flex;
+  display: none;
   justify-content: flex-start;
   flex-direction: row;
+}
+
+.reviews__item--active {
+  display: flex;
 }
 
 .reviews__item img {
