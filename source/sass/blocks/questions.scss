@@ -1,15 +1,16 @@
 .questions {
-  background: url("../img/bg-questions-photo-dekstop@1x.png") right 80px no-repeat,
-    url("../img/bg-questions-bag@1x.png") 0 bottom no-repeat,
+  background: //url("../img/bg-questions-photo-dekstop@1x.png") right 80px no-repeat,
+    //url("../img/bg-questions-bag@1x.png") 0 bottom no-repeat,
     url("../../img/bg-questions-watercolor-desktop@1x.png") left top no-repeat;
-  background-size: 47.2%, auto, auto;
+  //background-size: 47.2% cover, auto, contain;
+  background-size: contain;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  /*@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../../img/bg-questions-photo-dekstop@2x.png"),
       url("../img/bg-questions-bag@2x.png"),
       url("../img/bg-questions-watercolor-desktop@2x.png");
     background-size: 47.2%, 153px, 1366px;
-  }
+  } */
 
   padding-left: 110px;
   padding-top: 80px;
@@ -135,7 +136,7 @@
 
 @media (max-width: 767px) {
   .questions {
-    background: url("../img/bg-questions-bag@1x.png") -10px 500px no-repeat;
+    background: url("../img/bg-questions-bag@1x.png") -5px 738px no-repeat;
     padding-left: 0;
     padding-bottom: 35px;
   }
