@@ -37,6 +37,15 @@
   opacity: 0.5;
 }
 
+.page-footer__social-item {
+  fill: #d6d6d6;
+}
+
+
+.page-footer__social-item:hover {
+  fill: $gray;
+}
+
 @media (max-width: 767px) {
   .page-footer__logo {
     display: block;

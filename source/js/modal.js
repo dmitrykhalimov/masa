@@ -77,6 +77,8 @@ var closeCallback = function () {
 
 var openAccepted = function () {
   body.style.overflow = 'hidden';
+  var shift = window.pageYOffset;
+  acceptedModal.style.top = shift + 'px';
   acceptedModal.classList.remove('visually-hidden');
 
   document.addEventListener('keydown', onAcceptedEsc);
@@ -96,3 +98,16 @@ callbackSubmitButton.addEventListener('click', onCallbackSubmitClick);
 
 acceptedCloseButton.addEventListener('click', onAcceptedCloseClick);
 acceptedSubmitButton.addEventListener('click', onAcceptedSubmitClick);
+
+var contactsButton = document.querySelector('.contacts__button');
+var journeyButton = document.querySelector('.journey__button');
+
+journeyButton.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  openAccepted();
+});
+
+contactsButton.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  openAccepted();
+});

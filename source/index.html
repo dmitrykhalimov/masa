@@ -31,11 +31,7 @@
           <source type="image/webp" srcset="img/about-photo-mobile@1x.webp 1x, img/about-photo-mobile@2x.webp 2x">
           <img src="./img/about-photo-dekstop@1x.png" srcset="./img/about-photo-dekstop@2x.png 2x"  width="870" height="460" alt="Видеоролик о программе">
         </picture>
-        <svg class="about__button" width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle opacity="0.32" cx="48" cy="48" r="48" fill="white"/>
-          <circle cx="48" cy="48" r="32" fill="white"/>
-          <path d="M58 47.5L43 57V38L58 47.5Z" fill="#1FC0FC"/>
-        </svg>
+        <svg class="about__button" width="96" height="96"><use xlink:href="img/sprite.svg#icon-button-play"></use></svg>
       </div>
     </section>
     <section class="programs">
@@ -247,7 +243,7 @@
             <span class="reviews__program">Арт-Тель, февраль-сентябрь 2017</span>
             <p class="reviews__text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
             <p class="reviews__text">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.</p>
-            <a class="reviews__expand">Читать подробнее</a>
+            <a href="#" class="reviews__expand">Читать подробнее</a>
           </div>
         </li>
       </ul>
@@ -257,17 +253,17 @@
         <button class="reviews__button reviews__button--next"></button>
       </div>
       <ul class="reviews__socials">
-        <li class="contact__social-item">
-          <a><img src="img/icon-fb.svg"></a>
+        <li class="reviews__social-item">
+          <a href="#"><svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-fb"></use></svg></a>
           <span class="visually-hidden">Facebook</span>
         </li>
-        <li class="contact__social-item">
-          <a><img src="img/icon-tw.svg"></a>
-          <span class="visually-hidden">Facebook</span>
+        <li class="reviews__social-item">
+          <a href="#"><svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-tw"></use></svg></a>
+          <span class="visually-hidden">Twitter</span>
         </li>
-        <li class="contact__social-item">
-          <a><img src="img/icon-in.svg"></a>
-          <span class="visually-hidden">Facebook</span>
+        <li class="reviews__social-item">
+          <a href="#"><svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-in"></use></svg></a>
+          <span class="visually-hidden">Instagram</span>
         </li>
       </ul>
     </section>
@@ -285,16 +281,16 @@
               <p class="contacts__address">Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»</p>
               <ul class="contacts__socials">
                 <li class="contacts__item">
-                  <a><img class="contacts__icon" src="img/icon-fb.svg"></a>
+                  <a href="#"><svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-fb"></use></svg></a>
                   <span class="visually-hidden">Facebook</span>
                 </li>
                 <li class="contacts__item">
-                  <a><img class="contacts__icon" src="img/icon-wa.svg"></a>
-                  <span class="visually-hidden">Facebook</span>
+                  <a href="#"><svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-wa"></use></svg></a>
+                  <span class="visually-hidden">Whatsapp</span>
                 </li>
                 <li class="contacts__item">
-                  <a><img class="contacts__icon" src="img/icon-tg.svg"></a>
-                  <span class="visually-hidden">Facebook</span>
+                  <a href="#"><svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-tg"></use></svg></a>
+                  <span class="visually-hidden">Telegram</span>
                 </li>
               </ul>
             </div>
@@ -314,31 +310,28 @@
           <label class="visually-hidden" for="phone">Телефон</label>
           <input class="contacts__input contacts__input--phone" type="tel" id="contacts__phone" name="phone" placeholder="Телефон" required>
           <span class="contacts__phone-error">Ошибка: неверный формат</span>
-          <button class="contacts__button" type="submit">Перезвоните мне</button>
-          <input class="contacts__acceptance-cb visually-hidden" type="checkbox" id="contacts__acceptance" name="acceptance" required>
-        </form>
+          <button class="contacts__button" type="submit">Перезвоните мне</button>        </form>
       </div>
     </section>
     <footer class="page-footer">
       <div class="page-footer__container">
         <picture>
             <source media="(max-width: 1024px)" srcset="img/logo-footer-mobile@1x.png">
-            <img class="page-footer__logo" src="img/logo-footer-desktop@1x.png" width="85" height="27">
+            <a><img class="page-footer__logo" src="img/logo-footer-desktop@1x.png" width="85" height="27"></a>
         </picture>
-
         <span class="page-footer__text">Copyright someDesignCompany ©2019</span>
         <ul class="page-footer__socials">
           <li class="page-footer__social-item">
-            <a><img src="img/icon-fb.svg"></a>
+            <a href="#"><svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-fb"></use></svg></a>
             <span class="visually-hidden">Facebook</span>
           </li>
           <li class="page-footer__social-item">
-            <a><img src="img/icon-tw.svg"></a>
-            <span class="visually-hidden">Facebook</span>
+            <a href="#"><svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-tw"></use></svg></a>
+            <span class="visually-hidden">Twitter</span>
           </li>
           <li class="page-footer__social-item">
-            <a><img src="img/icon-in.svg"></a>
-            <span class="visually-hidden">Facebook</span>
+            <a href="#"><svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-in"></use></svg></a>
+            <span class="visually-hidden">Instagram</span>
           </li>
         </ul>
       </div>
@@ -368,7 +361,6 @@
         <button class="modal-accepted__close" type="submit">Закрыть</button>
       </div>
     </section>
-    -->
   </main>
   <script src="js/accordion.js"></script>
   <script src="js/modal.js"></script>

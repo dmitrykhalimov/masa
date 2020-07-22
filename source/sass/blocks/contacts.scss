@@ -90,7 +90,15 @@
 
 .contacts__courator-container img {
   display: block;
+}
 
+.contacts__item {
+  fill: #d6d6d6;
+}
+
+
+.contacts__item:hover {
+  fill: $gray;
 }
 
 .contacts__text-container {

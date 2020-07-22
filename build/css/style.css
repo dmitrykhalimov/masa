@@ -411,21 +411,45 @@ input[type="radio"].visually-hidden {
 .about__button {
   position: absolute;
   top: 38.77%;
-  left: 44.5%; }
+  left: 44.5%;
+  cursor: pointer;
+  --circle: #ffffff;
+  --triangle: #1FC0FC; }
 
-.about__button:hover path {
-  fill: #63d3fd; }
+.about__button:hover {
+  --triangle: #63d3fd; }
 
-.about__button:hover circle {
-  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.05));
-          filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.05)); }
+.about__button:active {
+  --triangle: #1FC0FC;
+  --circle: #f4f4f4; }
 
-.about__button:active circle:nth-child(2) {
-  fill: #f4f4f4; }
+/*
+.about__button:nth-child(1) {
+  fill: white;
+}
+.about__button:nth-child(2) {
+  fill: white;
+}
 
-.about__button:active path {
-  fill: #1fc0fc; }
+.about__button:nth-child(4) {
+  fill: #1fc0fc;
+}
 
+.about__button:nth-child(2):hover {
+  fill: #63d3fd;
+}
+
+.about__button:nth-child(1) {
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.05));
+}
+
+.about__button:nth-child(2):active {
+  fill: #1fc0fc;
+}
+
+.about__button:active:nth-child(1) {
+  fill: #f4f4f4;
+} */
 @media (max-width: 1023px) {
   .about__video-mock {
     width: 700px; }
@@ -567,6 +591,12 @@ input[type="radio"].visually-hidden {
 
 .contacts__courator-container img {
   display: block; }
+
+.contacts__item {
+  fill: #d6d6d6; }
+
+.contacts__item:hover {
+  fill: #ebebeb; }
 
 .contacts__text-container {
   margin-top: 41px;
@@ -1894,6 +1924,12 @@ input[type="radio"].visually-hidden {
   color: #484848;
   opacity: 0.5; }
 
+.page-footer__social-item {
+  fill: #d6d6d6; }
+
+.page-footer__social-item:hover {
+  fill: #ebebeb; }
+
 @media (max-width: 767px) {
   .page-footer__logo {
     display: block;
@@ -2488,6 +2524,12 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0; }
 
+.reviews__social-item {
+  fill: #d6d6d6; }
+
+.reviews__social-item:hover {
+  fill: #ebebeb; }
+
 .reviews__text {
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
@@ -2521,7 +2563,8 @@ input[type="radio"].visually-hidden {
 .reviews__button {
   border: 0;
   width: 11px;
-  height: 18px; }
+  height: 18px;
+  cursor: pointer; }
 
 .reviews__slider {
   position: absolute;
