@@ -1,5 +1,4 @@
 .howto {
-  @include outline;
   padding-top: 62px;
 
   min-height: 59vw;
@@ -14,10 +13,10 @@
     background-image: url("../img/bg-howto-people-desktop@2x.png"),
       url("../img/bg-howto-stamp-desktop@2x.png"),
       url("../img/bg-howto-watercolor@2x.png");
-    background-size: 581px auto, 216px auto, 1366px auto;
+    //background-size: 581px auto, 216px auto, 1366px auto;
   }
 
-  @media (max-width: 1222px) {
+  @media (max-width: 1050px) {
     background-size: 38.89%, 15.81%, 80%;
   }
 }
