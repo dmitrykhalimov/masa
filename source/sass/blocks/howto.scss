@@ -1,6 +1,8 @@
 .howto {
+  @include outline;
   padding-top: 62px;
-  padding-bottom: 160px;
+
+  min-height: 59vw;
 
   background: url("../img/bg-howto-people-desktop@1x.png") 12px 31px no-repeat,
     url("../img/bg-howto-stamp-desktop@1x.png") right 240px no-repeat,

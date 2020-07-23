@@ -904,8 +904,9 @@ input[type="radio"].visually-hidden {
     width: 82.81%; } }
 
 .howto {
+  outline: 4px solid red;
   padding-top: 62px;
-  padding-bottom: 160px;
+  min-height: 59vw;
   background: url("../img/bg-howto-people-desktop@1x.png") 12px 31px no-repeat, url("../img/bg-howto-stamp-desktop@1x.png") right 240px no-repeat, url("../img/bg-howto-watercolor@1x.png") 0 -170px no-repeat;
   background-size: 42.53%, 15.81%, 100%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
