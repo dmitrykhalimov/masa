@@ -68,6 +68,10 @@
   cursor: pointer;
 }
 
+.programs__item:hover .programs__label {
+  color: #FFD701;
+}
+
 .programs__content {
   position: absolute;
   top: 157px;
@@ -181,6 +185,25 @@
   border-color: transparent transparent transparent #ffd701;
 }
 
+.programs__item:hover .programs__label--general::before {
+  background-image: url("../img/icon-about-general-yellow.png");
+}
+
+.programs__item:hover .programs__label--academic::before {
+  background-image: url("../img/icon-about-academic-yellow.png");
+}
+
+.programs__item:hover .programs__label--practice::before {
+  background-image: url("../img/icon-about-practice-yellow.png");
+}
+
+.programs__item:hover .programs__label--volunteer::before {
+  background-image: url("../img/icon-about-volunteer-yellow.png");
+}
+
+.programs__item:hover .programs__label--religion::before {
+  background-image: url("../img/icon-about-religion-yellow.png");
+}
 
 .programs__radio:checked + .programs__label--general::before {
   background-image: url("../img/icon-about-general-white.png");

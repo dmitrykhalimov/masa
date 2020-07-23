@@ -1996,6 +1996,9 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   color: #484848;
   text-decoration: none; }
+  .page-header__phone:hover,
+  .page-header__callback:hover {
+    opacity: 0.5; }
 
 .page-header__callback {
   margin: 0;
@@ -2246,6 +2249,9 @@ input[type="radio"].visually-hidden {
   opacity: 0.87;
   cursor: pointer; }
 
+.programs__item:hover .programs__label {
+  color: #FFD701; }
+
 .programs__content {
   position: absolute;
   top: 157px;
@@ -2336,6 +2342,21 @@ input[type="radio"].visually-hidden {
   border-style: solid;
   border-width: 34px 0 34px 32px;
   border-color: transparent transparent transparent #ffd701; }
+
+.programs__item:hover .programs__label--general::before {
+  background-image: url("../img/icon-about-general-yellow.png"); }
+
+.programs__item:hover .programs__label--academic::before {
+  background-image: url("../img/icon-about-academic-yellow.png"); }
+
+.programs__item:hover .programs__label--practice::before {
+  background-image: url("../img/icon-about-practice-yellow.png"); }
+
+.programs__item:hover .programs__label--volunteer::before {
+  background-image: url("../img/icon-about-volunteer-yellow.png"); }
+
+.programs__item:hover .programs__label--religion::before {
+  background-image: url("../img/icon-about-religion-yellow.png"); }
 
 .programs__radio:checked + .programs__label--general::before {
   background-image: url("../img/icon-about-general-white.png"); }

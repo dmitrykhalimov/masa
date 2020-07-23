@@ -6,6 +6,12 @@
   <meta name="description" content="Проект Маса: стажировка в Израиле">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Проект "Израиль"</title>
+  <link href="fonts/Raleway-ExtraBold.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="fonts/Montserrat-Bold.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="fonts/FiraSans-Regular.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="fonts/FiraSans-Bold.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="fonts/FiraSans-Medium.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="fonts/Raleway-Black.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -34,7 +40,7 @@
         <svg class="about__button" width="96" height="96"><use xlink:href="img/sprite.svg#icon-button-play"></use></svg>
       </div>
     </section>
-      <!--
+
     <section class="programs">
       <h2 class="programs__heading">Программы</h2>
       <ul class="programs__list">
@@ -43,11 +49,11 @@
           <label class="programs__label programs__label--general" for="program-1">Общие</label>
         </li>
         <li class="programs__item">
-          <input class="programs__radio visually-hidden" type="radio" id="program-2" name="programs-group" value="academic" checked>
+          <input class="programs__radio visually-hidden" type="radio" id="program-2" name="programs-group" value="academic" checked="">
           <label class="programs__label programs__label--academic" for="program-2">Академические</label>
         </li>
         <li class="programs__item">
-          <input class="programs__radio visually-hidden" type="radio" id="program-3" name="programs-group" value="practice" >
+          <input class="programs__radio visually-hidden" type="radio" id="program-3" name="programs-group" value="practice">
           <label class="programs__label programs__label--practice" for="program-3">Стажировки</label>
         </li>
         <li class="programs__item">
@@ -91,7 +97,7 @@
         <p class="journey__text">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
         <form class="journey__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="journey-phone">Телефон</label>
-          <input class="journey__input" type="tel" id="journey-phone" name="journey-phone" placeholder="Телефон" required>
+          <input class="journey__input" type="tel" id="journey-phone" name="journey-phone" placeholder="Телефон" required="">
           <span class="journey__phone-error">Ошибка: неверный формат</span>
           <button class="journey__button" type="submit">Перезвоните мне</button>
         </form>
@@ -121,36 +127,51 @@
       <div class="life-in-israel__slider">
         <div class="life-in-israel__slider-item life-in-israel__slider-item--excursion">
           <picture>
-            <source media="(max-width: 767px)" data-srcset="img/life-excursion-mobile@1x.png">
-            <img class="lazyload" data-src="img/life-excursion-desktop@1x.png" alt="Elva dressed as a fairy">
+            <source type="image/webp" media="(max-width: 767px)" data-srcset="img/life-excursion-mobile@1x.webp 1x, img/life-excursion-mobile@2x.webp 2x">
+            <source type="image/webp" data-srcset="img/life-excursion-desktop@1x.webp 1x, img/life-excursion-desktop@2x.webp 2x">
+
+            <source media="(max-width: 767px)" data-srcset="img/life-excursion-mobile@1x.png 1x, img/life-excursion-mobile@2x.png 2x">
+            <img class="lazyload" data-src="img/life-excursion-desktop@1x.png" data-srcset="img/life-excursion-desktop@2x.png 2x" alt="Экскурсии" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=">
           </picture>
           <div class="life-in-israel__slide-text">Экскурсии по Израилю и&nbsp;знакомство с его историей</div>
         </div>
         <div class="life-in-israel__slider-item life-in-israel__slider-item--language">
           <picture>
-            <source media="(max-width: 767px)" data-srcset="img/life-language-mobile@1x.png">
-            <img class="lazyload" data-src="img/life-language-desktop@1x.png" alt="Elva dressed as a fairy">
+            <source type="image/webp" media="(max-width: 767px)" data-srcset="img/life-language-mobile@1x.webp 1x, img/life-language-mobile@2x.webp 2x">
+            <source type="image/webp" data-srcset="img/life-language-desktop@1x.webp 1x, img/life-language-desktop@2x.webp 2x">
+
+            <source media="(max-width: 767px)" data-srcset="img/life-language-mobile@1x.png 1x, img/life-language-mobile@2x.png 2x">
+            <img class="lazyload" data-src="img/life-language-desktop@1x.png" data-srcset="img/life-language-desktop@2x.png 2x" alt="Изучение иврита" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=">
           </picture>
           <div class="life-in-israel__slide-text">Изучение иврита</div>
         </div>
         <div class="life-in-israel__slider-item life-in-israel__slider-item--skills">
           <picture>
-            <source media="(max-width: 767px)" data-srcset="img/life-skills-mobile@1x.png">
-            <img class="lazyload" data-src="img/life-skills-desktop@1x.png" alt="Elva dressed as a fairy">
+            <source type="image/webp" media="(max-width: 767px)" data-srcset="img/life-skills-mobile@1x.webp 1x, img/life-skills-mobile@2x.webp 2x">
+            <source type="image/webp" data-srcset="img/life-skills-desktop@1x.webp 1x, img/life-skills-desktop@2x.webp 2x">
+
+            <source media="(max-width: 767px)" data-srcset="img/life-skills-mobile@1x.png 1x, img/life-skills-mobile@2x.png 2x">
+            <img class="lazyload" data-src="img/life-skills-desktop@1x.png" data-srcset="img/life-skills-desktop@2x.png 2x" alt="Навыки" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=">
           </picture>
           <div class="life-in-israel__slide-text">Обучение современным навыкам и профессиям</div>
         </div>
         <div class="life-in-israel__slider-item life-in-israel__slider-item--projects">
           <picture>
-            <source media="(max-width: 767px)" data-srcset="img/life-projects-mobile@1x.png">
-            <img class="lazyload" data-src="img/life-projects-desktop@1x.png" alt="Elva dressed as a fairy">
+            <source type="image/webp" media="(max-width: 767px)" data-srcset="img/life-projects-mobile@1x.webp 1x, img/life-projects-mobile@2x.webp 2x">
+            <source type="image/webp" data-srcset="img/life-projects-desktop@1x.webp 1x, img/life-projects-desktop@2x.webp 2x">
+
+            <source media="(max-width: 767px)" data-srcset="img/life-projects-mobile@1x.png 1x, img/life-projects-mobile@2x.png 2x">
+            <img class="lazyload" data-src="img/life-projects-desktop@1x.png" data-srcset="img/life-projects-desktop@2x.png 2x" alt="Проекты" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=">
           </picture>
           <div class="life-in-israel__slide-text">Совместные творческие проекты с израильской молодёжью</div>
         </div>
         <div class="life-in-israel__slider-item life-in-israel__slider-item--leadership">
           <picture>
-            <source media="(max-width: 767px)" data-srcset="img/life-leadership-mobile@1x.png">
-            <img src="img/life-leadership-desktop@1x.png" alt="Elva dressed as a fairy">
+            <source type="image/webp" media="(max-width: 767px)" data-srcset="img/life-leadership-mobile@1x.webp 1x, img/life-leadership-mobile@2x.webp 2x">
+            <source type="image/webp" data-srcset="img/life-leadership-desktop@1x.webp 1x, img/life-leadership-desktop@2x.webp 2x">
+
+            <source media="(max-width: 767px)" data-srcset="img/life-leadership-mobile@1x.png 1x, img/life-leadership-mobile@2x.png 2x">
+            <img class="lazyload" data-src="img/life-leadership-desktop@1x.png" data-srcset="img/life-leadership-desktop@2x.png 2x" alt="Лидерство" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=">
           </picture>
           <div class="life-in-israel__slide-text">Развитие лидерства</div>
         </div>
@@ -235,8 +256,8 @@
       <ul class="reviews__list">
         <li class="reviews__item">
           <picture>
-            <source media="(min-width: 1024px)" srcset="img/reviews-photo-desktop@1x.png 1x, img/reviews-photo-desktop@1x.png 2x">
-            <img src="img/reviews-mobile@1x.png" srcset="img/reviews-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
+            <source media="(min-width: 1024px)" data-srcset="img/reviews-photo-desktop@1x.png 1x, img/reviews-photo-desktop@1x.png 2x">
+            <img class="lazyload" data-src="img/reviews-mobile@1x.png" data-srcset="img/reviews-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
           </picture>
           <div class="reviews__container">
             <b class="reviews__name">Ольга Михайлова</b>
@@ -249,8 +270,8 @@
         </li>
         <li class="reviews__item">
           <picture>
-            <source media="(min-width: 1024px)" srcset="img/reviews-photo-desktop@1x.png 1x, img/reviews-photo-desktop@1x.png 2x">
-            <img src="img/reviews-mobile@1x.png" srcset="img/reviews-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
+            <source media="(min-width: 1024px)" data-srcset="img/reviews-photo-desktop@1x.png 1x, img/reviews-photo-desktop@1x.png 2x">
+            <img class="lazyload" data-src="img/reviews-mobile@1x.png" data-srcset="img/reviews-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
           </picture>
           <div class="reviews__container">
             <b class="reviews__name">Ольга Михайлова</b>
@@ -263,8 +284,8 @@
         </li>
         <li class="reviews__item reviews__item--active">
           <picture>
-            <source media="(min-width: 1024px)" srcset="img/reviews-photo-desktop@1x.png 1x, img/reviews-photo-desktop@1x.png 2x">
-            <img src="img/reviews-mobile@1x.png" srcset="img/reviews-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
+            <source media="(min-width: 1024px)" data-srcset="img/reviews-photo-desktop@1x.png 1x, img/reviews-photo-desktop@1x.png 2x">
+            <img class="lazyload" data-src="img/reviews-mobile@1x.png" data-srcset="img/reviews-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
           </picture>
           <div class="reviews__container">
             <b class="reviews__name">Ольга Михайлова</b>
@@ -277,8 +298,8 @@
         </li>
         <li class="reviews__item">
           <picture>
-            <source media="(min-width: 1024px)" srcset="img/reviews-photo-desktop@1x.png 1x, img/reviews-photo-desktop@1x.png 2x">
-            <img src="img/reviews-mobile@1x.png" srcset="img/reviews-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
+            <source media="(min-width: 1024px)" data-srcset="img/reviews-photo-desktop@1x.png 1x, img/reviews-photo-desktop@1x.png 2x">
+            <img class="lazyload" data-src="img/reviews-mobile@1x.png" data-srcset="img/reviews-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
           </picture>
           <div class="reviews__container">
             <b class="reviews__name">Ольга Михайлова</b>
@@ -291,8 +312,8 @@
         </li>
         <li class="reviews__item">
           <picture>
-            <source media="(min-width: 1024px)" srcset="img/reviews-photo-desktop@1x.png 1x, img/reviews-photo-desktop@1x.png 2x">
-            <img src="img/reviews-mobile@1x.png" srcset="img/reviews-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
+            <source media="(min-width: 1024px)" data-srcset="img/reviews-photo-desktop@1x.png 1x, img/reviews-photo-desktop@1x.png 2x">
+            <img class="lazyload" data-src="img/reviews-mobile@1x.png" data-srcset="img/reviews-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
           </picture>
           <div class="reviews__container">
             <b class="reviews__name">Ольга Михайлова</b>
@@ -305,8 +326,8 @@
         </li>
         <li class="reviews__item">
           <picture>
-            <source media="(min-width: 1024px)" srcset="img/reviews-photo-desktop@1x.png 1x, img/reviews-photo-desktop@1x.png 2x">
-            <img src="img/reviews-mobile@1x.png" srcset="img/reviews-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
+            <source media="(min-width: 1024px)" data-srcset="img/reviews-photo-desktop@1x.png 1x, img/reviews-photo-desktop@1x.png 2x">
+            <img class="lazyload" data-src="img/reviews-mobile@1x.png" data-srcset="img/reviews-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
           </picture>
           <div class="reviews__container">
             <b class="reviews__name">Ольга Михайлова</b>
@@ -370,16 +391,13 @@
           </div>
         </div>
 
-        <img class="lazyload contacts__map"
-        data-srcset="
+        <img class="lazyload contacts__map" data-srcset="
           img/contatcs-map-desktop@1x.png 768w,
-          img/contatcs-map-mobile@1x.png 320w"
-        sizes="
+          img/contatcs-map-mobile@1x.png 320w" sizes="
           (max-width: 767px) 320px,
-          768px"
-          data-src="img/contatcs-map-desktop@1x.png" width="702" height="448" alt="Карта проезда">
+          768px" data-src="img/contatcs-map-desktop@1x.png" width="702" height="448" alt="Карта проезда">
       </div>
-      </div>
+      
       <div class="contacts__callback">
         <div class="contacts__questions">
           <b class="contacts__bold-text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</b>
@@ -387,9 +405,9 @@
         </div>
         <form class="contacts__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="name">Имя</label>
-          <input class="contacts__input contacts__input--name" type="text" id="contacts__name" name="name" placeholder="Имя" required>
+          <input class="contacts__input contacts__input--name" type="text" id="contacts__name" name="name" placeholder="Имя" required="">
           <label class="visually-hidden" for="phone">Телефон</label>
-          <input class="contacts__input contacts__input--phone" type="tel" id="contacts__phone" name="phone" placeholder="Телефон" required>
+          <input class="contacts__input contacts__input--phone" type="tel" id="contacts__phone" name="phone" placeholder="Телефон" required="">
           <span class="contacts__phone-error">Ошибка: неверный формат</span>
           <button class="contacts__button" type="submit">Перезвоните мне</button>        </form>
       </div>
@@ -399,9 +417,9 @@
         <a href="#">
           <picture>
             <source media="(max-width: 1024px)" srcset="img/logo-footer-mobile@1x.png">
-            <img class="page-footer__logo" src="img/logo-footer-desktop@1x.png" width="85" height="27" alt="Логотип компании Masa"></a>
-          </picture>
-        </a>
+            <img class="page-footer__logo" src="img/logo-footer-desktop@1x.png" width="85" height="27" alt="Логотип компании Masa"></picture></a>
+          
+        
         <span class="page-footer__text">Copyright someDesignCompany ©2019</span>
         <ul class="page-footer__socials">
           <li class="page-footer__social-item">
@@ -425,12 +443,12 @@
         <p class="modal-callback__text">Оставьте ваши контактные данные, мы&nbsp;свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
         <form class="modal-callback__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="name">Имя</label>
-          <input class="modal-callback__input modal-callback__input--name" type="text" id="name" name="name" placeholder="Имя" required>
+          <input class="modal-callback__input modal-callback__input--name" type="text" id="name" name="name" placeholder="Имя" required="">
           <label class="visually-hidden" for="phone">Телефон</label>
-          <input class="modal-callback__input modal-callback__input--phone" type="tel" id="phone" name="phone" placeholder="Телефон" required>
+          <input class="modal-callback__input modal-callback__input--phone" type="tel" id="phone" name="phone" placeholder="Телефон" required="">
           <span class="modal-callback__phone-error">Ошибка: неверный формат</span>
           <button class="modal-callback__button" type="submit">Перезвоните мне</button>
-          <input class="modal-callback__acceptance-cb visually-hidden" type="checkbox" id="acceptance" name="acceptance" required>
+          <input class="modal-callback__acceptance-cb visually-hidden" type="checkbox" id="acceptance" name="acceptance" required="">
           <label class="modal-callback__acceptance" for="acceptance">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
         </form>
         <button class="modal-callback__close" type="button">Закрыть</button>
@@ -451,7 +469,7 @@
   <script src="js/slider.js"></script>
   <script src="js/reviews.js"></script>
   <script src="js/tabs.js"></script>
-  <script src="js/lazysizes.min.js"></script>-->
-</main></body>
+  <script src="js/lazysizes.min.js"></script>
+</body>
 
 </html>

@@ -29,6 +29,10 @@
   color: $black;
 
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .page-header__callback {
