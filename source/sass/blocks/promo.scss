@@ -1,4 +1,5 @@
 .promo {
+  @include outline;
   position: relative;
 
   //padding-bottom: 21.83%;
@@ -7,7 +8,9 @@
   //@include outline(red);
   width: 100%;
 
-  background: url("../img/bg-main-city-desktop@1x.png") center 0 no-repeat;
+  background: url("../../img/bg-promo-heading@1x.png") 0 0 no-repeat,
+  url("../img/bg-main-city-desktop@1x.png") center 0 no-repeat;
+
   background-size: 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -33,7 +36,7 @@
     background-image: url("../img/bg-main-girl-desktop@2x.png");
   }
 }
-
+/*
 .promo__decorative-text {
   display: block;
 
@@ -58,7 +61,8 @@
   background-clip: text;
 
   background-image: url("../img/bg-main-overlay-desktop@1x.jpg");
-
+  background-repeat: no-repeat;
+/*
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-main-overlay-desktop@2x.jpg");
     background-size: 1001px auto;
@@ -68,7 +72,7 @@
   background-position-y: 31%;
 
   color: transparent;
-}
+}*/
 
 
 .promo__heading {

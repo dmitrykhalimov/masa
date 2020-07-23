@@ -2060,10 +2060,11 @@ input[type="radio"].visually-hidden {
     padding-top: 32px; } }
 
 .promo {
+  outline: 4px solid red;
   position: relative;
   min-height: 65.5vw;
   width: 100%;
-  background: url("../img/bg-main-city-desktop@1x.png") center 0 no-repeat;
+  background: url("../../img/bg-promo-heading@1x.png") 0 0 no-repeat, url("../img/bg-main-city-desktop@1x.png") center 0 no-repeat;
   background-size: 100%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .promo {
@@ -2083,31 +2084,43 @@ input[type="radio"].visually-hidden {
     .promo::before {
       background-image: url("../img/bg-main-girl-desktop@2x.png"); } }
 
+/*
 .promo__decorative-text {
   display: block;
+
   padding-top: 160px;
   padding-left: 10px;
+
   height: 25vw;
+
   font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 900;
+
   font-size: 14.65vw;
   line-height: 170%;
   letter-spacing: 0.055em;
+
   overflow: hidden;
+
   text-transform: uppercase;
   text-align: center;
-  -webkit-background-clip: text;
-          background-clip: text;
+
+  background-clip: text;
+
   background-image: url("../img/bg-main-overlay-desktop@1x.jpg");
+  background-repeat: no-repeat;
+/*
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-main-overlay-desktop@2x.jpg");
+    background-size: 1001px auto;
+  }
+
   background-position-x: 51%;
   background-position-y: 31%;
-  color: transparent; }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .promo__decorative-text {
-      background-image: url("../img/bg-main-overlay-desktop@2x.jpg");
-      background-size: 1001px auto; } }
 
+  color: transparent;
+}*/
 .promo__heading {
   position: relative;
   margin: 0 auto;
