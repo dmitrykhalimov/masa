@@ -562,7 +562,10 @@ input[type="radio"].visually-hidden {
 
 .contacts__city {
   position: relative;
-  font-variant: small-caps; }
+  font-variant: small-caps;
+  background: none;
+  border: 0;
+  cursor: pointer; }
 
 .contacts__city::before {
   content: "";
@@ -1991,7 +1994,8 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
-  color: #484848; }
+  color: #484848;
+  text-decoration: none; }
 
 .page-header__callback {
   margin: 0;
@@ -2239,7 +2243,8 @@ input[type="radio"].visually-hidden {
   font-size: 15px;
   line-height: 18px;
   color: #484848;
-  opacity: 0.87; }
+  opacity: 0.87;
+  cursor: pointer; }
 
 .programs__content {
   position: absolute;

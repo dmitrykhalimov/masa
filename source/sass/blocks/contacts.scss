@@ -62,6 +62,10 @@
 .contacts__city {
   position: relative;
   font-variant: small-caps;
+  background: none;
+  border: 0;
+
+  cursor: pointer;
 }
 
 .contacts__city::before {
@@ -273,7 +277,6 @@
 .contacts__input--phone:focus:invalid + .contacts__phone-error {
   display: block;
 }
-
 
 @media (max-width: 1023px) {
   .contacts {
