@@ -6,7 +6,7 @@
   <meta name="description" content="Проект Маса: стажировка в Израиле">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Проект "Израиль"</title>
-  <link rel="stylesheet" href="css/style.min.css?ver=3">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="page-header">
@@ -34,6 +34,7 @@
         <svg class="about__button" width="96" height="96"><use xlink:href="img/sprite.svg#icon-button-play"></use></svg>
       </div>
     </section>
+      <!--
     <section class="programs">
       <h2 class="programs__heading">Программы</h2>
       <ul class="programs__list">
@@ -115,46 +116,42 @@
     </section>
 
     <section class="life-in-israel">
-
-      <h2 class="life-in-israel__heading">Жизнь в<span class="life-in-israel__nbsp">&nbsp;;</span>Израиле</h2>
-
+      <h2 class="life-in-israel__heading">Жизнь в<span class="life-in-israel__nbsp">&nbsp;</span>Израиле</h2>
       <p class="life-in-israel__text">Помимо учёбы, в рамках программе у вас будет возможность путешествовать по стране и&nbsp;познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.</p>
       <div class="life-in-israel__slider">
         <div class="life-in-israel__slider-item life-in-israel__slider-item--excursion">
-                      <img srcset="img/life-excursion-mobile@1x.png 288w,
-                         img/life-excursion-desktop@1x.png 482w"
-                  sizes="(max-width: 767px) 288px"
-                  src="img/life-excursion-desktop@1x.png" alt="Elva dressed as a fairy">
+          <picture>
+            <source media="(max-width: 767px)" data-srcset="img/life-excursion-mobile@1x.png">
+            <img class="lazyload" data-src="img/life-excursion-desktop@1x.png" alt="Elva dressed as a fairy">
+          </picture>
           <div class="life-in-israel__slide-text">Экскурсии по Израилю и&nbsp;знакомство с его историей</div>
         </div>
         <div class="life-in-israel__slider-item life-in-israel__slider-item--language">
-          <img srcset="img/life-language-mobile@1x.png 288w,
-          img/life-language-desktop@1x.png 482w"
-   sizes="(max-width: 767px) 288px"
-   src="img/life-language-desktop@1x.png" alt="Elva dressed as a fairy">
+          <picture>
+            <source media="(max-width: 767px)" data-srcset="img/life-language-mobile@1x.png">
+            <img class="lazyload" data-src="img/life-language-desktop@1x.png" alt="Elva dressed as a fairy">
+          </picture>
           <div class="life-in-israel__slide-text">Изучение иврита</div>
         </div>
-
         <div class="life-in-israel__slider-item life-in-israel__slider-item--skills">
-          <img srcset="img/life-skills-mobile@1x.png 288w,
-          img/life-skills-desktop@1x.png 482w"
-   sizes="(max-width: 767px) 288px"
-   src="img/life-skills-desktop@1x.png" alt="Elva dressed as a fairy">
+          <picture>
+            <source media="(max-width: 767px)" data-srcset="img/life-skills-mobile@1x.png">
+            <img class="lazyload" data-src="img/life-skills-desktop@1x.png" alt="Elva dressed as a fairy">
+          </picture>
           <div class="life-in-israel__slide-text">Обучение современным навыкам и профессиям</div>
         </div>
-
         <div class="life-in-israel__slider-item life-in-israel__slider-item--projects">
-          <img srcset="img/life-projects-mobile@1x.png 288w,
-          img/life-projects-desktop@1x.png 482w"
-   sizes="(max-width: 767px) 288px"
-   src="img/life-projects-desktop@1x.png" alt="Elva dressed as a fairy">
+          <picture>
+            <source media="(max-width: 767px)" data-srcset="img/life-projects-mobile@1x.png">
+            <img class="lazyload" data-src="img/life-projects-desktop@1x.png" alt="Elva dressed as a fairy">
+          </picture>
           <div class="life-in-israel__slide-text">Совместные творческие проекты с израильской молодёжью</div>
         </div>
         <div class="life-in-israel__slider-item life-in-israel__slider-item--leadership">
-          <img srcset="img/life-leadership-mobile@1x.png 288w,
-          img/life-leadership-desktop@1x.png 482w"
-   sizes="(max-width: 767px) 288px"
-   src="img/life-leadership-desktop@1x.png" alt="Elva dressed as a fairy">
+          <picture>
+            <source media="(max-width: 767px)" data-srcset="img/life-leadership-mobile@1x.png">
+            <img src="img/life-leadership-desktop@1x.png" alt="Elva dressed as a fairy">
+          </picture>
           <div class="life-in-israel__slide-text">Развитие лидерства</div>
         </div>
       </div>
@@ -448,12 +445,13 @@
       </div>
     </section>
   </main>
+
   <script src="js/accordion.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/reviews.js"></script>
   <script src="js/tabs.js"></script>
-  <script src="js/lazysizes.min.js"></script>
+  <script src="js/lazysizes.min.js"></script>-->
 </body>
 
 </html>
