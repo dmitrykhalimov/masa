@@ -9,7 +9,8 @@
   }
 
   padding-top: 87px;
-  padding-bottom: 254px;
+  height: 46.6vw;
+  @include outline;
 }
 
 .masa-israel__heading {
@@ -130,6 +131,8 @@
     margin-top: 74px;
     padding-top: 0;
     padding-bottom: 0;
+
+    min-height: 123.8vw;
 
     background: url("../img/bg-masa-mobile@1x.png") 0 45px no-repeat;
     background-size: 99.9% auto;

@@ -66,6 +66,7 @@
 
 .reviews__title {
   display: inline-block;
+  vertical-align: middle;
   margin-top: 10px;
   margin-right: 5px;
   margin-bottom: 14px;
@@ -266,6 +267,7 @@
     display: inline-block;
     @include list-reset;
     margin-bottom: 8px;
+    vertical-align: middle;
   }
 
   .reviews__text {
@@ -276,6 +278,7 @@
   .reviews__expand {
     display: inline-block;
     margin-top: 8px;
+    vertical-align: middle;
   }
 
   .reviews__slider {

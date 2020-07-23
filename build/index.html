@@ -33,8 +33,14 @@
       <p class="about__text">«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле. В&nbsp;течение освоения программ предусмотрен грант от 4200 до 8400$.</p>
       <div class="about__video-mock">
         <picture class="about__video-picture">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/about-photo-dekstop@1x.webp 1x, img/about-photo-desktop@2x.webp 2x">
-          <source type="image/webp" srcset="img/about-photo-mobile@1x.webp 1x, img/about-photo-mobile@2x.webp 2x">
+          <!-- 1х: 320px; 2x: 640px -->
+          <source media="(max-width: 767px)" type="image/webp" srcset="img/about-photo-mobile@1x.webp 1x, img/about-photo-mobile@2x.webp 2x">
+          <!-- 1х: 870px; 2x: 1740px -->
+          <source type="image/webp" srcset="img/about-photo-dekstop@1x.webp 1x, img/about-photo-desktop@2x.webp 2x">
+
+          <!-- 1х: 320px; 2x: 640px -->
+          <source media="(max-width: 767px)" data-srcset="img/life-excursion-mobile@1x.png 1x, img/life-excursion-mobile@2x.png 2x">
+          <!-- 1х: 870px; 2x: 1740px -->
           <img src="./img/about-photo-dekstop@1x.png" srcset="./img/about-photo-dekstop@2x.png 2x" width="870" height="460" alt="Видеоролик о программе">
         </picture>
         <svg class="about__button" width="96" height="96"><use xlink:href="img/sprite.svg#icon-button-play"></use></svg>
@@ -130,8 +136,10 @@
             <source type="image/webp" media="(max-width: 767px)" data-srcset="img/life-excursion-mobile@1x.webp 1x, img/life-excursion-mobile@2x.webp 2x">
             <source type="image/webp" data-srcset="img/life-excursion-desktop@1x.webp 1x, img/life-excursion-desktop@2x.webp 2x">
 
+            <!--  1x: 288px; 2х: 576px -->
             <source media="(max-width: 767px)" data-srcset="img/life-excursion-mobile@1x.png 1x, img/life-excursion-mobile@2x.png 2x">
-            <img class="lazyload" data-src="img/life-excursion-desktop@1x.png" data-srcset="img/life-excursion-desktop@2x.png 2x" alt="Экскурсии" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=">
+            <!--  1x: 482px; 2х: 964px -->
+            <img class="lazyload" data-src="img/life-excursion-desktop@1x.png" data-srcset="img/life-excursion-desktop@2x.png 2x" alt="Экскурсии" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" width="472" height="732">
           </picture>
           <div class="life-in-israel__slide-text">Экскурсии по Израилю и&nbsp;знакомство с его историей</div>
         </div>
@@ -140,8 +148,10 @@
             <source type="image/webp" media="(max-width: 767px)" data-srcset="img/life-language-mobile@1x.webp 1x, img/life-language-mobile@2x.webp 2x">
             <source type="image/webp" data-srcset="img/life-language-desktop@1x.webp 1x, img/life-language-desktop@2x.webp 2x">
 
+            <!--  1x: 288px; 2х: 576px -->
             <source media="(max-width: 767px)" data-srcset="img/life-language-mobile@1x.png 1x, img/life-language-mobile@2x.png 2x">
-            <img class="lazyload" data-src="img/life-language-desktop@1x.png" data-srcset="img/life-language-desktop@2x.png 2x" alt="Изучение иврита" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=">
+            <!--  1x: 211px; 2х: 422px -->
+            <img class="lazyload" data-src="img/life-language-desktop@1x.png" data-srcset="img/life-language-desktop@2x.png 2x" alt="Изучение иврита" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" width="211" height="318">
           </picture>
           <div class="life-in-israel__slide-text">Изучение иврита</div>
         </div>
@@ -150,8 +160,10 @@
             <source type="image/webp" media="(max-width: 767px)" data-srcset="img/life-skills-mobile@1x.webp 1x, img/life-skills-mobile@2x.webp 2x">
             <source type="image/webp" data-srcset="img/life-skills-desktop@1x.webp 1x, img/life-skills-desktop@2x.webp 2x">
 
+            <!--  1x: 288px; 2х: 576px -->
             <source media="(max-width: 767px)" data-srcset="img/life-skills-mobile@1x.png 1x, img/life-skills-mobile@2x.png 2x">
-            <img class="lazyload" data-src="img/life-skills-desktop@1x.png" data-srcset="img/life-skills-desktop@2x.png 2x" alt="Навыки" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=">
+            <!--  1x: 411px; 2х: 822px -->
+            <img class="lazyload" data-src="img/life-skills-desktop@1x.png" data-srcset="img/life-skills-desktop@2x.png 2x" alt="Навыки" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" width="411" height="318">
           </picture>
           <div class="life-in-israel__slide-text">Обучение современным навыкам и профессиям</div>
         </div>
@@ -160,8 +172,10 @@
             <source type="image/webp" media="(max-width: 767px)" data-srcset="img/life-projects-mobile@1x.webp 1x, img/life-projects-mobile@2x.webp 2x">
             <source type="image/webp" data-srcset="img/life-projects-desktop@1x.webp 1x, img/life-projects-desktop@2x.webp 2x">
 
+            <!--  1x: 288px; 2х: 576px -->
             <source media="(max-width: 767px)" data-srcset="img/life-projects-mobile@1x.png 1x, img/life-projects-mobile@2x.png 2x">
-            <img class="lazyload" data-src="img/life-projects-desktop@1x.png" data-srcset="img/life-projects-desktop@2x.png 2x" alt="Проекты" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=">
+            <!--  1x: 411px; 2х: 822px -->
+            <img class="lazyload" data-src="img/life-projects-desktop@1x.png" data-srcset="img/life-projects-desktop@2x.png 2x" alt="Проекты" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" width="411" height="318">
           </picture>
           <div class="life-in-israel__slide-text">Совместные творческие проекты с израильской молодёжью</div>
         </div>
@@ -170,8 +184,10 @@
             <source type="image/webp" media="(max-width: 767px)" data-srcset="img/life-leadership-mobile@1x.webp 1x, img/life-leadership-mobile@2x.webp 2x">
             <source type="image/webp" data-srcset="img/life-leadership-desktop@1x.webp 1x, img/life-leadership-desktop@2x.webp 2x">
 
+            <!--  1x: 288px; 2х: 576x -->
             <source media="(max-width: 767px)" data-srcset="img/life-leadership-mobile@1x.png 1x, img/life-leadership-mobile@2x.png 2x">
-            <img class="lazyload" data-src="img/life-leadership-desktop@1x.png" data-srcset="img/life-leadership-desktop@2x.png 2x" alt="Лидерство" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=">
+            <!--  1x: 214px; 2х: 428x -->
+            <img class="lazyload" data-src="img/life-leadership-desktop@1x.png" data-srcset="img/life-leadership-desktop@2x.png 2x" alt="Лидерство" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" width="214" height="318">
           </picture>
           <div class="life-in-israel__slide-text">Развитие лидерства</div>
         </div>
@@ -256,8 +272,13 @@
       <ul class="reviews__list">
         <li class="reviews__item">
           <picture>
+            <source type="image/webp" media="(min-width: 1024px)" data-srcset="img/reviews-photo-desktop@1x.webp 1x, img/reviews-photo-desktop@2x.webp 2x">
+            <source type="image/webp" data-srcset="img/reviews-photo-mobile@1x.webp 1x, img/reviews-photo-mobile@2x.webp 2x">
+
+            <!--  1x: 240px; 2х: 480x -->
             <source media="(min-width: 1024px)" data-srcset="img/reviews-photo-desktop@1x.png 1x, img/reviews-photo-desktop@1x.png 2x">
-            <img class="lazyload" data-src="img/reviews-mobile@1x.png" data-srcset="img/reviews-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
+            <!--  1x: 364px; 2х: 728x -->
+            <img class="lazyload" data-src="img/reviews-photo-mobile@1x.png" data-srcset="img/reviews-photo-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
           </picture>
           <div class="reviews__container">
             <b class="reviews__name">Ольга Михайлова</b>
@@ -270,8 +291,13 @@
         </li>
         <li class="reviews__item">
           <picture>
+            <source type="image/webp" media="(min-width: 1024px)" data-srcset="img/reviews-photo-desktop@1x.webp 1x, img/reviews-photo-desktop@2x.webp 2x">
+            <source type="image/webp" data-srcset="img/reviews-photo-mobile@1x.webp 1x, img/reviews-photo-mobile@2x.webp 2x">
+
+            <!--  1x: 240px; 2х: 480x -->
             <source media="(min-width: 1024px)" data-srcset="img/reviews-photo-desktop@1x.png 1x, img/reviews-photo-desktop@1x.png 2x">
-            <img class="lazyload" data-src="img/reviews-mobile@1x.png" data-srcset="img/reviews-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
+            <!--  1x: 364px; 2х: 728x -->
+            <img class="lazyload" data-src="img/reviews-photo-mobile@1x.png" data-srcset="img/reviews-photo-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
           </picture>
           <div class="reviews__container">
             <b class="reviews__name">Ольга Михайлова</b>
@@ -284,8 +310,13 @@
         </li>
         <li class="reviews__item reviews__item--active">
           <picture>
+            <source type="image/webp" media="(min-width: 1024px)" data-srcset="img/reviews-photo-desktop@1x.webp 1x, img/reviews-photo-desktop@2x.webp 2x">
+            <source type="image/webp" data-srcset="img/reviews-photo-mobile@1x.webp 1x, img/reviews-photo-mobile@2x.webp 2x">
+
+            <!--  1x: 240px; 2х: 480x -->
             <source media="(min-width: 1024px)" data-srcset="img/reviews-photo-desktop@1x.png 1x, img/reviews-photo-desktop@1x.png 2x">
-            <img class="lazyload" data-src="img/reviews-mobile@1x.png" data-srcset="img/reviews-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
+            <!--  1x: 364px; 2х: 728x -->
+            <img class="lazyload" data-src="img/reviews-photo-mobile@1x.png" data-srcset="img/reviews-photo-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
           </picture>
           <div class="reviews__container">
             <b class="reviews__name">Ольга Михайлова</b>
@@ -298,8 +329,13 @@
         </li>
         <li class="reviews__item">
           <picture>
+            <source type="image/webp" media="(min-width: 1024px)" data-srcset="img/reviews-photo-desktop@1x.webp 1x, img/reviews-photo-desktop@2x.webp 2x">
+            <source type="image/webp" data-srcset="img/reviews-photo-mobile@1x.webp 1x, img/reviews-photo-mobile@2x.webp 2x">
+
+            <!--  1x: 240px; 2х: 480x -->
             <source media="(min-width: 1024px)" data-srcset="img/reviews-photo-desktop@1x.png 1x, img/reviews-photo-desktop@1x.png 2x">
-            <img class="lazyload" data-src="img/reviews-mobile@1x.png" data-srcset="img/reviews-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
+            <!--  1x: 364px; 2х: 728x -->
+            <img class="lazyload" data-src="img/reviews-photo-mobile@1x.png" data-srcset="img/reviews-photo-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
           </picture>
           <div class="reviews__container">
             <b class="reviews__name">Ольга Михайлова</b>
@@ -312,8 +348,13 @@
         </li>
         <li class="reviews__item">
           <picture>
+            <source type="image/webp" media="(min-width: 1024px)" data-srcset="img/reviews-photo-desktop@1x.webp 1x, img/reviews-photo-desktop@2x.webp 2x">
+            <source type="image/webp" data-srcset="img/reviews-photo-mobile@1x.webp 1x, img/reviews-photo-mobile@2x.webp 2x">
+
+            <!--  1x: 240px; 2х: 480x -->
             <source media="(min-width: 1024px)" data-srcset="img/reviews-photo-desktop@1x.png 1x, img/reviews-photo-desktop@1x.png 2x">
-            <img class="lazyload" data-src="img/reviews-mobile@1x.png" data-srcset="img/reviews-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
+            <!--  1x: 364px; 2х: 728x -->
+            <img class="lazyload" data-src="img/reviews-photo-mobile@1x.png" data-srcset="img/reviews-photo-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
           </picture>
           <div class="reviews__container">
             <b class="reviews__name">Ольга Михайлова</b>
@@ -326,8 +367,13 @@
         </li>
         <li class="reviews__item">
           <picture>
+            <source type="image/webp" media="(min-width: 1024px)" data-srcset="img/reviews-photo-desktop@1x.webp 1x, img/reviews-photo-desktop@2x.webp 2x">
+            <source type="image/webp" data-srcset="img/reviews-photo-mobile@1x.webp 1x, img/reviews-photo-mobile@2x.webp 2x">
+
+            <!--  1x: 240px; 2х: 480x -->
             <source media="(min-width: 1024px)" data-srcset="img/reviews-photo-desktop@1x.png 1x, img/reviews-photo-desktop@1x.png 2x">
-            <img class="lazyload" data-src="img/reviews-mobile@1x.png" data-srcset="img/reviews-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
+            <!--  1x: 364px; 2х: 728x -->
+            <img class="lazyload" data-src="img/reviews-photo-mobile@1x.png" data-srcset="img/reviews-photo-mobile@2x.png 2x" width="240" height="320" alt="Фотография автора отзыва">
           </picture>
           <div class="reviews__container">
             <b class="reviews__name">Ольга Михайлова</b>
