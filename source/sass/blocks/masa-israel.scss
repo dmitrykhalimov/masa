@@ -68,6 +68,16 @@
   text-align: center;
 
   border-radius: 80px;
+
+  &:hover {
+    @include button-yellow-background-hover;
+  }
+
+  &:active {
+    outline: none;
+
+    @include button-yellow-background-active;
+  }
 }
 
 .masa-israel__button::before {

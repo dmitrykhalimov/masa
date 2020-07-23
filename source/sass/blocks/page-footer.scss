@@ -39,11 +39,10 @@
 
 .page-footer__social-item {
   --circle: #d6d6d6;
-}
 
-
-.page-footer__social-item:hover {
-  fill: #ebebeb;
+  &:hover {
+    --circle: #ebebeb;
+  }
 }
 
 @media (max-width: 767px) {

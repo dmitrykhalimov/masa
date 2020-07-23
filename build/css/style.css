@@ -566,6 +566,8 @@ input[type="radio"].visually-hidden {
   background: none;
   border: 0;
   cursor: pointer; }
+  .contacts__city:hover {
+    opacity: 0.5; }
 
 .contacts__city::before {
   content: "";
@@ -641,6 +643,8 @@ input[type="radio"].visually-hidden {
 
 .contacts__item {
   --circle: #d6d6d6; }
+  .contacts__item:hover {
+    --circle: #ebebeb; }
 
 .contacts__description {
   font-family: "Fira Sans", "Arial", sans-serif;
@@ -1456,6 +1460,11 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   text-align: center;
   border-radius: 80px; }
+  .masa-israel__button:hover {
+    background: linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%); }
+  .masa-israel__button:active {
+    outline: none;
+    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%); }
 
 .masa-israel__button::before {
   content: "";
@@ -1943,9 +1952,8 @@ input[type="radio"].visually-hidden {
 
 .page-footer__social-item {
   --circle: #d6d6d6; }
-
-.page-footer__social-item:hover {
-  fill: #ebebeb; }
+  .page-footer__social-item:hover {
+    --circle: #ebebeb; }
 
 @media (max-width: 767px) {
   .page-footer__logo {
@@ -2586,6 +2594,8 @@ input[type="radio"].visually-hidden {
 
 .reviews__social-item {
   --circle: #d6d6d6; }
+  .reviews__social-item:hover {
+    --circle: #ebebeb; }
 
 .reviews__social-item:hover {
   fill: #ebebeb; }
@@ -2609,6 +2619,8 @@ input[type="radio"].visually-hidden {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #1FC0FC; }
+  .reviews__expand:hover {
+    opacity: 0.5; }
 
 .reviews__numbers {
   font-family: "Fira Sans", "Arial", sans-serif;
@@ -2625,6 +2637,8 @@ input[type="radio"].visually-hidden {
   width: 11px;
   height: 18px;
   cursor: pointer; }
+  .reviews__button:hover {
+    opacity: 0.5; }
 
 .reviews__slider {
   position: absolute;
@@ -2802,7 +2816,11 @@ input[type="radio"].visually-hidden {
   padding-bottom: 22px;
   padding-right: 35px;
   min-height: 96px;
-  border-bottom: 1px solid rgba(72, 72, 72, 0.2); }
+  border-bottom: 1px solid rgba(72, 72, 72, 0.2);
+  cursor: pointer; }
+
+.questions__item:hover:not(.questions__item--active) {
+  opacity: 0.5; }
 
 .questions__expand {
   margin-left: auto;

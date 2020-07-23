@@ -66,6 +66,10 @@
   border: 0;
 
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .contacts__city::before {
@@ -137,6 +141,10 @@
 
 .contacts__item {
   --circle: #d6d6d6;
+
+  &:hover {
+    --circle: #ebebeb;
+  }
 }
 
 .contacts__description {

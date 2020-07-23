@@ -63,6 +63,12 @@
   min-height: 96px;
 
   border-bottom: 1px solid rgba(72, 72, 72, 0.2);
+
+  cursor: pointer;
+}
+
+.questions__item:hover:not(.questions__item--active) {
+  opacity: 0.5;
 }
 
 .questions__expand {
