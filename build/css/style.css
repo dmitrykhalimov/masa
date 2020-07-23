@@ -1401,8 +1401,7 @@ input[type="radio"].visually-hidden {
   background: url("../img/bg-masa-desktop@1x.png") 5px 0 no-repeat;
   background-size: 99.9% auto;
   padding-top: 87px;
-  height: 46.6vw;
-  outline: 4px solid red; }
+  height: 46.6vw; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .masa-israel {
       background-image: url("../img/bg-masa-desktop@2x.png");
@@ -2069,7 +2068,7 @@ input[type="radio"].visually-hidden {
 
 .promo {
   position: relative;
-  padding-bottom: 21.83%;
+  min-height: 65.5vw;
   width: 100%;
   background: url("../img/bg-main-city-desktop@1x.png") center 0 no-repeat;
   background-size: 100%; }
@@ -2077,9 +2076,6 @@ input[type="radio"].visually-hidden {
     .promo {
       background-image: url("../img/bg-main-city-desktop@2x.png");
       background-size: 100% auto; } }
-  @media (max-width: 1200px) {
-    .promo {
-      padding-bottom: 15%; } }
 
 .promo::before {
   content: "";
@@ -2143,8 +2139,6 @@ input[type="radio"].visually-hidden {
   background: url("../img/scroll-down.svg") 0 0 no-repeat; }
 
 @media (max-width: 1023px) {
-  .promo {
-    padding-bottom: 25%; }
   .promo__decorative-text {
     height: 28vw;
     margin-top: 18px;

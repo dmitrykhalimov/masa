@@ -1,7 +1,8 @@
 .promo {
   position: relative;
 
-  padding-bottom: 21.83%;
+  //padding-bottom: 21.83%;
+  min-height: 65.5vw;
 
   //@include outline(red);
   width: 100%;
@@ -12,10 +13,6 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-main-city-desktop@2x.png");
     background-size: 100% auto;
-  }
-
-  @media (max-width: 1200px) {
-    padding-bottom: 15%;
   }
 }
 
@@ -110,9 +107,6 @@
 }
 
 @media (max-width: 1023px) {
-  .promo {
-    padding-bottom: 25%;
-  }
 
   .promo__decorative-text {
     //@include outline(orange);
