@@ -2,14 +2,13 @@
   position: relative;
 
   margin-top: 0;
-  padding-bottom: 148px;
+  min-height: 59.7vw;
 
   background: url("../img/bg-about-desktop@1x.png") center 160px no-repeat;
   background-size: 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-about-desktop@2x.png");
-    background-size: 1366px auto;
   }
 }
 
@@ -54,7 +53,7 @@
 .about__button {
   position: absolute;
   top: 38.77%;
-  left: 44.5%;
+  left: 28.5vw;
 
   cursor: pointer;
 
@@ -102,17 +101,9 @@
 
 
 @media (max-width: 1023px) {
-  .about__video-mock {
-    width: 700px;
-  }
-
-  .about__video-picture img {
-    width: 700px;
-    height: auto;
-  }
-
   .about__button {
-    top: 158px;
+    top: 12vh;
+    left: 25.5vw;
   }
 }
 

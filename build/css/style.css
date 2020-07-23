@@ -363,13 +363,12 @@ input[type="radio"].visually-hidden {
 .about {
   position: relative;
   margin-top: 0;
-  padding-bottom: 148px;
+  min-height: 59.7vw;
   background: url("../img/bg-about-desktop@1x.png") center 160px no-repeat;
   background-size: 100%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .about {
-      background-image: url("../img/bg-about-desktop@2x.png");
-      background-size: 1366px auto; } }
+      background-image: url("../img/bg-about-desktop@2x.png"); } }
 
 .about__video-mock {
   position: relative;
@@ -411,7 +410,7 @@ input[type="radio"].visually-hidden {
 .about__button {
   position: absolute;
   top: 38.77%;
-  left: 44.5%;
+  left: 28.5vw;
   cursor: pointer;
   --circle: #ffffff;
   --triangle: #1FC0FC; }
@@ -451,13 +450,9 @@ input[type="radio"].visually-hidden {
   fill: #f4f4f4;
 } */
 @media (max-width: 1023px) {
-  .about__video-mock {
-    width: 700px; }
-  .about__video-picture img {
-    width: 700px;
-    height: auto; }
   .about__button {
-    top: 158px; } }
+    top: 12vh;
+    left: 25.5vw; } }
 
 @media (max-width: 767px) {
   .about {
