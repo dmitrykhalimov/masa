@@ -358,12 +358,17 @@
   }
 
   .programs__label--academic::before {
-    top: 5px;
+    top: 7px;
     left: 8px;
 
     width: 70%;
     height: 70%;
     object-fit: contain;
+  }
+
+  .programs__radio:checked + .programs__label--academic::before {
+    top: 5px;
+    left: 5px;
   }
 
   .programs__label--practice::before {
