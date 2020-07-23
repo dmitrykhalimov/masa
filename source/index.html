@@ -41,7 +41,11 @@
           <!-- 1х: 870px; 2x: 1740px -->
           <img src="./img/about-photo-dekstop@1x.png" srcset="./img/about-photo-dekstop@2x.png 2x"  width="870" height="460" alt="Видеоролик о программе">
         </picture>
-        <svg class="about__button" width="96" height="96"><use xlink:href="img/sprite.svg#icon-button-play"></use></svg>
+        <svg class="about__button" width="96" height="96">
+          <circle opacity="0.32" cx="48" cy="48" r="48"/>
+          <circle cx="48" cy="48" r="32"/>
+          <path d="M58 47.5L43 57V38L58 47.5Z"/>
+        </svg>
       </div>
     </section>
 
@@ -519,6 +523,8 @@
   <script src="js/tabs.js"></script>
   <script src="js/textfilters.js"></script>
   <script src="js/lazysizes.min.js"></script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
 </body>
 
 </html>

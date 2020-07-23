@@ -56,11 +56,12 @@
   left: 28.5vw;
 
   cursor: pointer;
-
-  --circle: #ffffff;
-  --triangle: #1FC0FC;
 }
-
+/*
+  --circle: #ffffff;
+  --triangle: #1FC0FC; */
+}
+/*
 .about__button:hover {
   --triangle: #63d3fd;
 }
@@ -68,10 +69,8 @@
 .about__button:active {
   --triangle: #1FC0FC;
   --circle: #f4f4f4;
-}
+}*/
 
-
-/*
 .about__button:nth-child(1) {
   fill: white;
 }
@@ -97,8 +96,7 @@
 
 .about__button:active:nth-child(1) {
   fill: #f4f4f4;
-} */
-
+}
 
 @media (max-width: 1023px) {
   .about__button {

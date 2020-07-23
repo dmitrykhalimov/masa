@@ -141,10 +141,10 @@
 }
 
 .contacts__item {
-  --circle: #d6d6d6;
+  fill: #d6d6d6;
 
   &:hover {
-    --circle: #ebebeb;
+    fill: #ebebeb;
   }
 }
 
@@ -158,13 +158,16 @@
 
 .contacts__map {
   display: block;
+  align-self: start;
   margin-top: 40px;
 
   overflow: hidden;
-  width: 90%;
-  height: auto;
+  width: 80vw; //IE - чемпион!
 }
 
+.contacts__wrapper {
+  width: 65vw;
+}
 .contacts__callback {
   //@include outline(green);
   display: flex;
