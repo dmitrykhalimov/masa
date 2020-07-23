@@ -58,12 +58,6 @@
   cursor: pointer;
 }
 
-.about__button {
-  position: absolute;
-  top: 178px;
-  left: 44.5%;
-}
-
 .about__button:hover path {
   fill: #63d3fd;
 }
@@ -82,7 +76,9 @@
 
 .about__button:nth-child(1) {
   fill: white;
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.05));
 }
+
 .about__button:nth-child(2) {
   fill: white;
 }
@@ -93,10 +89,6 @@
 
 .about__button:nth-child(2):hover {
   fill: #63d3fd;
-}
-
-.about__button:nth-child(1) {
-  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.05));
 }
 
 .about__button:nth-child(2):active {

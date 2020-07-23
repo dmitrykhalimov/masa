@@ -69,7 +69,7 @@
 }
 
 .programs__item:hover .programs__label {
-  color: #FFD701;
+  color: #ffd701;
 }
 
 .programs__content {
@@ -121,7 +121,6 @@
   height: 35px;
 
   background-image: url("../img/icon-about-academic-black.png");
-
 }
 
 .programs__label--practice::before {
@@ -249,14 +248,9 @@
     top: 157px;
     left: 301px;
   }
-
 }
 
 @media (max-width: 767px) {
-  /*.programs::-webkit-scrollbar {
-    display: none;
-  } */
-
   .programs__heading {
     @include heading-h2-mobile;
 
@@ -287,14 +281,13 @@
     overflow-x: hidden;
     overflow-y: visible;
 
-    -webkit-overflow-scrolling: touch; /* [3] */
+    -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
   }
 
   .programs__list {
     display: flex;
 
-    //@include outline;
     position: relative;
     top: 0;
     bottom: 0;
@@ -304,7 +297,7 @@
     overflow-x: auto;
     overflow-y: visible;
 
-    -webkit-overflow-scrolling: touch; /* [3] */
+    -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
   }
 

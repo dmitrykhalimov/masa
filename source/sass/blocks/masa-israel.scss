@@ -1,5 +1,10 @@
 .masa-israel {
   box-sizing: border-box;
+
+  padding-top: 87px;
+
+  height: 46.7vw;
+
   background: url("../img/bg-masa-desktop@1x.png") 5px 0 no-repeat;
   background-size: 99.9% auto;
 
@@ -7,29 +12,25 @@
     background-image: url("../img/bg-masa-desktop@2x.png");
     background-size: 1361px auto;
   }
-
-  padding-top: 87px;
-  height: 46.6vw;
 }
 
 .masa-israel__heading {
   @include heading-h2;
 
-  width: 100px;
-
   margin-left: auto;
   margin-right: 470px;
   margin-bottom: 0;
+
+  width: 100px;
 }
 
 .masa-israel__text {
-  width: 390px;
-
   margin-top: 23px;
   margin-left: auto;
   margin-right: 176px;
-
   padding: 0;
+
+  width: 390px;
 
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
@@ -57,7 +58,7 @@
 
   margin-left: auto;
   margin-right: 340px;
-  margin-top: 45px;
+  margin-top: 48px;
   padding-top: 21px;
   padding-left: 31px;
 
@@ -93,36 +94,38 @@
 }
 
 @media (max-width: 1023px) {
+  .masa-israel__heading {
+    width: 50%;
+    text-align: center;
 
-.masa-israel__heading {
-  width: 50%;
-  text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
 
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-}
+  .masa-israel__text {
+    box-sizing: border-box;
 
-.masa-israel__text {
-  width: 70%;
-  box-sizing: border-box;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 20px;
-  padding: 0;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
 
-  font-size: 15px;
-  line-height: 27px;
-}
+    width: 70%;
 
-.masa-israel__button {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
+    font-size: 15px;
+    line-height: 27px;
 
-  width: 230px;
-  height: 59px;
-}
+    text-align: center;
+  }
+
+  .masa-israel__button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+
+    width: 230px;
+    height: 59px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -143,8 +146,9 @@
 
   .masa-israel__text {
     box-sizing: border-box;
+
     display: block;
-    color: $white;
+
     width: 85%;
 
     margin-top: 30vw;
@@ -153,28 +157,32 @@
 
     font-style: normal;
     font-weight: normal;
+
     font-size: 16px;
     line-height: 26px;
 
-    color: #FFFFFF;
+    color: $white;
 
     opacity: 0.87;
 
     text-align: left;
 
-    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
   }
 
   .masa-israel__button {
     position: relative;
+
     margin: 0 auto;
     margin-top: 57px;
+
     width: 82.5vw;
   }
 
   .masa-israel__heading {
     margin: 0;
     padding: 0;
+
     width: 100%;
   }
 

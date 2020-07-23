@@ -412,11 +412,6 @@ input[type="radio"].visually-hidden {
   left: 28.5vw;
   cursor: pointer; }
 
-.about__button {
-  position: absolute;
-  top: 178px;
-  left: 44.5%; }
-
 .about__button:hover path {
   fill: #63d3fd; }
 
@@ -431,7 +426,9 @@ input[type="radio"].visually-hidden {
   fill: #1fc0fc; }
 
 .about__button:nth-child(1) {
-  fill: white; }
+  fill: white;
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.05));
+          filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.05)); }
 
 .about__button:nth-child(2) {
   fill: white; }
@@ -441,10 +438,6 @@ input[type="radio"].visually-hidden {
 
 .about__button:nth-child(2):hover {
   fill: #63d3fd; }
-
-.about__button:nth-child(1) {
-  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.05));
-          filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.05)); }
 
 .about__button:nth-child(2):active {
   fill: #1fc0fc; }
@@ -506,7 +499,7 @@ input[type="radio"].visually-hidden {
   background-size: 100% auto; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .contacts {
-      background-image: url("../img/bg-contacts-watercolor-desktop@1x.png"); } }
+      background-image: url("../img/bg-contacts-watercolor-desktop@2x.png"); } }
 
 .contacts__container {
   display: -webkit-box;
@@ -528,7 +521,7 @@ input[type="radio"].visually-hidden {
   color: #1fc0fc;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-bottom: 49px;
+  margin-bottom: 48px;
   width: 520px; }
 
 .contacts__title,
@@ -546,18 +539,18 @@ input[type="radio"].visually-hidden {
 .contacts__title {
   display: inline-block;
   vertical-align: middle;
-  padding-left: 22px;
   position: relative;
-  margin-right: 12px; }
+  padding-left: 22px;
+  margin-right: 8px; }
 
 .contacts__title::before {
   content: "";
   position: absolute;
-  width: 12px;
-  height: 18px;
-  background: url("../img/contacts-city-marker.png");
   left: 4px;
-  top: 1px; }
+  top: 1px;
+  background: url("../img/contacts-city-marker.png");
+  width: 12px;
+  height: 18px; }
 
 .contacts__city {
   position: relative;
@@ -571,20 +564,20 @@ input[type="radio"].visually-hidden {
 .contacts__city::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 0;
-  bottom: -3px;
+  bottom: 0;
   left: 0;
-  border-bottom: 1px dashed #1FC0FC; }
+  border-bottom: 1px dashed #1fc0fc;
+  width: 100%;
+  height: 0; }
 
 .contacts__city::after {
   content: "";
   position: absolute;
-  width: 16px;
-  height: 15px;
+  right: -19px;
+  top: 6px;
   background: url("../img/contacts-city-arrow.png");
-  right: -26px;
-  top: 3px; }
+  width: 16px;
+  height: 15px; }
 
 .contacts__courator-container {
   display: -webkit-box;
@@ -609,8 +602,8 @@ input[type="radio"].visually-hidden {
   margin-bottom: 20px; }
 
 .contacts__courator-title {
-  color: #1fc0fc;
-  margin-left: 5px; }
+  margin-left: 5px;
+  color: #1fc0fc; }
 
 .contacts__courator-name {
   margin-left: 5px; }
@@ -624,11 +617,10 @@ input[type="radio"].visually-hidden {
   color: #484848;
   opacity: 0.74;
   margin-left: 4px;
-  width: 264px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  width: 264px; }
 
 .contacts__socials {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -636,9 +628,10 @@ input[type="radio"].visually-hidden {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0;
-  padding: 0;
   margin-top: 12px;
-  width: 96px; }
+  padding: 0;
+  width: 96px;
+  list-style: none; }
 
 .contacts__item {
   fill: #d6d6d6; }
@@ -652,8 +645,8 @@ input[type="radio"].visually-hidden {
   font-size: 17px;
   line-height: 29px;
   color: #484848;
-  padding: 0;
   margin-top: 10px;
+  padding: 0;
   max-width: 481px; }
 
 .contacts__map {
@@ -665,7 +658,7 @@ input[type="radio"].visually-hidden {
   width: 80vw; }
 
 .contacts__wrapper {
-  width: 65vw; }
+  width: 63vw; }
 
 .contacts__callback {
   display: -webkit-box;
@@ -673,7 +666,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   margin: 0 auto;
   margin-top: 62px;
-  width: 83.60%; }
+  width: 83.6%; }
 
 .contacts__questions {
   margin-top: 4px; }
@@ -722,12 +715,12 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
+  margin-right: 24px;
+  padding-left: 38px;
   width: 32.62%;
   height: 59px;
   border: 2px solid #e3e3e3;
-  border-radius: 80px;
-  margin-right: 24px;
-  padding-left: 38px; }
+  border-radius: 80px; }
   .contacts__input:focus {
     outline: none;
     border-color: #ffc341; }
@@ -774,9 +767,6 @@ input[type="radio"].visually-hidden {
   color: #ff0000;
   opacity: 0.75; }
 
-.contacts__input--phone:focus:invalid + .contacts__phone-error {
-  display: block; }
-
 @media (max-width: 1023px) {
   .contacts {
     background: none; }
@@ -797,19 +787,15 @@ input[type="radio"].visually-hidden {
   .contacts__bold-text {
     font-size: 16px;
     line-height: 24px;
-    width: 60%; }
+    display: block;
+    width: 90%; }
   .contacts__text {
     font-size: 16px;
     line-height: 24px;
-    width: 60%; }
+    display: block;
+    width: 90%; }
   .contacts__questions {
     width: 50%; }
-  .contacts__bold-text {
-    display: block;
-    width: 90%; }
-  .contacts__text {
-    display: block;
-    width: 90%; }
   .contacts__form {
     width: 100%;
     display: block;
@@ -818,8 +804,8 @@ input[type="radio"].visually-hidden {
     margin-top: 35px; }
   .contacts__input {
     margin: 0 auto;
-    width: 90%;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    width: 90%; }
   .contacts__button {
     margin: 0 auto;
     margin-top: 23px;
@@ -829,8 +815,8 @@ input[type="radio"].visually-hidden {
   .contacts__callback {
     display: block;
     margin: 0;
-    width: 100%;
-    padding: 0; }
+    padding: 0;
+    width: 100%; }
   .contacts__bold-text {
     display: block;
     margin: 0 auto;
@@ -840,7 +826,7 @@ input[type="radio"].visually-hidden {
     text-align: left; }
   .contacts__text {
     display: block;
-    font-family: "Fira Sans";
+    font-family: "Fira Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -860,14 +846,13 @@ input[type="radio"].visually-hidden {
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #1fc0fc;
-    width: 100%; }
-  .contacts__container {
-    display: block;
     width: 100%;
-    padding-left: 0; }
-  .contacts__heading {
     text-align: center;
     margin-bottom: 25px; }
+  .contacts__container {
+    display: block;
+    padding-left: 0;
+    width: 100%; }
   .contacts__title {
     margin-left: 15px; }
   .contacts__courator-container {
@@ -886,25 +871,25 @@ input[type="radio"].visually-hidden {
     width: 90%; }
   .contacts__map {
     display: block;
-    width: 100%;
-    height: auto;
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: auto;
     margin-top: 25px; }
   .contacts__questions {
     width: 100%;
     padding: 0;
     margin: 0; }
   .contacts__form {
-    width: 100%;
     display: block;
+    width: 100%;
     padding: 0;
     margin: 0;
     margin-top: 35px; }
   .contacts__input {
     margin: 0 auto;
-    width: 90%;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    width: 90%; }
   .contacts__button {
     margin: 0 auto;
     margin-top: 23px;
@@ -912,7 +897,7 @@ input[type="radio"].visually-hidden {
 
 .howto {
   padding-top: 62px;
-  min-height: 59vw;
+  min-height: 58.9vw;
   background: url("../img/bg-howto-people-desktop@1x.png") 12px 31px no-repeat, url("../img/bg-howto-stamp-desktop@1x.png") right 240px no-repeat, url("../img/bg-howto-watercolor@1x.png") 0 -170px no-repeat;
   background-size: 42.53%, 15.81%, 100%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -999,14 +984,14 @@ input[type="radio"].visually-hidden {
   content: "";
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 3px;
   position: absolute;
   left: -43px;
   top: 36px;
-  border-left: 1px dashed #484848;
-  opacity: 0.2;
+  padding-top: 3px;
   width: 5px;
-  height: 40px; }
+  height: 40px;
+  border-left: 1px dashed #484848;
+  opacity: 0.2; }
 
 .howto__item:last-child::after {
   display: none; }
@@ -1038,42 +1023,42 @@ input[type="radio"].visually-hidden {
 
 .howto__requirments {
   display: block;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: 217px;
   width: 450px;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 29px;
-  color: #484848;
-  margin-top: 32px;
-  margin-left: auto;
-  margin-right: 217px; }
+  color: #484848; }
 
 .howto__additional {
   position: relative;
+  margin-top: 51px;
+  margin-left: auto;
+  margin-right: 130px;
+  width: 520px;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 21px;
   color: #484848;
-  opacity: 0.5;
-  width: 520px;
-  margin-top: 51px;
-  margin-left: auto;
-  margin-right: 130px; }
+  opacity: 0.5; }
 
 .howto__additional::before {
+  position: absolute;
   content: "";
+  left: -20px;
+  top: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-top: 3px;
-  position: absolute;
-  left: -20px;
-  top: 0;
-  background: linear-gradient(108.42deg, #ffc341 20.46%, #ffd701 65.31%);
   width: 4px;
-  height: 42px; }
+  height: 42px;
+  background: linear-gradient(108.42deg, #ffc341 20.46%, #ffd701 65.31%); }
 
 .howto__num {
   font-family: "Fira Sans", "Arial", sans-serif;
@@ -1096,8 +1081,8 @@ input[type="radio"].visually-hidden {
   .howto__requirments {
     margin-right: auto;
     margin-left: 450px;
-    width: 40%;
-    padding: 0; }
+    padding: 0;
+    width: 40%; }
   .howto__list {
     margin-right: auto;
     margin-left: 500px;
@@ -1117,9 +1102,9 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 767px) {
   .howto {
-    background: url("../img/bg-howto-stamp-mobile@1x.png") right 352px no-repeat;
     padding-top: 79px;
-    padding-bottom: 39px; } }
+    padding-bottom: 39px;
+    background: url("../img/bg-howto-stamp-mobile@1x.png") right 352px no-repeat; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .howto {
       background-image: url("../img/bg-howto-stamp-mobile@2x.png");
@@ -1136,9 +1121,9 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
     color: #1fc0fc;
     margin: 0;
-    text-align: center;
+    margin-bottom: 25px;
     width: 100%;
-    margin-bottom: 25px; }
+    text-align: center; }
   .howto__text {
     font-family: "Fira Sans", "Arial", sans-serif;
     font-style: normal;
@@ -1150,20 +1135,20 @@ input[type="radio"].visually-hidden {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin: 0;
-    width: 100%;
     padding-left: 15px;
-    padding-right: 15px; }
+    padding-right: 15px;
+    width: 100%; }
   .howto__requirments {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin: 0;
+    margin-top: 25px;
     padding: 0;
-    font-size: 16px;
-    line-height: 26px;
-    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 25px; }
+    width: 100%;
+    font-size: 16px;
+    line-height: 26px; }
   .howto__list {
     margin: 0;
     margin-top: 22px;
@@ -1315,7 +1300,6 @@ input[type="radio"].visually-hidden {
 
 .journey__phone-error {
   position: absolute;
-  position: absolute;
   bottom: -20px;
   left: 220px;
   display: none;
@@ -1398,10 +1382,10 @@ input[type="radio"].visually-hidden {
 .masa-israel {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url("../img/bg-masa-desktop@1x.png") 5px 0 no-repeat;
-  background-size: 99.9% auto;
   padding-top: 87px;
-  height: 46.6vw; }
+  height: 46.7vw;
+  background: url("../img/bg-masa-desktop@1x.png") 5px 0 no-repeat;
+  background-size: 99.9% auto; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .masa-israel {
       background-image: url("../img/bg-masa-desktop@2x.png");
@@ -1416,17 +1400,17 @@ input[type="radio"].visually-hidden {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #1fc0fc;
-  width: 100px;
   margin-left: auto;
   margin-right: 470px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  width: 100px; }
 
 .masa-israel__text {
-  width: 390px;
   margin-top: 23px;
   margin-left: auto;
   margin-right: 176px;
   padding: 0;
+  width: 390px;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1453,7 +1437,7 @@ input[type="radio"].visually-hidden {
   display: block;
   margin-left: auto;
   margin-right: 340px;
-  margin-top: 45px;
+  margin-top: 48px;
   padding-top: 21px;
   padding-left: 31px;
   width: 230px;
@@ -1484,15 +1468,15 @@ input[type="radio"].visually-hidden {
     margin-right: auto;
     padding: 0; }
   .masa-israel__text {
-    width: 70%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    text-align: center;
     margin: 0 auto;
     margin-top: 20px;
     padding: 0;
+    width: 70%;
     font-size: 15px;
-    line-height: 27px; }
+    line-height: 27px;
+    text-align: center; }
   .masa-israel__button {
     margin-left: auto;
     margin-right: auto;
@@ -1517,7 +1501,6 @@ input[type="radio"].visually-hidden {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
-    color: #ffffff;
     width: 85%;
     margin-top: 30vw;
     padding-left: 23px;
@@ -1526,10 +1509,10 @@ input[type="radio"].visually-hidden {
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 0.87;
     text-align: left;
-    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12); }
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12); }
   .masa-israel__button {
     position: relative;
     margin: 0 auto;
@@ -1915,9 +1898,6 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 83.86%;
@@ -2214,7 +2194,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer; }
 
 .programs__item:hover .programs__label {
-  color: #FFD701; }
+  color: #ffd701; }
 
 .programs__content {
   position: absolute;
@@ -2355,9 +2335,6 @@ input[type="radio"].visually-hidden {
     left: 301px; } }
 
 @media (max-width: 767px) {
-  /*.programs::-webkit-scrollbar {
-    display: none;
-  } */
   .programs__heading {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
@@ -2383,7 +2360,6 @@ input[type="radio"].visually-hidden {
     overflow-x: hidden;
     overflow-y: visible;
     -webkit-overflow-scrolling: touch;
-    /* [3] */
     -ms-overflow-style: -ms-autohiding-scrollbar; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .programs {
@@ -2403,7 +2379,6 @@ input[type="radio"].visually-hidden {
     overflow-x: auto;
     overflow-y: visible;
     -webkit-overflow-scrolling: touch;
-    /* [3] */
     -ms-overflow-style: -ms-autohiding-scrollbar; }
   .programs__list::-webkit-scrollbar {
     display: none; }
@@ -2474,9 +2449,9 @@ input[type="radio"].visually-hidden {
 
 .reviews {
   position: relative;
+  min-height: 525px;
   background: url("../img/bg-reviews-watercolor-desktop@1x.png") right 0 no-repeat, url("../img/bg-reviews-sketch-desktop@1x.png") right 52px no-repeat;
-  background-size: 92.16%, 38.28%;
-  min-height: 525px; }
+  background-size: 92.16%, 38.28%; }
 
 .reviews__heading {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -2487,15 +2462,15 @@ input[type="radio"].visually-hidden {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #1fc0fc;
-  text-align: center;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  text-align: center; }
 
 .reviews__list {
-  width: 79.35%;
-  padding: 0;
   margin: 0;
   margin-top: 7px;
-  margin-left: 98px; }
+  margin-left: 98px;
+  padding: 0;
+  width: 79.35%; }
 
 .reviews__item {
   display: none;
@@ -2557,9 +2532,6 @@ input[type="radio"].visually-hidden {
   .reviews__social-item:hover {
     fill: #ebebeb; }
 
-.reviews__social-item:hover {
-  fill: #ebebeb; }
-
 .reviews__text {
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
@@ -2578,7 +2550,7 @@ input[type="radio"].visually-hidden {
   line-height: 25px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  color: #1FC0FC; }
+  color: #1fc0fc; }
   .reviews__expand:hover {
     opacity: 0.5; }
 
@@ -2606,16 +2578,16 @@ input[type="radio"].visually-hidden {
   left: 36.7%; }
 
 .reviews__socials {
-  position: absolute;
-  width: 104px;
-  bottom: 0;
-  right: 185px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  right: 185px;
+  width: 104px;
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -2662,16 +2634,6 @@ input[type="radio"].visually-hidden {
     font-weight: normal;
     font-size: 14px;
     line-height: 22px; }
-  .reviews__text {
-    font-family: "Fira Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
-    color: #484848; }
-  .reviews__expand {
-    font-size: 16px;
-    line-height: 24px; }
   .reviews__list {
     margin: 0;
     padding: 0;
@@ -2684,10 +2646,10 @@ input[type="radio"].visually-hidden {
     display: block; }
   .reviews__item img {
     display: block;
+    margin: 0 auto;
     width: 75%;
     max-width: 240px;
-    height: auto;
-    margin: 0 auto; }
+    height: auto; }
   .reviews__name {
     text-align: left; }
   .reviews__container {
@@ -2696,9 +2658,9 @@ input[type="radio"].visually-hidden {
     padding-left: 15px;
     margin-top: 56px; }
   .reviews__title {
-    display: block;
     margin: 0;
     padding: 0;
+    display: block;
     margin-top: 10px; }
   .reviews__program {
     display: inline-block;
@@ -2707,18 +2669,24 @@ input[type="radio"].visually-hidden {
     margin-bottom: 8px;
     vertical-align: middle; }
   .reviews__text {
+    font-family: "Fira Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #484848;
     width: 95%; }
   .reviews__expand {
     display: inline-block;
     margin-top: 8px;
-    vertical-align: middle; }
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 24px; }
   .reviews__slider {
-    top: 38.7%;
+    top: 48vh;
     left: 35.6%; }
   .reviews__socials {
-    left: 3%; }
-  .reviews__slider {
-    top: 48vh; } }
+    left: 3%; } }
 
 .questions {
   background: url("../img/bg-questions-photo-dekstop@1x.png") right 80px no-repeat, url("../img/bg-questions-bag@1x.png") 0 bottom no-repeat, url("../../img/bg-questions-watercolor-desktop@1x.png") left top no-repeat;
@@ -2763,6 +2731,8 @@ input[type="radio"].visually-hidden {
   width: 100%; }
 
 .questions__answer {
+  padding-top: 2px;
+  padding-bottom: 0;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2774,8 +2744,8 @@ input[type="radio"].visually-hidden {
 .questions__item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 20px;
-  padding-bottom: 22px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   padding-right: 35px;
   min-height: 96px;
   border-bottom: 1px solid rgba(72, 72, 72, 0.2);
@@ -2798,6 +2768,9 @@ input[type="radio"].visually-hidden {
 .questions__item .questions__answer {
   display: none; }
 
+.questions__item--active {
+  padding-bottom: 19px; }
+
 .questions__item--active .questions__answer {
   display: block; }
 
@@ -2818,7 +2791,8 @@ input[type="radio"].visually-hidden {
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
-  line-height: 25px; }
+  line-height: 25px;
+  width: 70%; }
 
 @media (max-width: 1024px) {
   .questions__heading {
@@ -2902,14 +2876,15 @@ input[type="radio"].visually-hidden {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #1fc0fc;
-  text-align: center;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  text-align: center; }
 
 .life-in-israel__text {
   width: 750px;
-  padding: 0;
   margin: 0 auto;
   margin-top: 24px;
+  padding: 0;
+  padding-right: 52px;
   text-align: right;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
@@ -2917,26 +2892,25 @@ input[type="radio"].visually-hidden {
   font-size: 17px;
   line-height: 29px;
   color: #484848;
-  opacity: 0.87;
-  padding-right: 52px; }
+  opacity: 0.87; }
 
 .life-in-israel__slider-item {
   position: relative; }
 
 .life-in-israel__slide-text {
-  position: absolute;
   font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 21px;
   line-height: 25px;
-  color: #ffffff;
+  position: absolute;
   bottom: 10%;
   left: 25px;
-  width: 80%; }
+  width: 80%;
+  color: #ffffff; }
 
 .life-in-israel__slider-item--excursion .life-in-israel__slide-text {
-  bottom: 10%;
+  bottom: 5%;
   left: 40px; }
 
 .life-in-israel__slider-item--skills .life-in-israel__slide-text {
@@ -2955,9 +2929,9 @@ input[type="radio"].visually-hidden {
 
 .life-in-israel__slider {
   position: relative;
-  max-width: 84.77%;
-  margin: 0 auto;
   top: -21px;
+  margin: 0 auto;
+  max-width: 84.77%;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 70px 318px 30px 318px;
@@ -3049,20 +3023,20 @@ input[type="radio"].visually-hidden {
     line-height: 26px;
     color: #484848;
     margin-left: 0;
-    text-align: left;
-    width: 88%;
     padding-left: 15px;
-    padding-right: 0; }
+    padding-right: 0;
+    width: 88%;
+    text-align: left; }
   .life-in-israel__slider {
-    max-width: 90%;
     position: relative;
     top: 0;
-    margin: auto;
-    margin-top: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    overflow: hidden; }
+    overflow: hidden;
+    margin: auto;
+    margin-top: 25px;
+    max-width: 90%; }
   .life-in-israel__slider-item {
     -ms-flex-negative: 0;
         flex-shrink: 0;
@@ -3073,20 +3047,20 @@ input[type="radio"].visually-hidden {
     height: auto; }
   .life-in-israel__selectors {
     display: block;
-    text-align: center;
-    margin-top: 6px; }
+    margin-top: 6px;
+    text-align: center; }
   .life-in-israel__selector {
-    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px;
     height: 6px;
     width: 6px;
-    margin: 0 2px;
-    background-color: #ddd;
+    background-color: #dddddd;
     border-radius: 50%;
-    display: inline-block;
-    vertical-align: middle; }
+    cursor: pointer; }
   .life-in-israel__selector--active {
     height: 8px;
     width: 8px;
-    background-color: #FFD701; } }
+    background-color: #ffd701; } }
 
 /*# sourceMappingURL=style.css.map */

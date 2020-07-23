@@ -1,24 +1,28 @@
 .reviews {
   position: relative;
+
+  min-height: 525px;
+
   background: url("../img/bg-reviews-watercolor-desktop@1x.png") right 0 no-repeat,
     url("../img/bg-reviews-sketch-desktop@1x.png") right 52px no-repeat;
   background-size: 92.16%, 38.28%;
-
-  min-height: 525px;
 }
 
 .reviews__heading {
   @include heading-h2;
-  text-align: center;
+
   margin-bottom: 0;
+
+  text-align: center;
 }
 
 .reviews__list {
-  width: 79.35%;
-  padding: 0;
   margin: 0;
   margin-top: 7px;
   margin-left: 98px;
+  padding: 0;
+
+  width: 79.35%;
 }
 
 .reviews__item {
@@ -39,7 +43,6 @@
 .reviews__container {
   margin-top: 40px;
   margin-left: 40px;
-
 }
 
 .reviews__title,
@@ -48,6 +51,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
+
   line-height: 21px;
 }
 
@@ -67,19 +71,20 @@
 .reviews__title {
   display: inline-block;
   vertical-align: middle;
+
   margin-top: 10px;
   margin-right: 5px;
   margin-bottom: 14px;
+
   color: #1fc0fc;
 }
 
 .reviews__program {
   color: black;
   opacity: 0.74;
+
   padding: 0;
   margin: 0;
-
-
 }
 
 .reviews__social-item {
@@ -90,17 +95,10 @@
   }
 }
 
-
-.reviews__social-item:hover {
-  fill: $gray;
-}
-
 .reviews__text {
   @include text-big;
   color: black;
   opacity: 0.74;
-
-
 }
 
 .reviews__expand {
@@ -113,7 +111,7 @@
 
   text-decoration-line: underline;
 
-  color: #1FC0FC;
+  color: #1fc0fc;
 
   &:hover {
     opacity: 0.5;
@@ -152,12 +150,15 @@
 }
 
 .reviews__socials {
-  position: absolute;
-  width: 104px;
-  bottom: 0;
-  right: 185px;
   display: flex;
   justify-content: space-between;
+
+  position: absolute;
+  bottom: 0;
+  right: 185px;
+
+  width: 104px;
+
   @include list-reset;
   list-style: none;
 }
@@ -181,6 +182,7 @@
     bottom: -50px;
     right: 100px;
   }
+
   .reviews__item img {
     width: 300px;
   }
@@ -199,28 +201,21 @@
   .reviews {
     padding-bottom: 25px;
   }
+
   .reviews__heading {
     @include heading-h2-mobile;
+
     margin-bottom: 22px;
   }
 
   .reviews__title,
   .reviews__program {
-  font-family: "Fira Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+    font-family: "Fira Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
 
-  font-size: 14px;
-  line-height: 22px;
-}
-
-  .reviews__text {
-    @include text-big-mobile;
-  }
-
-  .reviews__expand {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
   }
 
   .reviews__list {
@@ -241,10 +236,12 @@
 
   .reviews__item img {
     display: block;
+
+    margin: 0 auto;
+
     width: 75%;
     max-width: 240px;
     height: auto;
-    margin: 0 auto;
   }
 
   .reviews__name {
@@ -253,44 +250,52 @@
 
   .reviews__container {
     @include list-reset;
+
     padding-left: 15px;
     margin-top: 56px;
   }
 
   .reviews__title {
-    display: block;
     @include list-reset;
+
+    display: block;
+
     margin-top: 10px;
   }
 
   .reviews__program {
     display: inline-block;
+
     @include list-reset;
+
     margin-bottom: 8px;
+
     vertical-align: middle;
   }
 
   .reviews__text {
+    @include text-big-mobile;
 
     width: 95%;
   }
 
   .reviews__expand {
     display: inline-block;
+
     margin-top: 8px;
+
     vertical-align: middle;
+
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .reviews__slider {
-    top: 38.7%;
+    top: 48vh;
     left: 35.6%;
   }
 
   .reviews__socials {
     left: 3%;
-  }
-
-  .reviews__slider {
-    top: 48vh;
   }
 }
