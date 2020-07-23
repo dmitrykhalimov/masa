@@ -2698,7 +2698,7 @@ input[type="radio"].visually-hidden {
     left: 3%; } }
 
 .questions {
-  background: url("../img/bg-questions-photo-dekstop@1x.png") right 80px no-repeat, url("../img/bg-questions-bag@1x.png") 0 bottom no-repeat, url("../../img/bg-questions-watercolor-desktop@1x.png") left top no-repeat;
+  background: url("../img/bg-questions-photo-dekstop@1x.png") right 80px no-repeat, url("../img/bg-questions-bag@1x.png") 0 bottom no-repeat, url("../img/bg-questions-watercolor-desktop@1x.png") left top no-repeat;
   background-size: 47.2%, auto, cover;
   /*@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../../img/bg-questions-photo-dekstop@2x.png"),
