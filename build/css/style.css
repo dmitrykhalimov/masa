@@ -410,20 +410,26 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 38.77%;
   left: 28.5vw;
-  cursor: pointer;
-  /*
-  --circle: #ffffff;
-  --triangle: #1FC0FC; */ }
+  cursor: pointer; }
 
-/*
-.about__button:hover {
-  --triangle: #63d3fd;
-}
+.about__button {
+  position: absolute;
+  top: 178px;
+  left: 44.5%; }
 
-.about__button:active {
-  --triangle: #1FC0FC;
-  --circle: #f4f4f4;
-}*/
+.about__button:hover path {
+  fill: #63d3fd; }
+
+.about__button:hover circle {
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.05));
+          filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.05)); }
+
+.about__button:active circle:nth-child(2) {
+  fill: #f4f4f4; }
+
+.about__button:active path {
+  fill: #1fc0fc; }
+
 .about__button:nth-child(1) {
   fill: white; }
 
