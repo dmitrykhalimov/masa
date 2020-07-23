@@ -1,7 +1,9 @@
 .page-header {
   position: absolute;
-  left: 0;
+  left: -4px;
   right: 0;
+  top: 31px;
+
 
   display: flex;
   justify-content: space-between;
@@ -11,9 +13,8 @@
 
   margin-right: auto;
   margin-left: auto;
-  margin-top: 32px;
 
-  max-width: 1142px;
+  max-width: 1140px;
   z-index: 5;
 }
 
@@ -64,8 +65,7 @@
   .page-header {
     flex-wrap: wrap;
     flex-direction: column;
-
-    margin-top: 20px;
+    top: 20px;
 
     min-width: 320px;
     height: 42px;

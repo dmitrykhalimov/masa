@@ -1,21 +1,21 @@
 .promo {
-  @include outline;
   position: relative;
 
+  padding-top: 39.5vw;
   //padding-bottom: 21.83%;
-  min-height: 65.5vw;
+  min-height: 26vw;
 
   //@include outline(red);
   width: 100%;
 
-  background: url("../../img/bg-promo-heading@1x.png") 0 0 no-repeat,
+  background: url("../../img/bg-promo-heading@1x.png") center 160px no-repeat,
   url("../img/bg-main-city-desktop@1x.png") center 0 no-repeat;
 
-  background-size: 100%;
+  background-size: 74.5%, 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-main-city-desktop@2x.png");
-    background-size: 100% auto;
+    background-image: url("../../img/bg-promo-heading@2x.png"),
+    url("../img/bg-main-city-desktop@2x.png");
   }
 }
 
@@ -79,7 +79,6 @@
   position: relative;
 
   margin: 0 auto;
-  margin-top: 37px;
 
   width: 343px;
 
@@ -127,35 +126,24 @@
 @media (max-width: 767px) {
 
   .promo {
-    padding: 0;
-    margin: 0;
-    height: 582px;
-    background: url("../img/bg-main-city-mobile@1x.png") center -18px no-repeat;
+    @include outline;
+
+    height: 295px;
+    padding-top: 34.5vh;
+    margin-top: 18px;
+    background: url("../../img/bg-promo-heading-mobile@2x.png") center 120px no-repeat,
+    url("../img/bg-main-city-mobile@1x.png") center -18px no-repeat;
+    background-size: 340px, auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-main-city-mobile@2x.png");
-      background-size: 912px auto;
-    }
-  }
-
-  .promo__decorative-text {
-    margin-left: -13px;
-    padding: 0;
-    padding-top: 118px;
-
-    font-size: 22.5vw;
-    letter-spacing: 0.01em;
-
-    background-image: url("../img/bg-main-overlay-mobile@1x.jpg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-main-overlay-mobile@2x.jpg");
-      background-size: 320px auto;
+      background-image: url("../../img/bg-promo-heading-mobile@2x.png"),
+      url("../img/bg-main-city-mobile@2x.png");
     }
   }
 
   .promo::before {
-    height: inherit;
+    @include outline(green);
+    height: 475px;
 
     background: url("../img/bg-main-girl-mobile@1x.png") center -18px no-repeat;
 
@@ -166,8 +154,6 @@
   }
 
   .promo__heading {
-    margin-top: 76px;
-
     width: 288px;
 
     font-size: 20px;
