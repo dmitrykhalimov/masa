@@ -36,44 +36,6 @@
     background-image: url("../img/bg-main-girl-desktop@2x.png");
   }
 }
-/*
-.promo__decorative-text {
-  display: block;
-
-  padding-top: 160px;
-  padding-left: 10px;
-
-  height: 25vw;
-
-  font-family: "Raleway", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-
-  font-size: 14.65vw;
-  line-height: 170%;
-  letter-spacing: 0.055em;
-
-  overflow: hidden;
-
-  text-transform: uppercase;
-  text-align: center;
-
-  background-clip: text;
-
-  background-image: url("../img/bg-main-overlay-desktop@1x.jpg");
-  background-repeat: no-repeat;
-/*
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-main-overlay-desktop@2x.jpg");
-    background-size: 1001px auto;
-  }
-
-  background-position-x: 51%;
-  background-position-y: 31%;
-
-  color: transparent;
-}*/
-
 
 .promo__heading {
   position: relative;
@@ -112,7 +74,6 @@
 @media (max-width: 1023px) {
 
   .promo__decorative-text {
-    //@include outline(orange);
     height: 28vw;
     margin-top: 18px;
     font-size: 150px;
@@ -124,16 +85,13 @@
 }
 
 @media (max-width: 767px) {
-
   .promo {
-    @include outline;
-
     height: 295px;
     padding-top: 34.5vh;
     margin-top: 18px;
     background: url("../../img/bg-promo-heading-mobile@2x.png") center 120px no-repeat,
     url("../img/bg-main-city-mobile@1x.png") center -18px no-repeat;
-    background-size: 340px, auto;
+    background-size: 340px, 912px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../../img/bg-promo-heading-mobile@2x.png"),
@@ -142,7 +100,6 @@
   }
 
   .promo::before {
-    @include outline(green);
     height: 475px;
 
     background: url("../img/bg-main-girl-mobile@1x.png") center -18px no-repeat;

@@ -201,10 +201,14 @@
     transition: background-color 0.6s ease;
 }
 
-.active,
+.life-in-israel__selector--active {
+  background-color: linear-gradient(108.42deg, #FFC341 20.46%, #FFD701 65.31%);;
+}
+
 .life-in-israel__selector:hover {
     background-color: #aaa;
 }
+
 /* Анимация слайдов */
 .slider .item {
     -webkit-animation-name: fade;

@@ -2083,43 +2083,6 @@ input[type="radio"].visually-hidden {
     .promo::before {
       background-image: url("../img/bg-main-girl-desktop@2x.png"); } }
 
-/*
-.promo__decorative-text {
-  display: block;
-
-  padding-top: 160px;
-  padding-left: 10px;
-
-  height: 25vw;
-
-  font-family: "Raleway", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-
-  font-size: 14.65vw;
-  line-height: 170%;
-  letter-spacing: 0.055em;
-
-  overflow: hidden;
-
-  text-transform: uppercase;
-  text-align: center;
-
-  background-clip: text;
-
-  background-image: url("../img/bg-main-overlay-desktop@1x.jpg");
-  background-repeat: no-repeat;
-/*
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-main-overlay-desktop@2x.jpg");
-    background-size: 1001px auto;
-  }
-
-  background-position-x: 51%;
-  background-position-y: 31%;
-
-  color: transparent;
-}*/
 .promo__heading {
   position: relative;
   margin: 0 auto;
@@ -2153,19 +2116,17 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 767px) {
   .promo {
-    outline: 4px solid red;
     height: 295px;
     padding-top: 34.5vh;
     margin-top: 18px;
     background: url("../../img/bg-promo-heading-mobile@2x.png") center 120px no-repeat, url("../img/bg-main-city-mobile@1x.png") center -18px no-repeat;
-    background-size: 340px, auto; } }
+    background-size: 340px, 912px; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .promo {
       background-image: url("../../img/bg-promo-heading-mobile@2x.png"), url("../img/bg-main-city-mobile@2x.png"); } }
 
 @media (max-width: 767px) {
   .promo::before {
-    outline: 4px solid green;
     height: 475px;
     background: url("../img/bg-main-girl-mobile@1x.png") center -18px no-repeat; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
@@ -3100,7 +3061,8 @@ input[type="radio"].visually-hidden {
     vertical-align: middle;
     -webkit-transition: background-color 0.6s ease;
     transition: background-color 0.6s ease; }
-  .active,
+  .life-in-israel__selector--active {
+    background-color: linear-gradient(108.42deg, #FFC341 20.46%, #FFD701 65.31%); }
   .life-in-israel__selector:hover {
     background-color: #aaa; }
   /* Анимация слайдов */
