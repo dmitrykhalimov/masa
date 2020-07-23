@@ -2924,12 +2924,12 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 25px;
   color: #ffffff;
-  bottom: 33px;
+  bottom: 10%;
   left: 25px;
   width: 80%; }
 
 .life-in-israel__slider-item--excursion .life-in-israel__slide-text {
-  bottom: 35px;
+  bottom: 10%;
   left: 40px; }
 
 .life-in-israel__slider-item--skills .life-in-israel__slide-text {
@@ -2951,39 +2951,54 @@ input[type="radio"].visually-hidden {
   max-width: 84.77%;
   margin: 0 auto;
   top: -21px;
+  display: -ms-grid;
   display: grid;
-  grid-template-rows: 4.91% 43.44% 43.44%;
-  grid-template-columns: 41.62% 18.22% 15.88% 19.86%;
+  -ms-grid-rows: 70px 318px 30px 318px;
+  -ms-grid-columns: 42.5% 2% 18.5% 2% 37%;
   -webkit-column-gap: 15px;
      -moz-column-gap: 15px;
           column-gap: 15px;
-  row-gap: 30px; }
+  row-gap: 30px;
+  grid-template-rows: 4.91% 43.44% 43.44%;
+  grid-template-columns: 41.62% 18.22% 15.88% 19.86%; }
 
 .life-in-israel__selectors {
   display: none; }
 
 .life-in-israel__slider-item--excursion {
+  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
   grid-column-start: 1;
   grid-row-start: 1;
   grid-row-end: 4; }
 
 .life-in-israel__slider-item--language {
+  -ms-grid-column: 3;
+  -ms-grid-row: 2;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2; }
 
 .life-in-israel__slider-item--skills {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 5;
+  -ms-grid-row: 2;
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 2;
   padding-left: 15px; }
 
 .life-in-israel__slider-item--projects {
+  -ms-grid-column: 5;
+  -ms-grid-row: 4;
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 3; }
 
 .life-in-israel__slider-item--leadership {
+  -ms-grid-column: 3;
+  -ms-grid-row: 4;
   grid-column-start: 4;
   grid-row-start: 3;
   padding-left: 15px; }
