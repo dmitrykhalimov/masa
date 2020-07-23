@@ -71,23 +71,30 @@ var onAcceptedCloseClick = function () {
 var onAcceptedSubmitClick = function () {
   closeAccepted();
 };
-/*
-var onOverlayClick = function (evt) {
-  var isClickInside = callbackModal.contains(evt.target);
-  console.log(evt.target);
-};*/
 
+var onOverlayClick = function (evt) {
+  console.log(evt.target);
+  if (evt.target === callbackModal) {
+    closeCallback();
+  } else if (evt.target === acceptedModal) {
+    closeAccepted();
+  } else {
+    console.log('FFFUUUU');
+  }
+};
 
 var openCallback = function () {
   body.style.overflow = 'hidden';
   callbackModal.classList.remove('visually-hidden');
   document.addEventListener('keydown', onCallbackEsc);
+  document.querySelector('body').addEventListener('click', onOverlayClick);
 };
 
 var closeCallback = function () {
   body.style.overflow = 'visible';
   callbackModal.classList.add('visually-hidden');
   document.removeEventListener('keydown', onCallbackEsc);
+  document.querySelector('body').removeEventListener('click', onOverlayClick);
 };
 
 var openAccepted = function () {
@@ -97,6 +104,7 @@ var openAccepted = function () {
   acceptedModal.classList.remove('visually-hidden');
 
   document.addEventListener('keydown', onAcceptedEsc);
+  document.querySelector('body').addEventListener('click', onOverlayClick);
 };
 
 var closeAccepted = function () {
@@ -104,6 +112,7 @@ var closeAccepted = function () {
   acceptedModal.classList.add('visually-hidden');
 
   document.removeEventListener('keydown', onAcceptedEsc);
+  document.querySelector('body').removeEventListener('click', onOverlayClick);
 };
 
 

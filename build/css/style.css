@@ -1984,9 +1984,8 @@ input[type="radio"].visually-hidden {
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1140px;
+  margin: 0 auto;
+  width: 83.5%;
   z-index: 5; }
 
 .page-header__phone,
@@ -2954,7 +2953,7 @@ input[type="radio"].visually-hidden {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 70px 318px 30px 318px;
-  -ms-grid-columns: 42.5% 2% 18.5% 2% 37%;
+  -ms-grid-columns: 42.5% 2% 18.5% 2% 14.5% 20%;
   -webkit-column-gap: 15px;
      -moz-column-gap: 15px;
           column-gap: 15px;
@@ -2990,14 +2989,15 @@ input[type="radio"].visually-hidden {
   padding-left: 15px; }
 
 .life-in-israel__slider-item--projects {
-  -ms-grid-column: 5;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
   -ms-grid-row: 4;
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 3; }
 
 .life-in-israel__slider-item--leadership {
-  -ms-grid-column: 3;
+  -ms-grid-column: 6;
   -ms-grid-row: 4;
   grid-column-start: 4;
   grid-row-start: 3;
