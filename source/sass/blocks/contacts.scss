@@ -13,7 +13,7 @@
 .contacts__container {
   display: flex;
   align-items: flex-start;
-
+  justify-content: space-between;
   padding-left: 110px;
 }
 
@@ -180,11 +180,13 @@
   margin-top: 40px;
 
   overflow: hidden;
-  width: 80vw; //IE - чемпион!
+  width: 100%;
+  height: auto;
+//  width: 80vw; //IE - чемпион!
 }
 
 .contacts__wrapper {
-  width: 63vw;
+  max-width: 44%;
 }
 
 .contacts__callback {
@@ -375,6 +377,11 @@
 
     width: 82.81%;
   }
+
+  .contacts__wrapper {
+    width: auto;
+    max-width: 90%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -387,6 +394,9 @@
     width: 100%;
   }
 
+  .contacts__wrapper {
+    max-width: 100%;
+  }
   .contacts__bold-text {
     display: block;
 
@@ -439,7 +449,7 @@
 
   .contacts__courator-container {
     box-sizing: border-box;
-    padding-left: 10px;
+    padding-left: 12px;
   }
 
   .contacts__text-container {

@@ -85,12 +85,12 @@
 
 @media (max-width: 767px) {
   .promo {
-    height: 295px;
+    height: 296px;
     padding-top: 34.5vh;
     margin-top: 18px;
-    background: url("../../img/bg-promo-heading-mobile@2x.png") center 120px no-repeat,
+    background: url("../../img/bg-promo-heading-mobile@2x.png") center 118px no-repeat,
       url("../img/bg-main-city-mobile@1x.png") center -18px no-repeat;
-    background-size: 340px, 912px;
+    background-size: 346px, 912px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../../img/bg-promo-heading-mobile@2x.png"),
