@@ -1213,7 +1213,7 @@ input[type="radio"].visually-hidden {
 
 .journey {
   padding-top: 210px;
-  padding-bottom: 261px;
+  min-height: 37.5vw;
   background: url("../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat, url("../img/bg-iwantgo-girl-dekstop@1x.png") right 0 no-repeat;
   background-size: 10.76%, 59.88%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -1221,7 +1221,6 @@ input[type="radio"].visually-hidden {
       background-image: url("../img/bg-iwantgo-backpack-desktop@2x.png"), url("../img/bg-iwantgo-girl-dekstop@2x.png"); } }
   @media (max-width: 1350px) {
     .journey {
-      background-position-y: 5vw;
       background-size: 10.76%, 49.88%; } }
 
 .journey__container {
@@ -1343,7 +1342,7 @@ input[type="radio"].visually-hidden {
 @media (max-width: 767px) {
   .journey {
     padding-top: 56px;
-    padding-bottom: 310px;
+    min-height: 156vw;
     background: url("../img/bg-iwantgo-backpack-mobile@1x.png") 0 0 no-repeat, url("../img/bg-iwantgo-girl-mobile@1x.png") 0 347px no-repeat;
     background-size: 100px, contain; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
