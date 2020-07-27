@@ -132,12 +132,14 @@
 }
 
 .reviews__button {
-  border: 0;
   width: 11px;
   height: 18px;
 
+  font-size: 0;
+
   cursor: pointer;
 
+  border: 0;
   &:hover {
     opacity: 0.5;
   }
