@@ -251,14 +251,6 @@
 }
 
 @media (max-width: 767px) {
-  .programs__heading {
-    @include heading-h2-mobile;
-
-    margin-bottom: 16px;
-
-    text-align: center;
-  }
-
   .programs {
     padding: 0;
     padding-top: 4px;
@@ -276,13 +268,21 @@
     }
 
     width: 100%;
-    min-height: 580px;
+    min-height: 100px;
 
     overflow-x: hidden;
     overflow-y: visible;
 
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+  .programs__heading {
+    @include heading-h2-mobile;
+
+    margin-bottom: 16px;
+
+    text-align: center;
   }
 
   .programs__list {
@@ -332,8 +332,8 @@
   }
 
   .programs__content {
-
-    top: 130px;
+    position: relative;
+    top: -30px;
     left: 15px;
     width: 95%;
   }

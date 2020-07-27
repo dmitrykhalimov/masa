@@ -1340,7 +1340,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 767px) {
   .journey {
-    padding-top: 56px;
+    padding-top: 36px;
     min-height: 156vw;
     background: url("../img/bg-iwantgo-backpack-mobile@1x.png") 0 0 no-repeat, url("../img/bg-iwantgo-girl-mobile@1x.png") 0 347px no-repeat;
     background-size: 100px, contain; } }
@@ -2343,6 +2343,27 @@ input[type="radio"].visually-hidden {
     left: 301px; } }
 
 @media (max-width: 767px) {
+  .programs {
+    padding: 0;
+    padding-top: 4px;
+    position: relative;
+    background-image: url("../img/bg-programs-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 120px;
+    background-size: 90% auto;
+    width: 100%;
+    min-height: 100px;
+    overflow-x: hidden;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .programs {
+      background-image: url("../img/bg-programs-mobile@2x.png");
+      background-size: 90% auto; } }
+
+@media (max-width: 767px) {
   .programs__heading {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
@@ -2354,27 +2375,6 @@ input[type="radio"].visually-hidden {
     color: #1fc0fc;
     margin-bottom: 16px;
     text-align: center; }
-  .programs {
-    padding: 0;
-    padding-top: 4px;
-    position: relative;
-    background-image: url("../img/bg-programs-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: 120px;
-    background-size: 90% auto;
-    width: 100%;
-    min-height: 580px;
-    overflow-x: hidden;
-    overflow-y: visible;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar; } }
-  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-    .programs {
-      background-image: url("../img/bg-programs-mobile@2x.png");
-      background-size: 90% auto; } }
-
-@media (max-width: 767px) {
   .programs__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2413,7 +2413,8 @@ input[type="radio"].visually-hidden {
     background: linear-gradient(141.47deg, #ffc341 20.46%, #ffd701 65.31%);
     border-radius: 61px; }
   .programs__content {
-    top: 130px;
+    position: relative;
+    top: -30px;
     left: 15px;
     width: 95%; }
   .programs__name {
