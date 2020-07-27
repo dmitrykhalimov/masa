@@ -1111,7 +1111,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 767px) {
   .howto {
-    padding-top: 79px;
+    padding-top: 59px;
     padding-bottom: 40px;
     background: url("../img/bg-howto-stamp-mobile@1x.png") right 352px no-repeat; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
@@ -1341,8 +1341,8 @@ input[type="radio"].visually-hidden {
 @media (max-width: 767px) {
   .journey {
     padding-top: 36px;
-    min-height: 156vw;
-    background: url("../img/bg-iwantgo-backpack-mobile@1x.png") 0 0 no-repeat, url("../img/bg-iwantgo-girl-mobile@1x.png") 0 347px no-repeat;
+    min-height: calc(100vw + 200px);
+    background: url("../img/bg-iwantgo-backpack-mobile@1x.png") 0 0 no-repeat, url("../img/bg-iwantgo-girl-mobile@1x.png") 0 327px no-repeat;
     background-size: 100px, contain; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .journey {

@@ -138,10 +138,10 @@
 @media (max-width: 767px) {
   .journey {
     padding-top: 36px;
-    min-height: 156vw;
+    min-height: calc(100vw + 200px);
 
     background: url("../img/bg-iwantgo-backpack-mobile@1x.png") 0 0 no-repeat,
-      url("../img/bg-iwantgo-girl-mobile@1x.png") 0 347px no-repeat;
+      url("../img/bg-iwantgo-girl-mobile@1x.png") 0 327px no-repeat;
     background-size: 100px, contain;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
