@@ -132,9 +132,12 @@
 }
 
 .reviews__button {
+  display: inline-block;
+  vertical-align: middle;
   width: 11px;
   height: 18px;
 
+  margin-top: -8px;
   font-size: 0;
 
   cursor: pointer;
@@ -148,7 +151,11 @@
 .reviews__slider {
   position: absolute;
   bottom: 0;
-  left: 36.7%;
+  left: calc(28vw + 120px);
+
+  @media(max-width: 1045px) {
+    bottom: -25px;
+  }
 }
 
 .reviews__socials {
@@ -163,6 +170,10 @@
 
   @include list-reset;
   list-style: none;
+
+  @media(max-width: 1045px) {
+    bottom: -25px;
+  }
 }
 
 .reviews__button--prev {

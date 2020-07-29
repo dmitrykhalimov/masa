@@ -2583,8 +2583,11 @@ input[type="radio"].visually-hidden {
   margin-right: 20px; }
 
 .reviews__button {
+  display: inline-block;
+  vertical-align: middle;
   width: 11px;
   height: 18px;
+  margin-top: -8px;
   font-size: 0;
   cursor: pointer;
   border: 0; }
@@ -2594,7 +2597,10 @@ input[type="radio"].visually-hidden {
 .reviews__slider {
   position: absolute;
   bottom: 0;
-  left: 36.7%; }
+  left: calc(28vw + 120px); }
+  @media (max-width: 1045px) {
+    .reviews__slider {
+      bottom: -25px; } }
 
 .reviews__socials {
   display: -webkit-box;
@@ -2610,6 +2616,9 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none; }
+  @media (max-width: 1045px) {
+    .reviews__socials {
+      bottom: -25px; } }
 
 .reviews__button--prev {
   background: url("../img/icon-prev.svg") 0 0 no-repeat;
