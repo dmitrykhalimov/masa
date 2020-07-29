@@ -12,6 +12,12 @@
   }
 }
 
+.swiper-container {
+  @include outline;
+  width: 100%;
+  height: 300px;
+}
+
 .life-in-israel__heading {
   @include heading-h2;
 

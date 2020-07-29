@@ -12,6 +12,8 @@
   <link href="fonts/FiraSans-Bold.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/FiraSans-Medium.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
 </head>
 <body>
   <header class="page-header">
@@ -203,6 +205,19 @@
         <span class="life-in-israel__selector"></span>
       </div>
     </section>
+
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+  </div>
     <section class="masa-israel">
       <h2 class="masa-israel__heading">#MASAISRAEL</h2>
       <p class="masa-israel__text">Познакомьтесь с программой от первого лица! Многие участники ведут блоги и фотодневники о жизни, учёбе и путешествиях в Израиле.</p>
@@ -511,10 +526,39 @@
       </div>
     </section>
   </main>
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="js/main.js"></script>
   <script src="js/vendor.js"></script>
   <script>svg4everybody();</script>
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    },
+  }
+  })
+  </script>
 </body>
 
 </html>
