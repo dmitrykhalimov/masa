@@ -147,10 +147,21 @@
     expandButton.addEventListener('click', onExpand);
   });
 })();
-
+/*
 (function () {
   // Слайдер
   'use strict';
+  var isDesktop = true;
+  var isMobile = true;
+
+  if (window.innerWidth > 767) {
+    isDesktop = true;
+    isMobile = false;
+
+  } else {
+    isDesktop = false;
+    isMobile = true;
+  }
 
   var buttonsSlider = document.querySelectorAll('.life-in-israel__selector');
 
@@ -166,8 +177,16 @@
 
   window.onresize = function () {
     var currentWidth = window.innerWidth;
-    if (currentWidth > 767) {
+    if (currentWidth > 767 && !isDesktop) {
       returnSlides();
+      isDesktop = true;
+      isMobile = false;
+      //alert('Больше 767')
+
+    } else if (currentWidth <= 767 && !isMobile) {
+      //alert('Меньше 767')
+      isMobile = true;
+      isDesktop = false;
     }
   };
 
@@ -194,7 +213,7 @@
   };
 
 
-})();
+})(); */
 
 (function () {
   var programs = document.querySelectorAll('.programs__radio');
@@ -268,6 +287,30 @@
 
   returnActiveNumber();
 })();
+/*
+(function () {
+  var mySwiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+})(); */
 
 /*
 (function () {

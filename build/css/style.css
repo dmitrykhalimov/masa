@@ -2903,11 +2903,6 @@ input[type="radio"].visually-hidden {
     .life-in-israel {
       background-image: url("../img/bg-life-watercolor@2x.png"), url("../img/bg-life-watch@2x.png"); } }
 
-.swiper-container {
-  outline: 4px solid red;
-  width: 100%;
-  height: 300px; }
-
 .life-in-israel__heading {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
@@ -3071,16 +3066,6 @@ input[type="radio"].visually-hidden {
     padding-right: 0;
     width: 88%;
     text-align: left; }
-  .life-in-israel__slider {
-    position: relative;
-    top: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: hidden;
-    margin: auto;
-    margin-top: 25px;
-    max-width: 90%; }
   .life-in-israel__slider-item {
     -ms-flex-negative: 0;
         flex-shrink: 0;
