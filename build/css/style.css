@@ -1642,6 +1642,7 @@ input[type="radio"].visually-hidden {
   height: 17px;
   border: 0;
   font-size: 0;
+  cursor: pointer;
   background: url("../img/icon-close.svg") 0 0 no-repeat; }
   .modal-accepted__close:hover {
     opacity: 0.6; }
@@ -1821,7 +1822,8 @@ input[type="radio"].visually-hidden {
   display: block;
   margin-left: 83px;
   margin-top: 17px;
-  width: 240px; }
+  width: 240px;
+  cursor: pointer; }
 
 .modal-callback__acceptance::before {
   position: absolute;
@@ -1855,6 +1857,7 @@ input[type="radio"].visually-hidden {
   height: 17px;
   border: 0;
   font-size: 0;
+  cursor: pointer;
   background: url("../img/icon-close.svg") 0 0 no-repeat; }
   .modal-callback__close:hover {
     opacity: 0.6; }
@@ -1950,9 +1953,9 @@ input[type="radio"].visually-hidden {
   opacity: 0.5; }
 
 .page-footer__social-item {
-  --circle: #d6d6d6; }
+  fill: #d6d6d6; }
   .page-footer__social-item:hover {
-    --circle: #ebebeb; }
+    fill: #ebebeb; }
 
 @media (max-width: 767px) {
   .page-footer__logo {
@@ -2467,7 +2470,6 @@ input[type="radio"].visually-hidden {
 
 .reviews {
   position: relative;
-  min-height: 525px;
   background: url("../img/bg-reviews-watercolor-desktop@1x.png") right 0 no-repeat, url("../img/bg-reviews-sketch-desktop@1x.png") right 52px no-repeat;
   background-size: 92.16%, 38.28%; }
 
@@ -2482,6 +2484,10 @@ input[type="radio"].visually-hidden {
   color: #1fc0fc;
   margin-bottom: 0;
   text-align: center; }
+
+.reviews__controls {
+  outline: 4px solid red;
+  position: relative; }
 
 .reviews__list {
   margin: 0;
@@ -2511,7 +2517,8 @@ input[type="radio"].visually-hidden {
 
 .reviews__container {
   margin-top: 40px;
-  margin-left: 40px; }
+  margin-left: 40px;
+  padding-bottom: 50px; }
 
 .reviews__title,
 .reviews__program {

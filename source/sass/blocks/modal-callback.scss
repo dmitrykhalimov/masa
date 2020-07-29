@@ -133,6 +133,8 @@
   margin-top: 17px;
 
   width: 240px;
+
+  cursor: pointer;
 }
 
 .modal-callback__acceptance::before {
@@ -175,6 +177,8 @@
 
   border: 0;
   font-size: 0;
+
+  cursor: pointer;
 
   background: url("../img/icon-close.svg") 0 0 no-repeat;
 
