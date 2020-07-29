@@ -912,9 +912,14 @@ input[type="radio"].visually-hidden {
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .howto {
       background-image: url("../img/bg-howto-people-desktop@2x.png"), url("../img/bg-howto-stamp-desktop@2x.png"), url("../img/bg-howto-watercolor@2x.png"); } }
-  @media (max-width: 1050px) {
+  @media (max-width: 1150px) {
     .howto {
-      background-size: 38.89%, 15.81%, 80%; } }
+      /*
+    background-size: 34.89%, 15.81%, 100%;
+    bac} */
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding-left: 500px; } }
 
 .howto__heading {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -1080,7 +1085,8 @@ input[type="radio"].visually-hidden {
 @media (max-width: 1023px) {
   .howto {
     background-size: 470px auto, auto;
-    background-position-y: 100px, 300px, 100px; }
+    background-position-y: 100px, 300px, 100px;
+    padding-left: 0; }
   .howto__heading {
     margin-top: 0;
     margin-bottom: 25px;

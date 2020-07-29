@@ -13,11 +13,14 @@
     background-image: url("../img/bg-howto-people-desktop@2x.png"),
       url("../img/bg-howto-stamp-desktop@2x.png"),
       url("../img/bg-howto-watercolor@2x.png");
-    //background-size: 581px auto, 216px auto, 1366px auto;
   }
 
-  @media (max-width: 1050px) {
-    background-size: 38.89%, 15.81%, 80%;
+  @media (max-width: 1150px) {
+    /*
+    background-size: 34.89%, 15.81%, 100%;
+    bac} */
+    box-sizing: border-box;
+    padding-left: 500px;
   }
 }
 
@@ -223,6 +226,7 @@
   .howto {
     background-size: 470px auto, auto;
     background-position-y: 100px, 300px, 100px;
+    padding-left: 0;
   }
 
   .howto__heading {
