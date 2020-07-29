@@ -540,22 +540,12 @@
   <script>
 
   var mySwiper = Swiper;
-
-  mySwiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  })
-
+  //document.querySelector('.life-in-israel__slider').classList.remove('swiper-wrapper');
   var isDesktop = true;
   var isMobile = true;
 
   var initalizeSwiper = function() {
+    document.querySelector('.life-in-israel__slider').classList.add('swiper-wrapper');
     mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
@@ -568,9 +558,15 @@
   })
   }
 
+  var destroySwiper = function() {
+    document.querySelector('.life-in-israel__slider').classList.remove('swiper-wrapper');
+    mySwiper.destroy(false, true);
+  }
+
   if (window.innerWidth > 767) {
     isDesktop = true;
     isMobile = false;
+    destroySwiper();
   } else {
     isDesktop = false;
     isMobile = true;
@@ -582,10 +578,12 @@
     if (currentWidth > 767 && !isDesktop) {
       isDesktop = true;
       isMobile = false;
-      mySwiper.destroy(false, false);
+      alert('Test1');
+      destroySwiper();
     } else if (currentWidth <= 767 && !isMobile) {
       isMobile = true;
       isDesktop = false;
+      alert('Test2');
       initalizeSwiper();
     }
   }
