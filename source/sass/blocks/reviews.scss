@@ -7,7 +7,6 @@
   padding: 0;
 
 
-  @include outline;
 
   background: url("../img/bg-reviews-watercolor-desktop@1x.png") right 0 no-repeat,
       url("../img/bg-reviews-sketch-desktop@1x.png") right 52px no-repeat;
@@ -103,7 +102,7 @@
 
 
 .reviews__list {
-  @include outline(green);
+
   margin: 0;
   margin-top: 7px;
   margin-left: 98px;
@@ -231,7 +230,7 @@
 
 .reviews__slider {
   position: absolute;
-  bottom: 18px;
+  bottom: -2px;
   left: calc(28vw + 120px);
 
   z-index: 2;
@@ -242,7 +241,7 @@
   justify-content: space-between;
 
   position: absolute;
-  bottom: 18px;
+  bottom: -4px;
   right: 185px;
 
   width: 104px;
@@ -308,7 +307,7 @@
 
   .reviews__list {
     @include list-reset;
-    //@include outline(blue);
+
     width: 100%;
   }
 

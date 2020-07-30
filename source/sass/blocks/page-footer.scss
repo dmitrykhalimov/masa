@@ -44,6 +44,10 @@
 }
 
 @media (max-width: 767px) {
+  .page-footer {
+    box-sizing: border-box;
+    border-top: 2px solid $gray;
+  }
   .page-footer__logo {
     display: block;
     margin: 0 auto;
@@ -68,5 +72,12 @@
     padding: 0;
     margin: 0 auto;
     margin-top: 30px;
+    @include outline(green);
+    width: 45%;
+  }
+
+  .page-footer__social-item svg {
+    width: 32px;
+    height: 32px;
   }
 }
