@@ -224,7 +224,7 @@
 
 @media (max-width: 1023px) {
   .howto {
-    background-size: 470px auto, auto;
+    background-size: 470px, 15.81%, 100%;
     background-position-y: 100px, 300px, 100px;
     padding-left: 0;
   }
@@ -279,7 +279,7 @@
     padding-top: 59px;
     padding-bottom: 40px;
 
-    background: url("../img/bg-howto-stamp-mobile@1x.png") right 352px no-repeat;
+    background: url("../img/bg-howto-stamp-mobile@1x.png") right 332px no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-howto-stamp-mobile@2x.png");

@@ -11,7 +11,7 @@
   <link href="fonts/FiraSans-Regular.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/FiraSans-Bold.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/FiraSans-Medium.woff2" as="font" rel="preload" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css?ver=5">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="page-header">
@@ -25,7 +25,7 @@
     <h1 class="visually-hidden">Сайт программы "Маса"</h1>
     <section class="promo">
       <h2 class="promo__heading">Учёба, путешествия и карьера для еврейской молодёжи</h2>
-      <a href="#about" class="promo__button">
+      <a href="#about" class="promo__button" aria-label="Button to about">
         <svg width="76" height="132" viewBox="0 0 76 132" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <path d="M38 76V131.5" stroke="white"/>
           <rect x="29" y="25" width="17" height="26" fill="url(#pattern0)"/>
@@ -529,7 +529,7 @@
           <span class="modal-callback__phone-error">Ошибка: неверный формат</span>
           <button class="modal-callback__button" type="submit">Перезвоните мне</button>
           <input class="modal-callback__acceptance-cb visually-hidden" type="checkbox" id="acceptance" name="acceptance" required>
-          <label class="modal-callback__acceptance" for="acceptance">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
+          <label class="modal-callback__acceptance" name="acceptance__text" for="acceptance">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
         </form>
         <button class="modal-callback__close" type="button">Закрыть</button>
       </div>
