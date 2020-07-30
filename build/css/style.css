@@ -2102,14 +2102,14 @@ input[type="radio"].visually-hidden {
   color: white;
   z-index: 3; }
 
-.promo__heading::before {
-  content: "";
-  position: absolute;
-  left: 39%;
-  top: 90px;
-  width: 76px;
-  height: 132px;
-  background: url("../img/scroll-down.svg") 0 0 no-repeat; }
+.promo__button {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 76px; }
+  .promo__button :hover {
+    opacity: 0.5; }
 
 @media (max-width: 1023px) {
   .promo__decorative-text {
