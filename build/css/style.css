@@ -3066,14 +3066,22 @@ input[type="radio"].visually-hidden {
     padding-right: 0;
     width: 88%;
     text-align: left; }
+  .life-in-israel__slider {
+    max-width: 100%;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+    margin-top: 50px;
+    margin-bottom: 11px; }
   .life-in-israel__slider-item {
     -ms-flex-negative: 0;
         flex-shrink: 0;
     width: 100%; }
   .life-in-israel__slider-item img {
     display: block;
-    width: 100%;
-    height: auto; }
+    width: 90%;
+    height: auto;
+    margin: 0 auto; }
   .life-in-israel__selectors {
     display: block;
     margin-top: 6px;
@@ -3090,6 +3098,9 @@ input[type="radio"].visually-hidden {
   .life-in-israel__selector--active {
     height: 8px;
     width: 8px;
-    background-color: #ffd701; } }
+    background-color: #ffd701; }
+  .life-in-israel__slider-item--leadership,
+  .life-in-israel__slider-item--skills {
+    padding-left: 0; } }
 
 /*# sourceMappingURL=style.css.map */
