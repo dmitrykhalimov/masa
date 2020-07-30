@@ -2469,10 +2469,105 @@ input[type="radio"].visually-hidden {
     height: 35px; } }
 
 .reviews {
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  outline: 4px solid red;
   background: url("../img/bg-reviews-watercolor-desktop@1x.png") right 0 no-repeat, url("../img/bg-reviews-sketch-desktop@1x.png") right 52px no-repeat;
   background-size: 92.16%, 38.28%; }
 
+.reviews__list {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
+
+/*
+.swiper-container-multirow > .reviews__list {
+  flex-wrap: wrap;
+}
+.swiper-container-multirow-column > .reviews__list {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.swiper-container-free-mode > .reviews__list {
+  transition-timing-function: ease-out;
+  margin: 0 auto;
+} */
+.reviews__slide {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+/* a11y */
+/*.reviews .swiper-notification {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: -1000;
+}
+.swiper-container-fade.swiper-container-free-mode .reviews__slide {
+  transition-timing-function: ease-out;
+}
+.swiper-container-fade .reviews__slide {
+  pointer-events: none;
+  transition-property: opacity;
+}
+.swiper-container-fade .reviews__slide .reviews__slide {
+  pointer-events: none;
+}
+
+.swiper-container-cube .reviews__slide {
+  pointer-events: none;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  z-index: 1;
+  visibility: hidden;
+  transform-origin: 0 0;
+  width: 100%;
+  height: 100%;
+}
+.swiper-container-cube .reviews__slide .reviews__slide {
+  pointer-events: none;
+}
+.swiper-container-cube.swiper-container-rtl .reviews__slide {
+  transform-origin: 100% 0;
+}
+
+.swiper-container-flip .reviews__slide {
+  pointer-events: none;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  z-index: 1;
+}
+*/
 .reviews__heading {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
@@ -2485,31 +2580,13 @@ input[type="radio"].visually-hidden {
   margin-bottom: 0;
   text-align: center; }
 
-.reviews__controls {
-  outline: 4px solid red;
-  position: relative; }
-
 .reviews__list {
+  outline: 4px solid green;
   margin: 0;
   margin-top: 7px;
   margin-left: 98px;
   padding: 0;
   width: 79.35%; }
-
-.reviews__item {
-  display: none;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-
-.reviews__item--active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
 
 .reviews__item img {
   width: 26.5vw;
@@ -2565,7 +2642,8 @@ input[type="radio"].visually-hidden {
   line-height: 29px;
   color: #484848;
   color: black;
-  opacity: 0.74; }
+  opacity: 0.74;
+  width: 70%; }
 
 .reviews__expand {
   font-family: "Fira Sans", "Arial", sans-serif;
@@ -2673,6 +2751,8 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding: 0;
     width: 100%; }
+  .reviews__slide {
+    display: block; }
   .reviews__item {
     margin: 0;
     padding: 0;
@@ -2977,7 +3057,7 @@ input[type="radio"].visually-hidden {
           column-gap: 15px;
   row-gap: 30px;
   grid-template-rows: 4.91% 43.44% 43.44%;
-  grid-template-columns: 41.62% 18.22% 15.88% 19.86%; }
+  grid-template-columns: 41.62% 18.22% 15.88% 18.30%; }
 
 .life-in-israel__selectors {
   display: none; }

@@ -147,73 +147,6 @@
     expandButton.addEventListener('click', onExpand);
   });
 })();
-/*
-(function () {
-  // Слайдер
-  'use strict';
-  var isDesktop = true;
-  var isMobile = true;
-
-  if (window.innerWidth > 767) {
-    isDesktop = true;
-    isMobile = false;
-
-  } else {
-    isDesktop = false;
-    isMobile = true;
-  }
-
-  var buttonsSlider = document.querySelectorAll('.life-in-israel__selector');
-
-  var onButtonSliderClick = function (button, number) {
-    button.addEventListener('click', function () {
-      showSlides(number);
-    });
-  };
-
-  buttonsSlider.forEach(function (button, index) {
-    onButtonSliderClick(button, index);
-  });
-
-  window.onresize = function () {
-    var currentWidth = window.innerWidth;
-    if (currentWidth > 767 && !isDesktop) {
-      returnSlides();
-      isDesktop = true;
-      isMobile = false;
-      //alert('Больше 767')
-
-    } else if (currentWidth <= 767 && !isMobile) {
-      //alert('Меньше 767')
-      isMobile = true;
-      isDesktop = false;
-    }
-  };
-
-  var returnSlides = function () {
-    var slides = document.querySelectorAll('.life-in-israel__slider-item');
-
-    slides.forEach(function (slide) {
-      slide.classList.remove('visually-hidden');
-    });
-  };
-
-  var showSlides = function (numberSlide) {
-    document.querySelector('.life-in-israel__selector--active').classList.remove('life-in-israel__selector--active');
-    buttonsSlider[numberSlide].classList.add('life-in-israel__selector--active');
-    var slides = document.querySelectorAll('.life-in-israel__slider-item');
-
-    slides.forEach(function (slide, index) {
-      if (index !== (numberSlide)) {
-        slide.classList.add('visually-hidden');
-      } else {
-        slide.classList.remove('visually-hidden');
-      }
-    });
-  };
-
-
-})(); */
 
 (function () {
   var programs = document.querySelectorAll('.programs__radio');
@@ -237,7 +170,40 @@
   }
 })();
 
+(function () {
+  var reviewsSwiper;
+  var title = document.querySelector('.reviews__numbers');
 
+  reviewsSwiper = new Swiper('.reviews', {
+    direction: 'horizontal',
+    wrapperClass: 'reviews__list',
+    slideClass: 'reviews__slide',
+
+    pagination: {
+      el: '.reviews__pagination',
+      clickable: true,
+    },
+  });
+
+  reviewsSwiper.on('slideChange', function () {
+    title.textContent = (reviewsSwiper.activeIndex + 1) + ' / ' + reviewsSwiper.slides.length;
+  });
+
+  reviewsSwiper.slideNext();
+  reviewsSwiper.slideNext();
+
+  var buttonPrev = document.querySelector('.reviews__button--prev');
+  var buttonNext = document.querySelector('.reviews__button--next');
+
+  buttonPrev.addEventListener('click', function () {
+    reviewsSwiper.slidePrev();
+  });
+
+  buttonNext.addEventListener('click', function () {
+    reviewsSwiper.slideNext();
+  });
+})();
+/*
 (function () {
 
   var reviews = document.querySelectorAll('.reviews__item');
@@ -286,8 +252,9 @@
   buttonNext.addEventListener('click', onButtonNextClick);
 
   returnActiveNumber();
-})();
+})(); */
 
+// слайдер жизнь в израиле
 (function () {
   var mySwiper;
 
@@ -296,6 +263,7 @@
 
   var initalizeSwiper = function () {
     document.querySelector('.life-in-israel__slider').classList.add('swiper-wrapper');
+    document.querySelector('.life-in-israel').classList.add('swiper-container');
     mySwiper = new Swiper('.swiper-container', {
       direction: 'horizontal',
       loop: true,
@@ -309,6 +277,7 @@
 
   var destroySwiper = function () {
     document.querySelector('.life-in-israel__slider').classList.remove('swiper-wrapper');
+    document.querySelector('.life-in-israel').classList.remove('swiper-container');
     mySwiper.destroy(false, true);
   };
 
@@ -316,6 +285,7 @@
     isDesktop = true;
     isMobile = false;
     document.querySelector('.life-in-israel__slider').classList.remove('swiper-wrapper');
+    document.querySelector('.life-in-israel').classList.remove('swiper-container');
   } else {
     isDesktop = false;
     isMobile = true;
