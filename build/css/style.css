@@ -2681,11 +2681,9 @@ input[type="radio"].visually-hidden {
 
 .reviews__slider {
   position: absolute;
-  bottom: 0;
-  left: calc(28vw + 120px); }
-  @media (max-width: 1045px) {
-    .reviews__slider {
-      bottom: -25px; } }
+  bottom: 18px;
+  left: calc(28vw + 120px);
+  z-index: 2; }
 
 .reviews__socials {
   display: -webkit-box;
@@ -2695,15 +2693,13 @@ input[type="radio"].visually-hidden {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: absolute;
-  bottom: 0;
+  bottom: 18px;
   right: 185px;
   width: 104px;
   margin: 0;
   padding: 0;
-  list-style: none; }
-  @media (max-width: 1045px) {
-    .reviews__socials {
-      bottom: -25px; } }
+  list-style: none;
+  z-index: 2; }
 
 .reviews__button--prev {
   background: url("../img/icon-prev.svg") 0 0 no-repeat;
@@ -2717,19 +2713,17 @@ input[type="radio"].visually-hidden {
     margin-left: 10px;
     width: 90%; }
   .reviews__socials {
-    bottom: -50px;
     right: 100px; }
   .reviews__item img {
     width: 300px; }
   .reviews__slider {
-    bottom: -50px;
     left: 350px; }
   .reviews__text {
     font-size: 15px; } }
 
 @media (max-width: 767px) {
   .reviews {
-    padding-bottom: 22px; }
+    padding-bottom: 42px; }
   .reviews__heading {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
@@ -2798,10 +2792,10 @@ input[type="radio"].visually-hidden {
     font-size: 16px;
     line-height: 24px; }
   .reviews__slider {
-    top: 392px;
+    top: 422px;
     left: calc(50.5% - 50px); }
   .reviews__socials {
-    bottom: -25px;
+    bottom: -5px;
     left: 3%; } }
 
 .questions {
