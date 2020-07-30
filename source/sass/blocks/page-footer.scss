@@ -54,7 +54,9 @@
     display: block;
     margin: 0 auto;
     margin-top: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 21px;
+    width: 105px;
+    height: auto;
   }
 
   .page-footer__container {
@@ -73,9 +75,11 @@
   .page-footer__socials {
     margin: 0 auto;
     margin-top: 30px;
-    padding: 0;
 
-    width: 45%;
+    padding: 0;
+    padding-right: 6px;
+
+    width: 43%;
   }
 
   .page-footer__social-item svg {

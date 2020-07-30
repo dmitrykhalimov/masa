@@ -1954,7 +1954,9 @@ input[type="radio"].visually-hidden {
     display: block;
     margin: 0 auto;
     margin-top: 30px;
-    margin-bottom: 25px; }
+    margin-bottom: 21px;
+    width: 105px;
+    height: auto; }
   .page-footer__container {
     display: block;
     margin-left: 0;
@@ -1967,7 +1969,8 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
     margin-top: 30px;
     padding: 0;
-    width: 45%; }
+    padding-right: 6px;
+    width: 43%; }
   .page-footer__social-item svg {
     width: 32px;
     height: 32px; } }
@@ -2744,15 +2747,12 @@ input[type="radio"].visually-hidden {
 .questions {
   background: url("../img/bg-questions-photo-dekstop@1x.png") right 80px no-repeat, url("../img/bg-questions-bag@1x.png") 0 bottom no-repeat, url("../img/bg-questions-watercolor-desktop@1x.png") left top no-repeat;
   background-size: 47.2%, auto, cover;
-  /*@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-questions-photo-dekstop@2x.png"),
-      url("../img/bg-questions-bag@2x.png"),
-      url("../img/bg-questions-watercolor-desktop@2x.png");
-    background-size: 47.2%, 153px, 1366px;
-  } */
   min-height: 65.7vw;
   padding-left: 110px;
   padding-top: 80px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .questions {
+      background-image: url("../img/bg-questions-photo-dekstop@2x.png"), url("../img/bg-questions-bag@2x.png"), url("../img/bg-questions-watercolor-desktop@2x.png"); } }
 
 .questions__heading {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -2861,8 +2861,14 @@ input[type="radio"].visually-hidden {
 @media (max-width: 767px) {
   .questions {
     background: url("../img/bg-questions-bag@1x.png") -5px 738px no-repeat;
+    background-size: 48%;
     padding-left: 0;
-    padding-bottom: 32px; }
+    padding-bottom: 32px; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .questions {
+      background-image: url("../img/bg-questions-bag@2x.png"); } }
+
+@media (max-width: 767px) {
   .questions__heading {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
