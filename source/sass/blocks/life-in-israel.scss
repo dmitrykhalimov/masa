@@ -181,14 +181,14 @@
 
   .life-in-israel__slider-item--excursion .life-in-israel__slide-text {
     bottom: 6%;
-    left: 36px;
+    left: 40px;
   }
 
   .life-in-israel__text {
     @include text-big-mobile;
 
     margin-left: 0;
-    padding-left: 15px;
+    padding-left: 20px;
     padding-right: 0;
 
     width: 88%;
@@ -199,8 +199,8 @@
   .life-in-israel__slider {
     max-width: 100%;
     column-gap: 0;
-    margin-top: 50px;
-    margin-bottom: 11px;
+    margin-top: 45px;
+    margin-bottom: 15px;
   }
 
   .life-in-israel__slider-item {
@@ -220,7 +220,6 @@
   .life-in-israel__selectors {
     display: block;
 
-    margin-top: 6px;
 
     text-align: center;
   }

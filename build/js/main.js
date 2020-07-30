@@ -287,30 +287,58 @@
 
   returnActiveNumber();
 })();
-/*
+
 (function () {
-  var mySwiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
+  var mySwiper;
 
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
+  var isDesktop = true;
+  var isMobile = true;
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  var initalizeSwiper = function () {
+    document.querySelector('.life-in-israel__slider').classList.add('swiper-wrapper');
+    mySwiper = new Swiper('.swiper-container', {
+      direction: 'horizontal',
+      loop: true,
 
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  };
+
+  var destroySwiper = function () {
+    document.querySelector('.life-in-israel__slider').classList.remove('swiper-wrapper');
+    mySwiper.destroy(false, true);
+  };
+
+  if (window.innerWidth > 767) {
+    isDesktop = true;
+    isMobile = false;
+    document.querySelector('.life-in-israel__slider').classList.remove('swiper-wrapper');
+  } else {
+    isDesktop = false;
+    isMobile = true;
+    initalizeSwiper();
+  }
+
+  function swiperMode() {
+    var currentWidth = window.innerWidth;
+    if (currentWidth > 767 && !isDesktop) {
+      isDesktop = true;
+      isMobile = false;
+      destroySwiper();
+    } else if (currentWidth <= 767 && !isMobile) {
+      isMobile = true;
+      isDesktop = false;
+      initalizeSwiper();
+    }
+  }
+
+  window.addEventListener('resize', function () {
+    swiperMode();
   });
-})(); */
+})();
 
 /*
 (function () {
