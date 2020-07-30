@@ -152,7 +152,7 @@
   border: 2px solid $yellow;
 }
 
-.modal-callback__form input[name="acceptance"]:checked + label[name="acceptance__text"]::after {
+.modal-callback__form input[name="acceptance"]:checked + label::after {
   position: absolute;
   content: "";
   left: -23px;

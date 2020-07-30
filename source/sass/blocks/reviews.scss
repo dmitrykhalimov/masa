@@ -12,8 +12,8 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../../img/bg-reviews-watercolor-desktop@2x.png"),
-      url("../../img/bg-reviews-sketch-desktop@2x.png")
-    }
+      url("../../img/bg-reviews-sketch-desktop@2x.png");
+  }
 }
 
 .reviews__slide {
@@ -228,13 +228,13 @@
 @media (max-width: 767px) {
   .reviews {
     padding-bottom: 42px;
-    background: url("../../img/bg-reviews-watercolor-mobile@1x.png") right 750px no-repeat,
-                url("../../img/bg-reviews-sketch-mobile@1x.png") right 550px no-repeat;
+    background: url("../img/bg-reviews-watercolor-mobile@1x.png") right 750px no-repeat,
+      url("../img/bg-reviews-sketch-mobile@1x.png") right 550px no-repeat;
     background-size: 100%, 90%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/bg-reviews-watercolor-mobile@2x.png"),
-      url("../../img/bg-reviews-sketch-mobile@2x.png")
+      background-image: url("../img/bg-reviews-watercolor-mobile@2x.png"),
+        url("../img/bg-reviews-sketch-mobile@2x.png");
     }
   }
 

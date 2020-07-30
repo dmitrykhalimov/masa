@@ -9,6 +9,8 @@
  *
  * Released on: July 15, 2020
  */
+/* stylelint-disable */
+
 
 @font-face {
   font-family: 'swiper-icons';
@@ -260,7 +262,7 @@ button.swiper-pagination-bullet {
   padding: 0;
   box-shadow: none;
   -webkit-appearance: none;
-     -moz-appearance: none;
+      -moz-appearance: none;
           appearance: none;
 }
 .swiper-pagination-clickable .swiper-pagination-bullet {
@@ -533,3 +535,4 @@ button.swiper-pagination-bullet {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
+/* stylelint-enable */
