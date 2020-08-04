@@ -1219,7 +1219,7 @@ input[type="radio"].visually-hidden {
       background-size: 10.76%, 49.88%; } }
   @media (max-width: 1100px) {
     .journey {
-      background-size: 10.76%, 47.5%;
+      background-size: 10.76%, 44.5%;
       background-position-y: 140px, 50px; } }
 
 .journey__container {
@@ -1324,8 +1324,8 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 1023px) {
   .journey {
-    background: url("../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat, url("../img/bg-iwantgo-girl-dekstop@1x.png") right 140px no-repeat;
-    background-size: auto, 550px auto;
+    background: url("../img/bg-iwantgo-backpack-desktop@1x.png") left 140px no-repeat, url("../img/bg-iwantgo-girl-dekstop@1x.png") right 180px no-repeat;
+    background-size: auto, 500px auto;
     padding-bottom: 100px; }
   .journey__container {
     /*
