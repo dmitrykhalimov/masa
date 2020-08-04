@@ -49,6 +49,8 @@
       closeCallback();
       openAccepted();
       evt.preventDefault();
+    } else if (!formPhone.validity.value) {
+      document.querySelector('.modal-callback__phone-error').classList.remove('visually-hidden');
     }
   };
 
@@ -56,6 +58,8 @@
     if (contactsName.validity.valid && contactsPhone.validity.valid) {
       openAccepted();
       evt.preventDefault();
+    } else if (!contactsPhone.validity.value) {
+      document.querySelector('.contacts__phone-error').classList.remove('visually-hidden');
     }
   };
 
@@ -63,6 +67,8 @@
     if (journeyName.validity.valid) {
       openAccepted();
       evt.preventDefault();
+    } else if (!journeyName.validity.value) {
+      document.querySelector('.journey__phone-error').classList.remove('visually-hidden');
     }
   };
 
@@ -113,6 +119,18 @@
     document.removeEventListener('keydown', onAcceptedEsc);
     document.querySelector('body').removeEventListener('click', onOverlayClick);
   };
+
+  formPhone.addEventListener('click', function () {
+    document.querySelector('.modal-callback__phone-error').classList.add('visually-hidden');
+  });
+
+  contactsPhone.addEventListener('click', function () {
+    document.querySelector('.contacts__phone-error').classList.add('visually-hidden');
+  });
+
+  journeyName.addEventListener('click', function () {
+    document.querySelector('.journey__phone-error').classList.add('visually-hidden');
+  });
 
 
   callbackOpenButton.addEventListener('click', onCallbackOpenClick);

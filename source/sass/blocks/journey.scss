@@ -161,6 +161,26 @@
     max-width: auto;
   }
 
+
+  .journey__phone-error {
+    position: absolute;
+    bottom: -20px;
+    left: 45%;
+
+
+    display: none;
+
+    font-family: "Fira Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+
+    font-size: 13px;
+    line-height: 150%;
+
+    color: $red;
+    opacity: 0.75;
+  }
+
   .journey__heading {
     @include heading-h2-mobile;
 

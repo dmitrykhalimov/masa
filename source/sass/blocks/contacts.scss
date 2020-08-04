@@ -301,7 +301,7 @@
 .contacts__phone-error {
   position: absolute;
   bottom: 30px;
-  right: 20%;
+  right: calc(20vw + 50px);
 
   display: none;
 
@@ -334,6 +334,11 @@
   .contacts__map {
     margin: 0;
     padding: 0;
+  }
+
+  .contacts__phone-error {
+    bottom: 65px;
+    left: 20px;
   }
 
   .contacts__map-conatiner {
@@ -525,5 +530,12 @@
     margin-top: 23px;
 
     width: 82.81%;
+  }
+
+  .contacts__phone-error {
+    bottom: 60px;
+    right: 200px;
+
+    display: none;
   }
 }

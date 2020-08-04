@@ -746,7 +746,7 @@ input[type="radio"].visually-hidden {
 .contacts__phone-error {
   position: absolute;
   bottom: 30px;
-  right: 20%;
+  right: calc(20vw + 50px);
   display: none;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
@@ -767,6 +767,9 @@ input[type="radio"].visually-hidden {
   .contacts__map {
     margin: 0;
     padding: 0; }
+  .contacts__phone-error {
+    bottom: 65px;
+    left: 20px; }
   .contacts__map-conatiner {
     width: 90%; }
   .contacts__description {
@@ -891,7 +894,11 @@ input[type="radio"].visually-hidden {
   .contacts__button {
     margin: 0 auto;
     margin-top: 23px;
-    width: 82.81%; } }
+    width: 82.81%; }
+  .contacts__phone-error {
+    bottom: 60px;
+    right: 200px;
+    display: none; } }
 
 .howto {
   padding-top: 62px;
@@ -1351,6 +1358,18 @@ input[type="radio"].visually-hidden {
   .journey__container {
     padding: 0;
     max-width: auto; }
+  .journey__phone-error {
+    position: absolute;
+    bottom: -20px;
+    left: 45%;
+    display: none;
+    font-family: "Fira Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    color: #ff0000;
+    opacity: 0.75; }
   .journey__heading {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
@@ -1887,7 +1906,10 @@ input[type="radio"].visually-hidden {
     margin-bottom: 30px;
     padding-right: 5px;
     padding-left: 5px;
+    min-height: 88px;
     text-align: center; }
+  .modal-callback__phone-error {
+    top: 465px; }
   .modal-callback__input {
     width: 100%; }
   .modal-callback__button {
