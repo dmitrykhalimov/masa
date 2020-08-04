@@ -2478,7 +2478,7 @@ input[type="radio"].visually-hidden {
   background-size: 92.16%, 38.28%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .reviews {
-      background-image: url("../../img/bg-reviews-watercolor-desktop@2x.png"), url("../../img/bg-reviews-sketch-desktop@2x.png"); } }
+      background-image: url("../img/bg-reviews-watercolor-desktop@2x.png"), url("../img/bg-reviews-sketch-desktop@2x.png"); } }
 
 .reviews__slide {
   -ms-flex-negative: 0;
