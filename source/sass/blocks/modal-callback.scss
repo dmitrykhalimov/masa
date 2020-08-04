@@ -45,8 +45,7 @@
 }
 
 
-.modal-callback__form input[name="name"],
-.modal-callback__form input[name="phone"] {
+.modal-callback__input {
   @include input-text;
 
   box-sizing: border-box;
@@ -73,7 +72,7 @@
   }
 }
 
-.modal-callback__form button {
+.modal-callback__button {
   @include button-white-text;
   @include button-yellow-background;
 
@@ -101,7 +100,7 @@
   }
 }
 
-.modal-callback__form span {
+.modal-callback__phone-error {
   position: absolute;
   bottom: 160px;
   left: 90px;
@@ -119,11 +118,11 @@
   opacity: 0.75;
 }
 
-.modal-callback__form input[name="phone"]:focus:invalid + span {
+.modal-callback__input--phone:focus:invalid + .modal-callback__phone-error {
   display: block;
 }
 
-.modal-callback__form label {
+.modal-callback__acceptance {
   @include text-small;
 
   position: relative;
@@ -138,7 +137,7 @@
   cursor: pointer;
 }
 
-.modal-callback__form label::before {
+.modal-callback__acceptance::before {
   position: absolute;
   content: "";
   left: -23px;
@@ -152,7 +151,7 @@
   border: 2px solid $yellow;
 }
 
-.modal-callback__form input[name="acceptance"]:checked + label::after {
+.modal-callback__acceptance-cb:checked + .modal-callback__acceptance::after {
   position: absolute;
   content: "";
   left: -23px;

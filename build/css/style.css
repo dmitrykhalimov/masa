@@ -1733,8 +1733,7 @@ input[type="radio"].visually-hidden {
   margin-top: 18px;
   margin-bottom: 33px; }
 
-.modal-callback__form input[name="name"],
-.modal-callback__form input[name="phone"] {
+.modal-callback__input {
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1753,16 +1752,14 @@ input[type="radio"].visually-hidden {
   height: 59px;
   border: 2px solid #e3e3e3;
   border-radius: 80px; }
-  .modal-callback__form input[name="name"]:focus,
-  .modal-callback__form input[name="phone"]:focus {
+  .modal-callback__input:focus {
     outline: none;
     border-color: #ffc341; }
-  .modal-callback__form input[name="name"]:focus:invalid,
-  .modal-callback__form input[name="phone"]:focus:invalid {
+  .modal-callback__input:focus:invalid {
     outline: none;
     border-color: #ff0000; }
 
-.modal-callback__form button {
+.modal-callback__button {
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1781,13 +1778,13 @@ input[type="radio"].visually-hidden {
   border: none;
   border-radius: 80px;
   cursor: pointer; }
-  .modal-callback__form button:hover {
+  .modal-callback__button:hover {
     background: linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%); }
-  .modal-callback__form button:active {
+  .modal-callback__button:active {
     outline: none;
     background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%); }
 
-.modal-callback__form span {
+.modal-callback__phone-error {
   position: absolute;
   bottom: 160px;
   left: 90px;
@@ -1800,10 +1797,10 @@ input[type="radio"].visually-hidden {
   color: #ff0000;
   opacity: 0.75; }
 
-.modal-callback__form input[name="phone"]:focus:invalid + span {
+.modal-callback__input--phone:focus:invalid + .modal-callback__phone-error {
   display: block; }
 
-.modal-callback__form label {
+.modal-callback__acceptance {
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1818,7 +1815,7 @@ input[type="radio"].visually-hidden {
   width: 240px;
   cursor: pointer; }
 
-.modal-callback__form label::before {
+.modal-callback__acceptance::before {
   position: absolute;
   content: "";
   left: -23px;
@@ -1829,7 +1826,7 @@ input[type="radio"].visually-hidden {
   height: 16px;
   border: 2px solid #ffc341; }
 
-.modal-callback__form input[name="acceptance"]:checked + label::after {
+.modal-callback__acceptance-cb:checked + .modal-callback__acceptance::after {
   position: absolute;
   content: "";
   left: -23px;
