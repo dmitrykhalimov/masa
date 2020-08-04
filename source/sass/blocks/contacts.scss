@@ -24,7 +24,7 @@
   box-sizing: border-box;
 
   margin-bottom: 48px;
-  width: 520px;
+  max-width: 520px;
 }
 
 .contacts__title,
@@ -182,8 +182,14 @@
 
   overflow: hidden;
 
+  //width: 51.5vw;
   width: 100%;
   height: auto;
+}
+
+.contacts__map-conatiner {
+  flex-shrink: 1;
+  width: 56%;
 }
 
 .contacts__wrapper {
@@ -316,6 +322,11 @@
     background: none;
   }
 
+  .contacts__heading {
+    max-width: 100%;
+    text-align: center;
+  }
+
   .contacts__container {
     display: block;
   }
@@ -323,13 +334,15 @@
   .contacts__map {
     margin: 0;
     padding: 0;
+  }
 
+  .contacts__map-conatiner {
     width: 90%;
-    height: auto;
   }
 
   .contacts__description {
     @include text-big-mobile;
+    max-width: 88%;
   }
 
   .contacts__bold-text {
@@ -476,15 +489,11 @@
   }
 
   .contacts__map {
-    display: block;
-
-    margin: 0;
-    padding: 0;
-
-    width: 100%;
-    height: auto;
-
     margin-top: 25px;
+  }
+
+  .contacts__map-conatiner {
+    width: 100%;
   }
 
   .contacts__questions {

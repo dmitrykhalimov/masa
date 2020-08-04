@@ -505,7 +505,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 48px;
-  width: 520px; }
+  max-width: 520px; }
 
 .contacts__title,
 .contacts__city,
@@ -641,6 +641,11 @@ input[type="radio"].visually-hidden {
   width: 100%;
   height: auto; }
 
+.contacts__map-conatiner {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  width: 56%; }
+
 .contacts__wrapper {
   max-width: 44%; }
 
@@ -754,20 +759,24 @@ input[type="radio"].visually-hidden {
 @media (max-width: 1023px) {
   .contacts {
     background: none; }
+  .contacts__heading {
+    max-width: 100%;
+    text-align: center; }
   .contacts__container {
     display: block; }
   .contacts__map {
     margin: 0;
-    padding: 0;
-    width: 90%;
-    height: auto; }
+    padding: 0; }
+  .contacts__map-conatiner {
+    width: 90%; }
   .contacts__description {
     font-family: "Fira Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
-    color: #484848; }
+    color: #484848;
+    max-width: 88%; }
   .contacts__bold-text {
     display: block;
     font-size: 16px;
@@ -862,12 +871,9 @@ input[type="radio"].visually-hidden {
     margin-left: 5px;
     width: 90%; }
   .contacts__map {
-    display: block;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
     margin-top: 25px; }
+  .contacts__map-conatiner {
+    width: 100%; }
   .contacts__questions {
     width: 100%;
     padding: 0;
