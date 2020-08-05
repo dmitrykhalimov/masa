@@ -714,8 +714,7 @@ input[type="radio"].visually-hidden {
     outline: none;
     border-color: #ffc341; }
   .contacts__input:focus:invalid {
-    outline: none;
-    border-color: #ff0000; }
+    outline: none; }
 
 .contacts__input--phone:focus:invalid + .contacts__phone-error {
   display: block; }
@@ -1286,8 +1285,7 @@ input[type="radio"].visually-hidden {
     outline: none;
     border-color: #ffc341; }
   .journey__input:focus:invalid {
-    outline: none;
-    border-color: #ff0000; }
+    outline: none; }
 
 .journey__button {
   font-family: "Fira Sans", "Arial", sans-serif;
@@ -1775,8 +1773,7 @@ input[type="radio"].visually-hidden {
     outline: none;
     border-color: #ffc341; }
   .modal-callback__input:focus:invalid {
-    outline: none;
-    border-color: #ff0000; }
+    outline: none; }
 
 .modal-callback__button {
   font-family: "Fira Sans", "Arial", sans-serif;
