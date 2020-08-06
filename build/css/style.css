@@ -2835,6 +2835,7 @@ input[type="radio"].visually-hidden {
   height: 11px;
   font-size: 0;
   border: 0;
+  cursor: pointer;
   background: url("../img/icon-show.svg") center top no-repeat; }
 
 .questions__expand:focus {
