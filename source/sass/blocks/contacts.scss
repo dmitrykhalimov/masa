@@ -165,6 +165,10 @@
   }
 }
 
+.contacts__item a {
+  font-size: 0;
+}
+
 .contacts__description {
   @include text-big;
 

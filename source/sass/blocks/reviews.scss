@@ -114,6 +114,10 @@
   }
 }
 
+.reviews__social-item a {
+  font-size: 0;
+}
+
 .reviews__text {
   @include text-big;
   color: black;

@@ -621,6 +621,9 @@ input[type="radio"].visually-hidden {
   .contacts__item:hover {
     fill: #ebebeb; }
 
+.contacts__item a {
+  font-size: 0; }
+
 .contacts__description {
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
@@ -1409,6 +1412,7 @@ input[type="radio"].visually-hidden {
           box-sizing: border-box;
   padding-top: 87px;
   height: 46.7vw;
+  background-color: #ffcbcc;
   background: url("../img/bg-masa-desktop@1x.png") 5px 0 no-repeat;
   background-size: 99.9% auto; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -1966,6 +1970,9 @@ input[type="radio"].visually-hidden {
   .page-footer__social-item:hover {
     fill: #ebebeb; }
 
+.page-footer__social-item a {
+  font-size: 0; }
+
 @media (max-width: 767px) {
   .page-footer {
     -webkit-box-sizing: border-box;
@@ -2091,6 +2098,7 @@ input[type="radio"].visually-hidden {
   padding-top: 39.5vw;
   min-height: 26vw;
   width: 100%;
+  background-color: #eeeff1;
   background: url("../img/bg-promo-heading@1x.png") center 160px no-repeat, url("../img/bg-main-city-desktop@1x.png") center 0 no-repeat;
   background-size: 74.5%, 100%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -2594,6 +2602,9 @@ input[type="radio"].visually-hidden {
   fill: #d6d6d6; }
   .reviews__social-item:hover {
     fill: #ebebeb; }
+
+.reviews__social-item a {
+  font-size: 0; }
 
 .reviews__text {
   font-family: "Fira Sans", "Arial", sans-serif;
