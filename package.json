@@ -1,7 +1,7 @@
 {
-  "name": "Liga-A-start-template",
+  "name": "Masa-Israel-build",
   "version": "1.0.0",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "Сборка сайта Маса - Израиль",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
